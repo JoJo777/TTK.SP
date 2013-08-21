@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{865b8573-8077-4e3b-a08b-a9c0b47eb6f0}"
+       Name="XXXFirstName"
+       DisplayName="XXXFirstName"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

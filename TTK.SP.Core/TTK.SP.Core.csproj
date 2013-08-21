@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D38C3CB7-8581-4A5E-B961-EBDB512E4E59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TTK.SP.Core</RootNamespace>
+    <AssemblyName>TTK.SP.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <SandboxedSolution>True</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Feature.SP.Core\Feature.SP.Core.EventReceiver.cs">
+      <DependentUpon>Feature.SP.Core.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature.SP.Core\Feature.SP.Core.feature">
+      <FeatureId>{b9fee37d-6e47-44ff-85c7-bd47b5b1ad71}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Module\CustomerList\CustomerListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b72c8aba-ab86-4bc4-bb19-4c4471dfa1eb}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\CustomerList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a59e8b63-1409-47fa-a972-ab3dde52d40a}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\CustomerRecordDocumentLibrary\CustomerRecordInstanceDocumentLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0f1b3f00-9b6a-4c9a-88cf-cb1ee0ce13a0}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\CustomerRecordDocumentLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{80c222b2-8606-4486-816d-64573a6d67de}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\CustomForms\NeedsAnalysis.docx" />
+    <None Include="Module\CustomForms\template.dotx" />
+    <None Include="Module\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77fe4852-eab9-4538-a3d3-6d2450ccf09f}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\SiteColumn1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ac4c7ca-9f71-4fa3-8d30-a32fd038a364}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\SiteColumn2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4fa36a0d-3750-4295-a776-6817c194a3b8}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\SiteColumn3\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4b4084d-23fa-4446-91b2-a9f7ba8d0803}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\XXXContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4de4724d-71d6-4779-b2c7-cb435535d109}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\XXXList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bfe83968-112d-4451-957f-64488f3fa300}</SharePointProjectItemId>
+    </None>
+    <None Include="Module\XXXList\XXXListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{65275cc4-d431-44b3-99aa-7f4f786db44d}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{eed167e2-0871-43f7-8ad8-e40f5026dc39}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Module\NeedsAnalysisForm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature.SP.Core\Feature.SP.Core.Template.xml">
+      <DependentUpon>Feature.SP.Core.feature</DependentUpon>
+    </Content>
+    <Content Include="Module\CustomerList\CustomerListInstance\Elements.xml" />
+    <Content Include="Module\CustomerList\Elements.xml" />
+    <Content Include="Module\CustomerList\Schema.xml" />
+    <Content Include="Module\CustomForms\Sandbox\CustomerWizard.aspx" />
+    <Content Include="Module\CustomForms\CustomerWizard.aspx" />
+    <Content Include="Module\Elements.xml" />
+    <Content Include="Module\images\ajax-loader2.gif" />
+    <Content Include="Module\js\jquery-1.9.1.min.js" />
+    <Content Include="Module\CustomerRecordDocumentLibrary\EditDlg.htm" />
+    <Content Include="Module\CustomerRecordDocumentLibrary\Elements.xml" />
+    <Content Include="Module\CustomerRecordDocumentLibrary\FileDlg.htm" />
+    <Content Include="Module\CustomerRecordDocumentLibrary\CustomerRecordInstanceDocumentLibrary\Elements.xml" />
+    <Content Include="Module\CustomerRecordDocumentLibrary\Repair.aspx" />
+    <Content Include="Module\CustomerRecordDocumentLibrary\Schema.xml" />
+    <Content Include="Module\CustomerRecordDocumentLibrary\Upload.aspx" />
+    <Content Include="Module\SiteColumn1\Elements.xml" />
+    <Content Include="Module\SiteColumn2\Elements.xml" />
+    <Content Include="Module\SiteColumn3\Elements.xml" />
+    <Content Include="Module\XXXContentType\Elements.xml" />
+    <Content Include="Module\XXXList\EditDlg.htm" />
+    <Content Include="Module\XXXList\Elements.xml" />
+    <Content Include="Module\XXXList\FileDlg.htm" />
+    <Content Include="Module\XXXList\Repair.aspx" />
+    <Content Include="Module\XXXList\Schema.xml" />
+    <Content Include="Module\XXXList\Upload.aspx" />
+    <Content Include="Module\XXXList\XXXListInstance\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Module" Url="Style Library" >
+    <File Path="Module\js\jquery-1.9.1.min.js" Url="js/jquery-1.9.1.min.js" Type="GhostableInLibrary" />
+    <File Path="Module\images\ajax-loader2.gif" Url="images/ajax-loader2.gif" />
+    <File Path="Module\CustomForms\CustomerWizard.aspx" Url="Module/CustomForms/CustomerWizard.aspx" />
+  </Module>
+
+  <Module Name="Needs Analysis Content Type" Path="Module\CustomForms\" Url="_cts/NeedsAnalysisContentType" RootWebOnly="TRUE">
+    <File Url="NeedsAnalysis.docx" Type="Ghostable" />
+    <File Path="template.dotx" Url="Module/CustomForms/template.dotx" />
+</Module>
+
+  <Module Name="XXX Content Type" Path="Module\CustomForms\" Url="_cts/XXXContentType" RootWebOnly="TRUE">
+    <File Url="template.dotx" Type="Ghostable" />
+    <File Path="template.dotx" Url="Module/CustomForms/template.dotx" />
+  </Module>
+  
+</Elements>

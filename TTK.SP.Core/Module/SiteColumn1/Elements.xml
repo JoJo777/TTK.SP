@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{685a7853-1b46-481e-8b27-5392b0b38c6f}"
+       Name="XXXGender"
+       DisplayName="XXXGender"
+       Type="Choice"
+       Required="FALSE"
+       Group="Custom Site Columns">
+    <CHOICES>
+      <CHOICE>Female</CHOICE>
+      <CHOICE>Male</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

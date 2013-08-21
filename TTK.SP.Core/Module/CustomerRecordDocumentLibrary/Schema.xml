@@ -1,0 +1,1320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="CustomerRecordDocumentLibrary" Direction="$Resources:Direction;" Url="CustomerRecordDocumentLibrary" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x010023f8e649fa7149578c87402887d0813c" Name="Needs Analysis Content Type" Group="Tartakover" >
+        <DocumentTemplate ></DocumentTemplate>
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{4b1bf6c6-4f39-45ac-acd5-16fe7a214e5e}" Name="TemplateUrl" />
+          <FieldRef ID="{cd1ecb9f-dd4e-4f29-ab9e-e9ff40048d64}" Name="xd_ProgID" />
+          <FieldRef ID="{fbf29b2d-cae5-49aa-8e0a-29955b540122}" Name="xd_Signature" />
+          <FieldRef ID="{e52012a0-51eb-4c0c-8dfb-9b8a0ebedcb6}" Name="Combine" />
+          <FieldRef ID="{5d36727b-bcb2-47d2-a231-1f0bc63b7439}" Name="RepairDocument" />
+          <FieldRef ID="{1c23b352-9620-4f63-af3f-2f3878620ccf}" Name="Referrer" />
+          <FieldRef ID="{22b9000d-688e-4747-88f7-2b5338f6a328}" Name="DateCaptured" />
+          <FieldRef ID="{1f5aec80-262b-43ec-8e71-a669a0c9007a}" Name="DoB" />
+          <FieldRef ID="{8b5f2626-24ff-47af-af35-ab62110e9fae}" Name="Gender" />
+          <FieldRef ID="{e547283c-108f-46c4-a6a0-c32fc3b3dd61}" Name="Marital" />
+          <FieldRef ID="{22a94ef4-704e-4b54-8158-b2271274bed5}" Name="Residential" />
+          <FieldRef ID="{16546cb2-b834-4198-9495-6de22c06ebf2}" Name="Business" />
+          <FieldRef ID="{87f44d4e-eab8-47c1-879e-0bc5f10d4945}" Name="Home" />
+          <FieldRef ID="{52d0a088-3eed-4d0e-b175-89fe35062439}" Name="Email" />
+          <FieldRef ID="{ada2969c-8ae9-4524-9951-99efa3c5548a}" Name="CorrespondancePreference" />
+          <FieldRef ID="{e119e1ab-76ed-432d-bedf-96e484336ea0}" Name="Will" />
+          <FieldRef ID="{1eabffe4-a588-46b5-a20b-eabac3b7eb8a}" Name="Qantas" />
+          <FieldRef ID="{4c87deb8-db5d-4705-bd0f-6d342ca606ef}" Name="RACV" />
+          <FieldRef ID="{8c47ed08-2f90-449c-9659-00d069131c10}" Name="Solicitor" />
+          <FieldRef ID="{f80ac0bb-af6f-4092-8c51-65fe70c00fea}" Name="Accountant" />
+          <FieldRef ID="{36220b87-b6fe-4f37-8e6e-8f9d24e3d7b0}" Name="FirstName" />
+          <FieldRef ID="{21e6cc3f-4233-44d9-9c08-4fac3df27550}" Name="Smoker" />
+          <FieldRef ID="{6dfe9ea1-9569-4f53-af94-96ccf1c0fc75}" Name="SurNameP" />
+          <FieldRef ID="{50e49422-0bff-4ca7-acf5-540096aaf28c}" Name="FirstNameP" />
+          <FieldRef ID="{3e495036-d601-48ba-aa30-fadc1b87fd04}" Name="DoBP" />
+          <FieldRef ID="{f661bf9c-47e6-4dbd-abff-29a661c9020e}" Name="GenderP" />
+          <FieldRef ID="{9cd6203c-6df6-43aa-8e3f-65eff8476acc}" Name="MaritalP" />
+          <FieldRef ID="{681d8566-cb85-490f-9e3d-c78a58ee1032}" Name="MobileP" />
+          <FieldRef ID="{18971644-6d4e-48c0-a473-a7486b3061f5}" Name="BusinessP" />
+          <FieldRef ID="{798fe16e-3196-43b3-a094-561ae682d805}" Name="HomeP" />
+          <FieldRef ID="{a627d597-91d1-402d-ac68-3f030fea8461}" Name="EmailP" />
+          <FieldRef ID="{09348ce8-804d-428d-9320-2a6f2eb8fbe8}" Name="CorrespondancePreferenceP" />
+          <FieldRef ID="{742d2fcc-231c-485e-97d3-6f57759ddc35}" Name="WillP" />
+          <FieldRef ID="{34181e13-bf37-4855-8212-cba649cca94e}" Name="QantasP" />
+          <FieldRef ID="{99649c25-4821-4b43-9bff-d54a28cfd6bf}" Name="RACVP" />
+          <FieldRef ID="{b5c4f7c9-e759-4b6b-864c-ac6f7900c90a}" Name="AccountantP" />
+          <FieldRef ID="{e5ced78d-4c69-4e0f-b67d-282fd6ed7342}" Name="SolicitorP" />
+          <FieldRef ID="{f5d4c925-8adb-49ac-b787-ef195b0b3334}" Name="SmokerP" />
+          <FieldRef ID="{2da8120f-be12-4222-bb5f-091c79aa1aa4}" Name="Father" />
+          <FieldRef ID="{2ec651d6-c683-43fe-a3db-7d2a804f8b1e}" Name="FatherDOB" />
+          <FieldRef ID="{a3d3fc77-fad2-4a45-9867-75127f364c12}" Name="FatherHealth" />
+          <FieldRef ID="{436bf713-7060-475d-8086-b75d12ce9951}" Name="Mother" />
+          <FieldRef ID="{91254bc4-df2b-45ff-a5bb-d29a820f7d58}" Name="MotherDOB" />
+          <FieldRef ID="{2dbe53a8-f07d-47f2-aa77-f0ac3f542956}" Name="MotherHealth" />
+          <FieldRef ID="{05082b8c-9642-4b33-9b6f-f32965fa03ca}" Name="Brother" />
+          <FieldRef ID="{3815ffca-459c-47e1-a0e6-ee23f6a817a8}" Name="BrotherDOB" />
+          <FieldRef ID="{d2ae9db4-65ac-4374-a0a7-5c9517c0ccc7}" Name="BrotherHealth" />
+          <FieldRef ID="{03a9a9cc-6804-4ec4-91ee-331ecdbe8770}" Name="Brother2" />
+          <FieldRef ID="{e5f017c0-c904-4cde-93d6-385324e437f7}" Name="Brother2DOB" />
+          <FieldRef ID="{523b7d34-0aae-445b-b028-29060373cb72}" Name="BrotherHealth2" />
+          <FieldRef ID="{a27dfcb2-2899-447c-8e86-a597c0d3039d}" Name="Sister" />
+          <FieldRef ID="{5bdcfa94-91da-4a92-9807-95a8dcadfb7c}" Name="SisterDOB" />
+          <FieldRef ID="{c1b35c89-62d9-4ba8-a088-08202ab98e49}" Name="SisterHealth" />
+          <FieldRef ID="{50168b76-bd5c-4d6a-840d-661d37eca20f}" Name="Sister2" />
+          <FieldRef ID="{5573ea6f-ab56-4498-98bd-c594ef38826e}" Name="SisterDOB2" />
+          <FieldRef ID="{ff3222c4-024c-4860-afac-b579e7e8643f}" Name="SisterHealth2" />
+          <FieldRef ID="{e432c87b-da60-45d6-a478-7621cc79644b}" Name="FatherP" />
+          <FieldRef ID="{b0bce503-1723-4dba-83d6-ddcad55eef2f}" Name="FatherPDOB" />
+          <FieldRef ID="{3f83721c-120f-4827-a46b-eb474d1820db}" Name="FatherHealth1" />
+          <FieldRef ID="{c9f84442-435f-43cf-9ee4-b7d9f34bae79}" Name="MotherP" />
+          <FieldRef ID="{15b03e34-80f4-4e90-b373-cd0291a04fc2}" Name="MotherPDOB" />
+          <FieldRef ID="{518d3123-3190-4125-a6dd-551748e0637b}" Name="MotherHealthP" />
+          <FieldRef ID="{8212a146-1ad7-4824-8f77-a65d602c7ece}" Name="BrotherP" />
+          <FieldRef ID="{cf73d2f1-10ed-4b4f-9018-888d40597773}" Name="BrotherPDOB" />
+          <FieldRef ID="{1c86fe0b-faef-4ac5-a4f0-efe0e53974bb}" Name="BrotherHealthP" />
+          <FieldRef ID="{1d7ec34e-bb2e-4919-94a1-012d744a4cc0}" Name="Brother2P" />
+          <FieldRef ID="{f76a9597-84cb-42f0-b58e-57090ae9e0a0}" Name="Brother2PDOB" />
+          <FieldRef ID="{193c036f-17a4-4e07-bc24-5683a34ff226}" Name="BrotherHealth2P" />
+          <FieldRef ID="{832862f0-e1d1-4f03-a299-e8bc0198aba9}" Name="SisterP" />
+          <FieldRef ID="{ca752ada-7a81-4144-a991-be6c79b2a94c}" Name="SisterPDOB" />
+          <FieldRef ID="{8e7dd569-ba76-4b55-841a-ce75b7958a4c}" Name="SisterHealthP" />
+          <FieldRef ID="{198c3f20-5b7e-401e-8a09-7c8dda1231ac}" Name="Sister2P" />
+          <FieldRef ID="{16894424-c26c-4cad-bfbe-9ecc8faaf3b9}" Name="Sister2PDOB" />
+          <FieldRef ID="{a972d3c9-416c-496a-bf23-d28939cce4d3}" Name="SisterHealth2P" />
+          <FieldRef ID="{4d950eee-51f0-41f0-a812-1997ccf6ff39}" Name="DependantsFirst1" />
+          <FieldRef ID="{3125b53c-3ab9-4a21-9d51-60c81583bdb9}" Name="DependantsSurName1" />
+          <FieldRef ID="{0b53675d-c5ae-4043-9e13-02343a2f2ef0}" Name="Dependants1" />
+          <FieldRef ID="{aeb27fc6-b35a-4857-bfb5-cd855be06ee8}" Name="Relation1" />
+          <FieldRef ID="{0b79faa1-b7fc-4df5-aa5b-b22c4fff715d}" Name="DependantsEducationOccupationLevel1" />
+          <FieldRef ID="{0c4f1c40-ca98-41d1-9fe9-2ad199f2ef50}" Name="DependantsSchoolUniversity1" />
+          <FieldRef ID="{27f8a0d2-5550-4a82-b5b3-12ea424f364f}" Name="DependantsHealth1" />
+          <FieldRef ID="{962c1e04-a520-42c3-b415-37b6ac92c682}" Name="DependantsFirst2" />
+          <FieldRef ID="{a02e3b7d-afdd-4ff4-bee8-f8514e5c0353}" Name="DependantsSurName1ddRelation2" />
+          <FieldRef ID="{b1ee6b0d-c00d-4cfa-8609-4587d605cba5}" Name="Dependants2" />
+          <FieldRef ID="{a43c5bf5-2117-4830-bba8-bbbed768530a}" Name="Relation2" />
+          <FieldRef ID="{f66548f2-a6fc-426c-bb60-43f41d972064}" Name="DependantsEducationOccupationLevel2" />
+          <FieldRef ID="{63c6745e-b93d-4b14-815a-5c45642abe8e}" Name="DependantsSchoolUniversity2" />
+          <FieldRef ID="{274f72b8-0d92-4e04-b962-d23fd3d400bc}" Name="DependantsHealth2" />
+          <FieldRef ID="{162f85dc-dc07-403f-aca2-a3e7fa23b751}" Name="DependantsFirst3" />
+          <FieldRef ID="{73f03521-0d70-4a59-8ab1-583df5de7cb6}" Name="DependantsSurName3" />
+          <FieldRef ID="{c0c99ee3-65fc-4036-95dd-4dc61d69a85b}" Name="Dependants3" />
+          <FieldRef ID="{61fae296-a66f-4ab2-82b0-9eb3add8fde4}" Name="Relation3" />
+          <FieldRef ID="{b3bd316f-6f52-4d2f-b73c-3850044f1cca}" Name="DependantsEducationOccupationLevel3" />
+          <FieldRef ID="{17665bce-9ea7-437b-95eb-01f92e2ed696}" Name="DependantsSchoolUniversity3" />
+          <FieldRef ID="{8a60f590-96a7-44d8-8f80-124ca4d17153}" Name="DependantsHealth3" />
+          <FieldRef ID="{6a7423db-6eed-4dd3-8475-17e6a7d8f703}" Name="DependantsFirst4" />
+          <FieldRef ID="{c1c52fb1-e669-4171-882b-8fd1b5bf553a}" Name="DependantsSurName4" />
+          <FieldRef ID="{54aee872-892a-494c-872c-62ac65737d07}" Name="Dependants4" />
+          <FieldRef ID="{8a0f2a53-7ab1-4c38-b2bb-caa5447cebaf}" Name="Relation4" />
+          <FieldRef ID="{e7392de2-c6e9-4283-8e68-8b09dedb20df}" Name="DependantsEducationOccupationLevel4" />
+          <FieldRef ID="{e057126c-285c-4d3f-8d0a-06ed36768cbe}" Name="DependantsSchoolUniversity4" />
+          <FieldRef ID="{5221537b-0288-4ce4-9bd2-c9d45b69acf8}" Name="DependantsHealth4" />
+          <FieldRef ID="{078cbe1c-4738-4f0b-b0ca-74d9a25886a4}" Name="DependantsFirst5" />
+          <FieldRef ID="{f7df757b-9141-4edc-b28d-6b8bf9022cd1}" Name="DependantsSurName5" />
+          <FieldRef ID="{44b14243-83c6-4fc6-9c78-eeac3315443f}" Name="Dependants5" />
+          <FieldRef ID="{f577ef60-bf37-4d66-83fd-b5d03a9133a8}" Name="Relation5" />
+          <FieldRef ID="{d7430d3e-f3d7-49be-9625-4f0d354e8ab6}" Name="DependantsEducationOccupationLevel5" />
+          <FieldRef ID="{4ff42a1a-0e2e-480e-af15-342876ff9675}" Name="DependantsSchoolUniversity5" />
+          <FieldRef ID="{8b950d29-45d2-4619-a906-7b4f7974aaf2}" Name="DependantsHealth5" />
+          <FieldRef ID="{0ee1ce10-302f-4b70-8228-8a65a83a9dba}" Name="JobTitle1" />
+          <FieldRef ID="{1cdce262-0115-4c92-b1eb-4144db1c962f}" Name="EmploymentStatus" />
+          <FieldRef ID="{760fcd51-041e-4aec-b447-97b2aebdfdac}" Name="Employer" />
+          <FieldRef ID="{9ab00eec-72c9-4037-af53-fe883959bbe8}" Name="HoursPerWeek" />
+          <FieldRef ID="{9ec5ccf2-d1ed-4066-bc00-0bc4d2a6eaed}" Name="Qualifications" />
+          <FieldRef ID="{ae4068ab-45ef-4cee-b591-e5d8ad918c49}" Name="Remuneration" />
+          <FieldRef ID="{e195969d-25fa-4653-b8b8-797964eadf7f}" Name="Duties" />
+          <FieldRef ID="{0322e181-046a-4136-a2a4-af3ed54fe52e}" Name="JobTitleP" />
+          <FieldRef ID="{e77a9fca-b4fb-4e51-81a9-108e68176264}" Name="EmploymentStatusP" />
+          <FieldRef ID="{427cadd1-f64c-440c-9084-3aea69e65785}" Name="EmployerP" />
+          <FieldRef ID="{152760d3-b661-465e-8831-d7ae60f28eb5}" Name="HoursPerWeekP" />
+          <FieldRef ID="{317c6a27-53da-4c4b-b743-7cb334b854d6}" Name="QualificationsP" />
+          <FieldRef ID="{be618688-d3df-4e74-a219-326d4e23409d}" Name="RemunerationP" />
+          <FieldRef ID="{541e3ef8-e43a-4ced-86b3-e1bd16572444}" Name="DutiesP" />
+          <FieldRef ID="{b9781a9d-1620-45cc-8011-78a50924e011}" Name="HealthCondition" />
+          <FieldRef ID="{68bf44b7-1342-46bb-b13f-890aeef57ed0}" Name="HealthConditionP" />
+          <FieldRef ID="{3e01df2f-579a-4f69-9a7b-be7fd4a50c0d}" Name="House" />
+          <FieldRef ID="{f6aedcd8-5510-43f0-8b2e-9db50a7b4d89}" Name="Contents" />
+          <FieldRef ID="{2a4d6733-886d-4796-8dce-3f6560915369}" Name="Supe" />
+          <FieldRef ID="{98c50685-dbf7-49e8-bdbb-220fccdf14e6}" Name="Cash" />
+          <FieldRef ID="{5cd54d32-6790-4c2b-8654-dbfb24ce789f}" Name="Shares" />
+          <FieldRef ID="{64552d4b-bc1b-4c0d-8f7e-ef7d9c7c55d6}" Name="InvestmentProperties" />
+          <FieldRef ID="{cfbf1bae-f73c-471b-a7dc-cc19c53bf219}" Name="BusinessValue" />
+          <FieldRef ID="{e0117b83-8735-4065-854a-7babc56dd4d5}" Name="PotentialInheritance" />
+          <FieldRef ID="{084981da-9ee6-499e-97f7-fe016fa7e045}" Name="Mortgage" />
+          <FieldRef ID="{e6006710-0b34-4bff-b6b2-1a3ca1253dee}" Name="PersonalLoans" />
+          <FieldRef ID="{a2b936f6-57f6-4751-9762-427e8595568b}" Name="CreditCardDebt" />
+          <FieldRef ID="{a7cddfe5-9619-4ee0-9ace-a38242831d30}" Name="InvestmentLoans" />
+          <FieldRef ID="{387044a9-2890-4a38-b40f-3d7d950f3b9c}" Name="Leases" />
+          <FieldRef ID="{74238717-22b9-450a-9478-2e32825679aa}" Name="BusinessDebt" />
+          <FieldRef ID="{d5d511d0-05c6-486a-8f4d-3089b3ad1ec2}" Name="Liabilites" />
+          <FieldRef ID="{0000e5f3-25e4-4889-8cfc-5d8de61b8384}" Name="HouseP" />
+          <FieldRef ID="{a74880a7-f135-4ad5-b802-86ee774dbb63}" Name="ContentsP" />
+          <FieldRef ID="{f69c687e-73f9-49bd-8eee-7ea4e09d4919}" Name="SuperP" />
+          <FieldRef ID="{9b50fea4-de50-4d0e-85da-b34e861b6f32}" Name="CashP" />
+          <FieldRef ID="{c91694d0-4c50-468d-8b95-4cf0bf67e61c}" Name="SharesP" />
+          <FieldRef ID="{222a45a9-05f6-437e-8e39-ca4c9659c139}" Name="InvestmentPropertiesP" />
+          <FieldRef ID="{e020cebb-f5c5-45f7-b071-e688b7603ed4}" Name="BusinessValueP" />
+          <FieldRef ID="{4ba25725-42e8-48c2-af27-62ffe0751536}" Name="PotentialInheritanceP" />
+          <FieldRef ID="{944906d1-62bc-4a6f-aec5-ff25339bbf64}" Name="MortgageP" />
+          <FieldRef ID="{642ac3fa-9182-42f5-9673-90f5b8accad5}" Name="PersonalLoansP" />
+          <FieldRef ID="{940f138b-3a13-463c-b2b0-931bc921ba8a}" Name="CreditCardDebtP" />
+          <FieldRef ID="{87e34477-1be3-45f2-82c5-dc513eea4893}" Name="InvestmentLoansP" />
+          <FieldRef ID="{5ebbcc9d-1823-464a-b088-dcb79478c6fb}" Name="LeasesP" />
+          <FieldRef ID="{0281583b-b7d8-44aa-9c9c-41f1406c6eda}" Name="BusinessDebtP" />
+          <FieldRef ID="{8160c25b-4030-4f01-958e-4005c29a978d}" Name="LiabilitesP" />
+          <FieldRef ID="{9da084d5-5012-4b29-adf1-17f023297d0f}" Name="HouseJ" />
+          <FieldRef ID="{54d579df-af1f-4d5a-9acc-9b1ea0e70b46}" Name="ContentsJ" />
+          <FieldRef ID="{d39bdfc4-b834-4511-a343-d4b7183255ee}" Name="SuperJ" />
+          <FieldRef ID="{940bd4e7-3942-41eb-aef9-7c9ab751ed24}" Name="CashJ" />
+          <FieldRef ID="{3f7f1e7d-1dbf-4b37-a51f-ba4603ad5ff5}" Name="SharesJ" />
+          <FieldRef ID="{75c28bfa-9b44-4f38-842a-9791e0a44876}" Name="InvestmentPropertiesJ" />
+          <FieldRef ID="{555202e6-385b-4e33-8a0e-0ce33aa6e000}" Name="BusinessValueJ" />
+          <FieldRef ID="{385c7b3b-8d04-4bf9-a466-0756bf4f55ab}" Name="PotentialInheritanceJ" />
+          <FieldRef ID="{a0f63579-f81f-433a-bee8-e9247ad9bc7c}" Name="MortgageJ" />
+          <FieldRef ID="{efe6e55a-60b5-4e68-a8f2-c7c7933f2e6b}" Name="PersonalLoansJ" />
+          <FieldRef ID="{fe52608b-1d81-4575-ba48-0588f358d317}" Name="CreditCardDebtJ" />
+          <FieldRef ID="{5ad31ab4-1fe6-4ee6-af72-837f4cd1cbeb}" Name="InvestmentLoansJ" />
+          <FieldRef ID="{752c10f4-f56b-44e1-b04e-a5494bccbab7}" Name="LeasesJ" />
+          <FieldRef ID="{ae682139-602f-45d8-a879-ec4a36e06893}" Name="BusinessDebtJ" />
+          <FieldRef ID="{fee09bb4-4b11-4573-a936-7df49385d79b}" Name="LiabilitesJ" />
+          <FieldRef ID="{0c19605e-5a5a-4f8e-a2be-2d955fcc155f}" Name="Income" />
+          <FieldRef ID="{f2153670-3c60-42fd-acdc-bd5fd560d79e}" Name="ClientIncome" />
+          <FieldRef ID="{9c276840-f015-467d-b31e-62bb422c75c2}" Name="PartnerIncome" />
+          <FieldRef ID="{ab71e228-a82c-44ba-9e5c-56f1c2c0f98e}" Name="IncomeProtection" />
+          <FieldRef ID="{3ea2f65a-60ff-44e9-8e66-68c7307cdec2}" Name="LifeCover" />
+          <FieldRef ID="{81fff9f2-d85d-47a9-adb5-adc3f3cbd064}" Name="Disable" />
+          <FieldRef ID="{24db6e87-3277-4591-a73c-d4d7dc808e5a}" Name="Trauma" />
+          <FieldRef ID="{c4de26a7-a7b7-4c34-8871-0e22191f84d4}" Name="OtherInsured" />
+          <FieldRef ID="{a66b826f-fa20-4da2-9953-1f41f77e6bcc}" Name="FirstLetter" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef  ID="0x0101">
+        <Folder  TargetName="Forms/NeedsAnalysisContentType" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" DisplayName="$Resources:core,Title;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title"></Field>
+      <Field ID="{4b1bf6c6-4f39-45ac-acd5-16fe7a214e5e}" Type="Text" Name="TemplateUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Template_Link;" XName="TemplateUrl" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" PITarget="mso-infoPathSolution" PIAttribute="href" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TemplateUrl"></Field>
+      <Field ID="{cd1ecb9f-dd4e-4f29-ab9e-e9ff40048d64}" Type="Text" Name="xd_ProgID" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Html_File_Link;" XName="ProgID" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_ProgID"></Field>
+      <Field ID="{fbf29b2d-cae5-49aa-8e0a-29955b540122}" Type="Boolean" Group="_Hidden" Name="xd_Signature" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_Signature" DisplayName="$Resources:core,Xml_signed;" XName="{FBF29B2D-CAE5-49aa-8E0A-29955B540122}" Filterable="TRUE" Sortable="TRUE" Sealed="TRUE" Hidden="TRUE" FromBaseType="TRUE" ReadOnly="TRUE"></Field>
+      <Field ID="{e52012a0-51eb-4c0c-8dfb-9b8a0ebedcb6}" ReadOnly="TRUE" Type="Computed" Name="Combine" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Merge;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Combine">
+        <FieldRefs>
+          <FieldRef Name="FSObjType" Key="Primary" />
+          <FieldRef Name="EncodedAbsUrl" />
+          <FieldRef Name="TemplateUrl" />
+        </FieldRefs>
+      </Field>
+      <Field ID="{5d36727b-bcb2-47d2-a231-1f0bc63b7439}" ReadOnly="TRUE" Type="Computed" Name="RepairDocument" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Relink;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RepairDocument">
+        <FieldRefs>
+          <FieldRef Name="FSObjType" Key="Primary" />
+          <FieldRef Name="ID" />
+        </FieldRefs>
+      </Field>
+      <Field Name="Referrer" ID="{1c23b352-9620-4f63-af3f-2f3878620ccf}" DisplayName="Referrer" Type="Text" />
+      <Field Name="DateCaptured" ID="{22b9000d-688e-4747-88f7-2b5338f6a328}" DisplayName="Date" Type="DateTime" />
+      <Field Name="DoB" ID="{1f5aec80-262b-43ec-8e71-a669a0c9007a}" DisplayName="DoB" Type="DateTime" />
+      <Field Name="Gender" ID="{8b5f2626-24ff-47af-af35-ab62110e9fae}" DisplayName="Gender" Type="Choice">
+        <CHOICES>
+          <CHOICE>Female</CHOICE>
+          <CHOICE>Male</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Marital" ID="{e547283c-108f-46c4-a6a0-c32fc3b3dd61}" DisplayName="MaritalStatus" Type="Choice">
+        <CHOICES>
+          <CHOICE>Married</CHOICE>
+          <CHOICE>Single</CHOICE>
+          <CHOICE>De Facto</CHOICE>
+          <CHOICE>Divorced</CHOICE>
+          <CHOICE>Seperated</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Residential" ID="{22a94ef4-704e-4b54-8158-b2271274bed5}" DisplayName="Residential" Type="Note" />
+      <Field Name="Business" ID="{16546cb2-b834-4198-9495-6de22c06ebf2}" DisplayName="Business" Type="Text" />
+      <Field Name="Home" ID="{87f44d4e-eab8-47c1-879e-0bc5f10d4945}" DisplayName="Home" Type="Text" />
+      <Field Name="Email" ID="{52d0a088-3eed-4d0e-b175-89fe35062439}" DisplayName="Email" Type="Text" />
+      <Field Name="CorrespondancePreference" ID="{ada2969c-8ae9-4524-9951-99efa3c5548a}" DisplayName="CorrespondancePreference" Type="Choice">
+        <CHOICES>
+          <CHOICE>Email</CHOICE>
+          <CHOICE>Post</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Will" ID="{e119e1ab-76ed-432d-bedf-96e484336ea0}" DisplayName="Will" Type="Boolean" />
+      <Field Name="Qantas" ID="{1eabffe4-a588-46b5-a20b-eabac3b7eb8a}" DisplayName="Qantas" Type="Text" />
+      <Field Name="RACV" ID="{4c87deb8-db5d-4705-bd0f-6d342ca606ef}" DisplayName="RACV" Type="Text" />
+      <Field Name="Solicitor" ID="{8c47ed08-2f90-449c-9659-00d069131c10}" DisplayName="Solicitor" Type="Text" />
+      <Field Name="Accountant" ID="{f80ac0bb-af6f-4092-8c51-65fe70c00fea}" DisplayName="Accountant" Type="Text" />
+      <Field Name="FirstName" ID="{36220b87-b6fe-4f37-8e6e-8f9d24e3d7b0}" DisplayName="FirstName" Type="Text" />
+      <Field Name="Smoker" ID="{21e6cc3f-4233-44d9-9c08-4fac3df27550}" DisplayName="Smoker" Type="Choice">
+        <CHOICES>
+          <CHOICE>Smoker</CHOICE>
+          <CHOICE>Non-smoker</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="SurNameP" ID="{6dfe9ea1-9569-4f53-af94-96ccf1c0fc75}" DisplayName="SurNameP" Type="Text" />
+      <Field Name="FirstNameP" ID="{50e49422-0bff-4ca7-acf5-540096aaf28c}" DisplayName="FirstNameP" Type="Text" />
+      <Field Name="DoBP" ID="{3e495036-d601-48ba-aa30-fadc1b87fd04}" DisplayName="DoBP" Type="DateTime" />
+      <Field Name="GenderP" ID="{f661bf9c-47e6-4dbd-abff-29a661c9020e}" DisplayName="GenderP" Type="Choice">
+        <CHOICES>
+          <CHOICE>Female</CHOICE>
+          <CHOICE>Male</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="MaritalP" ID="{9cd6203c-6df6-43aa-8e3f-65eff8476acc}" DisplayName="MaritalStatusP" Type="Choice">
+        <CHOICES>
+          <CHOICE>Married</CHOICE>
+          <CHOICE>Single</CHOICE>
+          <CHOICE>De Facto</CHOICE>
+          <CHOICE>Divorced</CHOICE>
+          <CHOICE>Seperated</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="MobileP" ID="{681d8566-cb85-490f-9e3d-c78a58ee1032}" DisplayName="ResidentialP" Type="Note" />
+      <Field Name="BusinessP" ID="{18971644-6d4e-48c0-a473-a7486b3061f5}" DisplayName="BusinessP" Type="Text" />
+      <Field Name="HomeP" ID="{798fe16e-3196-43b3-a094-561ae682d805}" DisplayName="HomeP" Type="Text" />
+      <Field Name="EmailP" ID="{a627d597-91d1-402d-ac68-3f030fea8461}" DisplayName="EmailP" Type="Text" />
+      <Field Name="CorrespondancePreferenceP" ID="{09348ce8-804d-428d-9320-2a6f2eb8fbe8}" DisplayName="CorrespondancePreferenceP" Type="Choice"></Field>
+      <Field Name="WillP" ID="{742d2fcc-231c-485e-97d3-6f57759ddc35}" DisplayName="WillP" Type="Boolean" />
+      <Field Name="QantasP" ID="{34181e13-bf37-4855-8212-cba649cca94e}" DisplayName="QantasP" Type="Text" />
+      <Field Name="RACVP" ID="{99649c25-4821-4b43-9bff-d54a28cfd6bf}" DisplayName="RACVP" Type="Text" />
+      <Field Name="AccountantP" ID="{b5c4f7c9-e759-4b6b-864c-ac6f7900c90a}" DisplayName="AccountantP" Type="Text" />
+      <Field Name="SolicitorP" ID="{e5ced78d-4c69-4e0f-b67d-282fd6ed7342}" DisplayName="SolicitorP" Type="Text" />
+      <Field Name="SmokerP" ID="{f5d4c925-8adb-49ac-b787-ef195b0b3334}" DisplayName="SmokerP" Type="Choice">
+        <CHOICES>
+          <CHOICE>Smoker</CHOICE>
+          <CHOICE>Non-smoker</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Father" ID="{2da8120f-be12-4222-bb5f-091c79aa1aa4}" DisplayName="Father" Type="Text" />
+      <Field Name="FatherDOB" ID="{2ec651d6-c683-43fe-a3db-7d2a804f8b1e}" DisplayName="FatherDOB" Type="DateTime" />
+      <Field Name="FatherHealth" ID="{a3d3fc77-fad2-4a45-9867-75127f364c12}" Type="MultiChoice" Format="RadioButtons" DisplayName="FatherHealth">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Mother" ID="{436bf713-7060-475d-8086-b75d12ce9951}" DisplayName="Mother" Type="Text" />
+      <Field Name="MotherDOB" ID="{91254bc4-df2b-45ff-a5bb-d29a820f7d58}" DisplayName="MotherDOB" Type="DateTime" />
+      <Field Name="MotherHealth" ID="{2dbe53a8-f07d-47f2-aa77-f0ac3f542956}" Type="MultiChoice" Format="RadioButtons" DisplayName="MotherHealth">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Brother" ID="{05082b8c-9642-4b33-9b6f-f32965fa03ca}" DisplayName="Brother" Type="Text" />
+      <Field Name="BrotherDOB" ID="{3815ffca-459c-47e1-a0e6-ee23f6a817a8}" DisplayName="BrotherDOB" Type="DateTime" />
+      <Field Name="BrotherHealth" ID="{d2ae9db4-65ac-4374-a0a7-5c9517c0ccc7}" Type="MultiChoice" Format="RadioButtons" DisplayName="BrotherHealth">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Brother2" ID="{03a9a9cc-6804-4ec4-91ee-331ecdbe8770}" DisplayName="Brother2" Type="Text" />
+      <Field Name="Brother2DOB" ID="{e5f017c0-c904-4cde-93d6-385324e437f7}" DisplayName="Brother2DOB" Type="DateTime" />
+      <Field Name="BrotherHealth2" ID="{523b7d34-0aae-445b-b028-29060373cb72}" Type="MultiChoice" Format="RadioButtons" DisplayName="BrotherHealth2">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Sister" ID="{a27dfcb2-2899-447c-8e86-a597c0d3039d}" DisplayName="Sister" Type="Text" />
+      <Field Name="SisterDOB" ID="{5bdcfa94-91da-4a92-9807-95a8dcadfb7c}" DisplayName="SisterDOB" Type="DateTime" />
+      <Field Name="SisterHealth" ID="{c1b35c89-62d9-4ba8-a088-08202ab98e49}" DisplayName="SisterHealth" Type="Text" />
+      <Field Name="Sister2" ID="{50168b76-bd5c-4d6a-840d-661d37eca20f}" DisplayName="Sister2" Type="Text" />
+      <Field Name="SisterDOB2" ID="{5573ea6f-ab56-4498-98bd-c594ef38826e}" DisplayName="SisterDOB2" Type="DateTime" />
+      <Field Name="SisterHealth2" ID="{ff3222c4-024c-4860-afac-b579e7e8643f}" Type="MultiChoice" Format="RadioButtons" DisplayName="SisterHealth2">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="FatherP" ID="{e432c87b-da60-45d6-a478-7621cc79644b}" DisplayName="FatherP" Type="Text" />
+      <Field Name="FatherPDOB" ID="{b0bce503-1723-4dba-83d6-ddcad55eef2f}" DisplayName="FatherPDOB" Type="DateTime" />
+      <Field Name="FatherHealth1" ID="{3f83721c-120f-4827-a46b-eb474d1820db}" Type="MultiChoice" Format="RadioButtons" DisplayName="FatherHealthP">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="MotherP" ID="{c9f84442-435f-43cf-9ee4-b7d9f34bae79}" DisplayName="MotherP" Type="Text" />
+      <Field Name="MotherPDOB" ID="{15b03e34-80f4-4e90-b373-cd0291a04fc2}" DisplayName="MotherPDOB" Type="DateTime" />
+      <Field Name="MotherHealthP" ID="{518d3123-3190-4125-a6dd-551748e0637b}" Type="MultiChoice" Format="RadioButtons" DisplayName="MotherHealthP">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="BrotherP" ID="{8212a146-1ad7-4824-8f77-a65d602c7ece}" DisplayName="BrotherP" Type="Text" />
+      <Field Name="BrotherPDOB" ID="{cf73d2f1-10ed-4b4f-9018-888d40597773}" DisplayName="BrotherPDOB" Type="DateTime" />
+      <Field Name="BrotherHealthP" ID="{1c86fe0b-faef-4ac5-a4f0-efe0e53974bb}" Type="MultiChoice" Format="RadioButtons" DisplayName="BrotherHealthP">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Brother2P" ID="{1d7ec34e-bb2e-4919-94a1-012d744a4cc0}" DisplayName="Brother2P" Type="Text" />
+      <Field Name="Brother2PDOB" ID="{f76a9597-84cb-42f0-b58e-57090ae9e0a0}" DisplayName="Brother2PDOB" Type="DateTime" />
+      <Field Name="BrotherHealth2P" ID="{193c036f-17a4-4e07-bc24-5683a34ff226}" Type="MultiChoice" Format="RadioButtons" DisplayName="BrotherHealth2P">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="SisterP" ID="{832862f0-e1d1-4f03-a299-e8bc0198aba9}" DisplayName="SisterP" Type="Text" />
+      <Field Name="SisterPDOB" ID="{ca752ada-7a81-4144-a991-be6c79b2a94c}" DisplayName="SisterPDOB" Type="DateTime" />
+      <Field Name="SisterHealthP" ID="{8e7dd569-ba76-4b55-841a-ce75b7958a4c}" Type="MultiChoice" Format="RadioButtons" DisplayName="SisterHealthP">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Sister2P" ID="{198c3f20-5b7e-401e-8a09-7c8dda1231ac}" DisplayName="Sister2P" Type="Text" />
+      <Field Name="Sister2PDOB" ID="{16894424-c26c-4cad-bfbe-9ecc8faaf3b9}" DisplayName="Sister2PDOB" Type="DateTime" />
+      <Field Name="SisterHealth2P" ID="{a972d3c9-416c-496a-bf23-d28939cce4d3}" Type="MultiChoice" Format="RadioButtons" DisplayName="SisterHealth2P">
+        <CHOICES>
+          <CHOICE>Back</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Dementia</CHOICE>
+          <CHOICE>Heart Disease</CHOICE>
+          <CHOICE>High Blood Pressure</CHOICE>
+          <CHOICE>High Cholesterol</CHOICE>
+          <CHOICE>Kidney Disease</CHOICE>
+          <CHOICE>Mental Illness</CHOICE>
+          <CHOICE>Stroke</CHOICE>
+          <CHOICE>Diabetes</CHOICE>
+          <CHOICE>Cancer</CHOICE>
+          <CHOICE>Other</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="DependantsFirst1" ID="{4d950eee-51f0-41f0-a812-1997ccf6ff39}" DisplayName="DependantsFirst1" Type="Text" />
+      <Field Name="DependantsSurName1" ID="{3125b53c-3ab9-4a21-9d51-60c81583bdb9}" DisplayName="DependantsSurName1" Type="Text" />
+      <Field Name="Dependants1" ID="{0b53675d-c5ae-4043-9e13-02343a2f2ef0}" DisplayName="Dependants1" Type="DateTime" />
+      <Field Name="Relation1" ID="{aeb27fc6-b35a-4857-bfb5-cd855be06ee8}" DisplayName="Relation1" Type="Choice">
+        <CHOICES>
+          <CHOICE>Daughter</CHOICE>
+          <CHOICE>Son</CHOICE>
+          <CHOICE>Step-Daughter</CHOICE>
+          <CHOICE>Step-Son</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="DependantsEducationOccupationLevel1" ID="{0b79faa1-b7fc-4df5-aa5b-b22c4fff715d}" DisplayName="DependantsEducationOccupationLevel1" Type="Text" />
+      <Field Name="DependantsSchoolUniversity1" ID="{0c4f1c40-ca98-41d1-9fe9-2ad199f2ef50}" DisplayName="DependantsSchoolUniversity1" Type="Text" />
+      <Field Name="DependantsHealth1" ID="{27f8a0d2-5550-4a82-b5b3-12ea424f364f}" DisplayName="DependantsHealth1" Type="Text" />
+      <Field Name="DependantsFirst2" ID="{962c1e04-a520-42c3-b415-37b6ac92c682}" DisplayName="DependantsFirst2" Type="Text" />
+      <Field Name="DependantsSurName1ddRelation2" ID="{a02e3b7d-afdd-4ff4-bee8-f8514e5c0353}" DisplayName="DependantsSurName2" Type="Text" />
+      <Field Name="Dependants2" ID="{b1ee6b0d-c00d-4cfa-8609-4587d605cba5}" DisplayName="Dependants2" Type="DateTime" />
+      <Field Name="Relation2" ID="{a43c5bf5-2117-4830-bba8-bbbed768530a}" DisplayName="Relation2" Type="Choice">
+        <CHOICES>
+          <CHOICE>Daughter</CHOICE>
+          <CHOICE>Son</CHOICE>
+          <CHOICE>Step-Daughter</CHOICE>
+          <CHOICE>Step-Son</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="DependantsEducationOccupationLevel2" ID="{f66548f2-a6fc-426c-bb60-43f41d972064}" DisplayName="DependantsEducationOccupationLevel2" Type="Text" />
+      <Field Name="DependantsSchoolUniversity2" ID="{63c6745e-b93d-4b14-815a-5c45642abe8e}" DisplayName="DependantsSchoolUniversity2" Type="Text" />
+      <Field Name="DependantsHealth2" ID="{274f72b8-0d92-4e04-b962-d23fd3d400bc}" DisplayName="DependantsHealth2" Type="Text" />
+      <Field Name="DependantsFirst3" ID="{162f85dc-dc07-403f-aca2-a3e7fa23b751}" DisplayName="DependantsFirst3" Type="Text" />
+      <Field Name="DependantsSurName3" ID="{73f03521-0d70-4a59-8ab1-583df5de7cb6}" DisplayName="DependantsSurName3" Type="Text" />
+      <Field Name="Dependants3" ID="{c0c99ee3-65fc-4036-95dd-4dc61d69a85b}" DisplayName="Dependants3" Type="DateTime" />
+      <Field Name="Relation3" ID="{61fae296-a66f-4ab2-82b0-9eb3add8fde4}" DisplayName="Relation3" Type="Choice">
+        <CHOICES>
+          <CHOICE>Daughter</CHOICE>
+          <CHOICE>Son</CHOICE>
+          <CHOICE>Step-Daughter</CHOICE>
+          <CHOICE>Step-Son</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="DependantsEducationOccupationLevel3" ID="{b3bd316f-6f52-4d2f-b73c-3850044f1cca}" DisplayName="DependantsEducationOccupationLevel3" Type="Text" />
+      <Field Name="DependantsSchoolUniversity3" ID="{17665bce-9ea7-437b-95eb-01f92e2ed696}" DisplayName="DependantsSchoolUniversity3" Type="Text" />
+      <Field Name="DependantsHealth3" ID="{8a60f590-96a7-44d8-8f80-124ca4d17153}" DisplayName="DependantsHealth3" Type="Text" />
+      <Field Name="DependantsFirst4" ID="{6a7423db-6eed-4dd3-8475-17e6a7d8f703}" DisplayName="DependantsFirst4" Type="Text" />
+      <Field Name="DependantsSurName4" ID="{c1c52fb1-e669-4171-882b-8fd1b5bf553a}" DisplayName="DependantsSurName4" Type="Text" />
+      <Field Name="Dependants4" ID="{54aee872-892a-494c-872c-62ac65737d07}" DisplayName="Dependants4" Type="DateTime" />
+      <Field Name="Relation4" ID="{8a0f2a53-7ab1-4c38-b2bb-caa5447cebaf}" DisplayName="Relation4" Type="Choice">
+        <CHOICES>
+          <CHOICE>Daughter</CHOICE>
+          <CHOICE>Son</CHOICE>
+          <CHOICE>Step-Daughter</CHOICE>
+          <CHOICE>Step-Son</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="DependantsEducationOccupationLevel4" ID="{e7392de2-c6e9-4283-8e68-8b09dedb20df}" DisplayName="DependantsEducationOccupationLevel4" Type="Text" />
+      <Field Name="DependantsSchoolUniversity4" ID="{e057126c-285c-4d3f-8d0a-06ed36768cbe}" DisplayName="DependantsSchoolUniversity4" Type="Text" />
+      <Field Name="DependantsHealth4" ID="{5221537b-0288-4ce4-9bd2-c9d45b69acf8}" DisplayName="DependantsHealth4" Type="Text" />
+      <Field Name="DependantsFirst5" ID="{078cbe1c-4738-4f0b-b0ca-74d9a25886a4}" DisplayName="DependantsFirst5" Type="Text" />
+      <Field Name="DependantsSurName5" ID="{f7df757b-9141-4edc-b28d-6b8bf9022cd1}" DisplayName="DependantsSurName5" Type="Text" />
+      <Field Name="Dependants5" ID="{44b14243-83c6-4fc6-9c78-eeac3315443f}" DisplayName="Dependants5" Type="DateTime" />
+      <Field Name="Relation5" ID="{f577ef60-bf37-4d66-83fd-b5d03a9133a8}" DisplayName="Relation5" Type="Choice">
+        <CHOICES>
+          <CHOICE>Daughter</CHOICE>
+          <CHOICE>Son</CHOICE>
+          <CHOICE>Step-Daughter</CHOICE>
+          <CHOICE>Step-Son</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="DependantsEducationOccupationLevel5" ID="{d7430d3e-f3d7-49be-9625-4f0d354e8ab6}" DisplayName="DependantsEducationOccupationLevel5" Type="Text" />
+      <Field Name="DependantsSchoolUniversity5" ID="{4ff42a1a-0e2e-480e-af15-342876ff9675}" DisplayName="DependantsSchoolUniversity5" Type="Text" />
+      <Field Name="DependantsHealth5" ID="{8b950d29-45d2-4619-a906-7b4f7974aaf2}" DisplayName="DependantsHealth5" Type="Text" />
+      <Field Name="JobTitle1" ID="{0ee1ce10-302f-4b70-8228-8a65a83a9dba}" DisplayName="JobTitle" Type="Text" />
+      <Field Name="EmploymentStatus" ID="{1cdce262-0115-4c92-b1eb-4144db1c962f}" DisplayName="EmploymentStatus" Type="Choice">
+        <CHOICES>
+          <CHOICE>Employee</CHOICE>
+          <CHOICE>Working Director</CHOICE>
+          <CHOICE>Sole Trader</CHOICE>
+          <CHOICE>Home Duties</CHOICE>
+          <CHOICE>Unemployed</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="Employer" ID="{760fcd51-041e-4aec-b447-97b2aebdfdac}" DisplayName="Employer" Type="Text" />
+      <Field Name="HoursPerWeek" ID="{9ab00eec-72c9-4037-af53-fe883959bbe8}" DisplayName="HoursPerWeek" Type="Text" />
+      <Field Name="Qualifications" ID="{9ec5ccf2-d1ed-4066-bc00-0bc4d2a6eaed}" DisplayName="Qualifications" Type="Text" />
+      <Field Name="Remuneration" ID="{ae4068ab-45ef-4cee-b591-e5d8ad918c49}" DisplayName="Remuneration" Type="Text" />
+      <Field Name="Duties" ID="{e195969d-25fa-4653-b8b8-797964eadf7f}" DisplayName="Duties" Type="Text" />
+      <Field Name="JobTitleP" ID="{0322e181-046a-4136-a2a4-af3ed54fe52e}" DisplayName="JobTitleP" Type="Text" />
+      <Field Name="EmploymentStatusP" ID="{e77a9fca-b4fb-4e51-81a9-108e68176264}" DisplayName="EmploymentStatusP" Type="Choice">
+        <CHOICES>
+          <CHOICE>Employee</CHOICE>
+          <CHOICE>Working Director</CHOICE>
+          <CHOICE>Sole Trader</CHOICE>
+          <CHOICE>Home Duties</CHOICE>
+          <CHOICE>Unemployed</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="EmployerP" ID="{427cadd1-f64c-440c-9084-3aea69e65785}" DisplayName="EmployerP" Type="Text" />
+      <Field Name="HoursPerWeekP" ID="{152760d3-b661-465e-8831-d7ae60f28eb5}" DisplayName="HoursPerWeekP" Type="Text" />
+      <Field Name="QualificationsP" ID="{317c6a27-53da-4c4b-b743-7cb334b854d6}" DisplayName="QualificationsP" Type="Text" />
+      <Field Name="RemunerationP" ID="{be618688-d3df-4e74-a219-326d4e23409d}" DisplayName="RemunerationP" Type="Text" />
+      <Field Name="DutiesP" ID="{541e3ef8-e43a-4ced-86b3-e1bd16572444}" DisplayName="DutiesP" Type="Text" />
+      <Field Name="HealthCondition" ID="{b9781a9d-1620-45cc-8011-78a50924e011}" DisplayName="HealthCondition" Type="Note" />
+      <Field Name="HealthConditionP" ID="{68bf44b7-1342-46bb-b13f-890aeef57ed0}" DisplayName="HealthConditionP" Type="UserMulti" Mult="TRUE" />
+      <Field Name="House" ID="{3e01df2f-579a-4f69-9a7b-be7fd4a50c0d}" DisplayName="House" Type="Text" />
+      <Field Name="Contents" ID="{f6aedcd8-5510-43f0-8b2e-9db50a7b4d89}" DisplayName="Contents" Type="Text" />
+      <Field Name="Supe" ID="{2a4d6733-886d-4796-8dce-3f6560915369}" DisplayName="Super" Type="Text" />
+      <Field Name="Cash" ID="{98c50685-dbf7-49e8-bdbb-220fccdf14e6}" DisplayName="Cash" Type="Text" />
+      <Field Name="Shares" ID="{5cd54d32-6790-4c2b-8654-dbfb24ce789f}" DisplayName="Shares" Type="Text" />
+      <Field Name="InvestmentProperties" ID="{64552d4b-bc1b-4c0d-8f7e-ef7d9c7c55d6}" DisplayName="InvestmentProperties" Type="Text" />
+      <Field Name="BusinessValue" ID="{cfbf1bae-f73c-471b-a7dc-cc19c53bf219}" DisplayName="BusinessValue" Type="Text" />
+      <Field Name="PotentialInheritance" ID="{e0117b83-8735-4065-854a-7babc56dd4d5}" DisplayName="PotentialInheritance" Type="Text" />
+      <Field Name="Mortgage" ID="{084981da-9ee6-499e-97f7-fe016fa7e045}" DisplayName="Mortgage" Type="Text" />
+      <Field Name="PersonalLoans" ID="{e6006710-0b34-4bff-b6b2-1a3ca1253dee}" DisplayName="PersonalLoans" Type="Text" />
+      <Field Name="CreditCardDebt" ID="{a2b936f6-57f6-4751-9762-427e8595568b}" DisplayName="CreditCardDebt" Type="Text" />
+      <Field Name="InvestmentLoans" ID="{a7cddfe5-9619-4ee0-9ace-a38242831d30}" DisplayName="InvestmentLoans" Type="Text" />
+      <Field Name="Leases" ID="{387044a9-2890-4a38-b40f-3d7d950f3b9c}" DisplayName="Leases" Type="Text" />
+      <Field Name="BusinessDebt" ID="{74238717-22b9-450a-9478-2e32825679aa}" DisplayName="BusinessDebt" Type="Text" />
+      <Field Name="Liabilites" ID="{d5d511d0-05c6-486a-8f4d-3089b3ad1ec2}" DisplayName="Liabilites" Type="Text" />
+      <Field Name="HouseP" ID="{0000e5f3-25e4-4889-8cfc-5d8de61b8384}" DisplayName="HouseP" Type="Text" />
+      <Field Name="ContentsP" ID="{a74880a7-f135-4ad5-b802-86ee774dbb63}" DisplayName="ContentsP" Type="Text" />
+      <Field Name="SuperP" ID="{f69c687e-73f9-49bd-8eee-7ea4e09d4919}" DisplayName="SuperP" Type="Text" />
+      <Field Name="CashP" ID="{9b50fea4-de50-4d0e-85da-b34e861b6f32}" DisplayName="CashP" Type="Text" />
+      <Field Name="SharesP" ID="{c91694d0-4c50-468d-8b95-4cf0bf67e61c}" DisplayName="SharesP" Type="Text" />
+      <Field Name="InvestmentPropertiesP" ID="{222a45a9-05f6-437e-8e39-ca4c9659c139}" DisplayName="InvestmentPropertiesP" Type="Text" />
+      <Field Name="BusinessValueP" ID="{e020cebb-f5c5-45f7-b071-e688b7603ed4}" DisplayName="BusinessValueP" Type="Text" />
+      <Field Name="PotentialInheritanceP" ID="{4ba25725-42e8-48c2-af27-62ffe0751536}" DisplayName="PotentialInheritanceP" Type="Text" />
+      <Field Name="MortgageP" ID="{944906d1-62bc-4a6f-aec5-ff25339bbf64}" DisplayName="MortgageP" Type="Text" />
+      <Field Name="PersonalLoansP" ID="{642ac3fa-9182-42f5-9673-90f5b8accad5}" DisplayName="PersonalLoansP" Type="Text" />
+      <Field Name="CreditCardDebtP" ID="{940f138b-3a13-463c-b2b0-931bc921ba8a}" DisplayName="CreditCardDebtP" Type="Text" />
+      <Field Name="InvestmentLoansP" ID="{87e34477-1be3-45f2-82c5-dc513eea4893}" DisplayName="InvestmentLoansP" Type="Text" />
+      <Field Name="LeasesP" ID="{5ebbcc9d-1823-464a-b088-dcb79478c6fb}" DisplayName="LeasesP" Type="Text" />
+      <Field Name="BusinessDebtP" ID="{0281583b-b7d8-44aa-9c9c-41f1406c6eda}" DisplayName="BusinessDebtP" Type="Text" />
+      <Field Name="LiabilitesP" ID="{8160c25b-4030-4f01-958e-4005c29a978d}" DisplayName="LiabilitesP" Type="Text" />
+      <Field Name="HouseJ" ID="{9da084d5-5012-4b29-adf1-17f023297d0f}" DisplayName="HouseJ" Type="Text" />
+      <Field Name="ContentsJ" ID="{54d579df-af1f-4d5a-9acc-9b1ea0e70b46}" DisplayName="ContentsJ" Type="Text" />
+      <Field Name="SuperJ" ID="{d39bdfc4-b834-4511-a343-d4b7183255ee}" DisplayName="SuperJ" Type="Text" />
+      <Field Name="CashJ" ID="{940bd4e7-3942-41eb-aef9-7c9ab751ed24}" DisplayName="CashJ" Type="Text" />
+      <Field Name="SharesJ" ID="{3f7f1e7d-1dbf-4b37-a51f-ba4603ad5ff5}" DisplayName="SharesJ" Type="Text" />
+      <Field Name="InvestmentPropertiesJ" ID="{75c28bfa-9b44-4f38-842a-9791e0a44876}" DisplayName="InvestmentPropertiesJ" Type="Text" />
+      <Field Name="BusinessValueJ" ID="{555202e6-385b-4e33-8a0e-0ce33aa6e000}" DisplayName="BusinessValueJ" Type="Text" />
+      <Field Name="PotentialInheritanceJ" ID="{385c7b3b-8d04-4bf9-a466-0756bf4f55ab}" DisplayName="PotentialInheritanceJ" Type="Text" />
+      <Field Name="MortgageJ" ID="{a0f63579-f81f-433a-bee8-e9247ad9bc7c}" DisplayName="MortgageJ" Type="Text" />
+      <Field Name="PersonalLoansJ" ID="{efe6e55a-60b5-4e68-a8f2-c7c7933f2e6b}" DisplayName="PersonalLoansJ" Type="Text" />
+      <Field Name="CreditCardDebtJ" ID="{fe52608b-1d81-4575-ba48-0588f358d317}" DisplayName="CreditCardDebtJ" Type="Text" />
+      <Field Name="InvestmentLoansJ" ID="{5ad31ab4-1fe6-4ee6-af72-837f4cd1cbeb}" DisplayName="InvestmentLoansJ" Type="Text" />
+      <Field Name="LeasesJ" ID="{752c10f4-f56b-44e1-b04e-a5494bccbab7}" DisplayName="LeasesJ" Type="Text" />
+      <Field Name="BusinessDebtJ" ID="{ae682139-602f-45d8-a879-ec4a36e06893}" DisplayName="BusinessDebtJ" Type="Text" />
+      <Field Name="LiabilitesJ" ID="{fee09bb4-4b11-4573-a936-7df49385d79b}" DisplayName="LiabilitesJ" Type="Text" />
+      <Field Name="Income" ID="{0c19605e-5a5a-4f8e-a2be-2d955fcc155f}" DisplayName="Income" Type="Choice">
+        <CHOICES>
+          <CHOICE>Rental Income</CHOICE>
+          <CHOICE>Dividends from Shares</CHOICE>
+          <CHOICE>Interest Income</CHOICE>
+          <CHOICE>Other Income</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="ClientIncome" ID="{f2153670-3c60-42fd-acdc-bd5fd560d79e}" DisplayName="ClientIncome" Type="Text" />
+      <Field Name="PartnerIncome" ID="{9c276840-f015-467d-b31e-62bb422c75c2}" DisplayName="PartnerIncome" Type="Text" />
+      <Field Name="IncomeProtection" ID="{ab71e228-a82c-44ba-9e5c-56f1c2c0f98e}" DisplayName="IncomeProtection" Type="Text" />
+      <Field Name="LifeCover" ID="{3ea2f65a-60ff-44e9-8e66-68c7307cdec2}" DisplayName="LifeCover" Type="Text" />
+      <Field Name="Disable" ID="{81fff9f2-d85d-47a9-adb5-adc3f3cbd064}" DisplayName="Disable" Type="Text" />
+      <Field Name="Trauma" ID="{24db6e87-3277-4591-a73c-d4d7dc808e5a}" DisplayName="Trauma" Type="Text" />
+      <Field Name="OtherInsured" ID="{c4de26a7-a7b7-4c34-8871-0e22191f84d4}" DisplayName="OtherInsured" Type="Text" />
+      <Field Type="Calculated" DisplayName="FirstLetter" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" LCID="3081" ResultType="Text" ReadOnly="TRUE" ID="{a66b826f-fa20-4da2-9953-1f41f77e6bcc}" SourceID="{0b55bee7-b12a-4323-801b-25c64e03f9d4}" StaticName="FirstLetter" Name="FirstLetter" ColName="sql_variant1" RowOrdinal="0">
+        <Formula>=LEFT(Title)</Formula>
+        <FormulaDisplayNames>=LEFT(Title)</FormulaDisplayNames>
+        <FieldRefs>
+          <FieldRef Name="Title" />
+        </FieldRefs>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE" FreeForm="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilenameNoMenu"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto)" />
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,Add_New_Document)" />
+          <ParameterBinding Name="MoreAnnouncements" Location="Resource(wss,MoreDocuments)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,All_Documents;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilename"></FieldRef>
+          <FieldRef Name="Modified"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+          <FieldRef Name="Accountant" />
+          <FieldRef Name="AccountantP" />
+          <FieldRef Name="Brother" />
+          <FieldRef Name="Brother2" />
+          <FieldRef Name="Brother2DOB" />
+          <FieldRef Name="Brother2P" />
+          <FieldRef Name="Brother2PDOB" />
+          <FieldRef Name="BrotherDOB" />
+          <FieldRef Name="BrotherHealth" />
+          <FieldRef Name="BrotherHealth2" />
+          <FieldRef Name="BrotherHealth2P" />
+          <FieldRef Name="BrotherHealthP" />
+          <FieldRef Name="BrotherP" />
+          <FieldRef Name="BrotherPDOB" />
+          <FieldRef Name="Business" />
+          <FieldRef Name="BusinessDebt" />
+          <FieldRef Name="BusinessDebtJ" />
+          <FieldRef Name="BusinessDebtP" />
+          <FieldRef Name="BusinessP" />
+          <FieldRef Name="BusinessValue" />
+          <FieldRef Name="BusinessValueJ" />
+          <FieldRef Name="BusinessValueP" />
+          <FieldRef Name="Cash" />
+          <FieldRef Name="CashJ" />
+          <FieldRef Name="CashP" />
+          <FieldRef Name="ClientIncome" />
+          <FieldRef Name="Contents" />
+          <FieldRef Name="ContentsJ" />
+          <FieldRef Name="ContentsP" />
+          <FieldRef Name="CorrespondancePreference" />
+          <FieldRef Name="CorrespondancePreferenceP" />
+          <FieldRef Name="Created" />
+          <FieldRef Name="Author" />
+          <FieldRef Name="CreditCardDebt" />
+          <FieldRef Name="CreditCardDebtJ" />
+          <FieldRef Name="CreditCardDebtP" />
+          <FieldRef Name="DateCaptured" />
+          <FieldRef Name="Dependants1" />
+          <FieldRef Name="Dependants2" />
+          <FieldRef Name="Dependants3" />
+          <FieldRef Name="Dependants4" />
+          <FieldRef Name="Dependants5" />
+          <FieldRef Name="DependantsEducationOccupationLevel1" />
+          <FieldRef Name="DependantsEducationOccupationLevel2" />
+          <FieldRef Name="DependantsEducationOccupationLevel3" />
+          <FieldRef Name="DependantsEducationOccupationLevel4" />
+          <FieldRef Name="DependantsEducationOccupationLevel5" />
+          <FieldRef Name="DependantsFirst1" />
+          <FieldRef Name="DependantsFirst2" />
+          <FieldRef Name="DependantsFirst3" />
+          <FieldRef Name="DependantsFirst4" />
+          <FieldRef Name="DependantsFirst5" />
+          <FieldRef Name="DependantsHealth1" />
+          <FieldRef Name="DependantsHealth2" />
+          <FieldRef Name="DependantsHealth3" />
+          <FieldRef Name="DependantsHealth4" />
+          <FieldRef Name="DependantsHealth5" />
+          <FieldRef Name="DependantsSchoolUniversity1" />
+          <FieldRef Name="DependantsSchoolUniversity2" />
+          <FieldRef Name="DependantsSchoolUniversity3" />
+          <FieldRef Name="DependantsSchoolUniversity4" />
+          <FieldRef Name="DependantsSchoolUniversity5" />
+          <FieldRef Name="DependantsSurName1" />
+          <FieldRef Name="DependantsSurName1ddRelation2" />
+          <FieldRef Name="DependantsSurName3" />
+          <FieldRef Name="DependantsSurName4" />
+          <FieldRef Name="DependantsSurName5" />
+          <FieldRef Name="Disable" />
+          <FieldRef Name="DoB" />
+          <FieldRef Name="DoBP" />
+          <FieldRef Name="Duties" />
+          <FieldRef Name="DutiesP" />
+          <FieldRef Name="Email" />
+          <FieldRef Name="EmailP" />
+          <FieldRef Name="Employer" />
+          <FieldRef Name="EmployerP" />
+          <FieldRef Name="EmploymentStatus" />
+          <FieldRef Name="EmploymentStatusP" />
+          <FieldRef Name="Father" />
+          <FieldRef Name="FatherDOB" />
+          <FieldRef Name="FatherHealth" />
+          <FieldRef Name="FatherHealth1" />
+          <FieldRef Name="FatherP" />
+          <FieldRef Name="FatherPDOB" />
+          <FieldRef Name="FirstLetter" />
+          <FieldRef Name="FirstName" />
+          <FieldRef Name="FirstNameP" />
+          <FieldRef Name="Gender" />
+          <FieldRef Name="GenderP" />
+          <FieldRef Name="HealthCondition" />
+          <FieldRef Name="HealthConditionP" />
+          <FieldRef Name="Home" />
+          <FieldRef Name="HomeP" />
+          <FieldRef Name="HoursPerWeek" />
+          <FieldRef Name="HoursPerWeekP" />
+          <FieldRef Name="House" />
+          <FieldRef Name="HouseJ" />
+          <FieldRef Name="HouseP" />
+          <FieldRef Name="Income" />
+          <FieldRef Name="IncomeProtection" />
+          <FieldRef Name="InvestmentLoans" />
+          <FieldRef Name="InvestmentLoansJ" />
+          <FieldRef Name="InvestmentLoansP" />
+          <FieldRef Name="InvestmentProperties" />
+          <FieldRef Name="InvestmentPropertiesJ" />
+          <FieldRef Name="InvestmentPropertiesP" />
+          <FieldRef Name="JobTitle1" />
+          <FieldRef Name="JobTitleP" />
+          <FieldRef Name="Leases" />
+          <FieldRef Name="LeasesJ" />
+          <FieldRef Name="LeasesP" />
+          <FieldRef Name="Liabilites" />
+          <FieldRef Name="LiabilitesJ" />
+          <FieldRef Name="LiabilitesP" />
+          <FieldRef Name="LifeCover" />
+          <FieldRef Name="Marital" />
+          <FieldRef Name="MaritalP" />
+          <FieldRef Name="Mortgage" />
+          <FieldRef Name="MortgageJ" />
+          <FieldRef Name="MortgageP" />
+          <FieldRef Name="Mother" />
+          <FieldRef Name="MotherDOB" />
+          <FieldRef Name="MotherHealth" />
+          <FieldRef Name="MotherHealthP" />
+          <FieldRef Name="MotherP" />
+          <FieldRef Name="MotherPDOB" />
+          <FieldRef Name="OtherInsured" />
+          <FieldRef Name="PartnerIncome" />
+          <FieldRef Name="PersonalLoans" />
+          <FieldRef Name="PersonalLoansJ" />
+          <FieldRef Name="PersonalLoansP" />
+          <FieldRef Name="PotentialInheritance" />
+          <FieldRef Name="PotentialInheritanceJ" />
+          <FieldRef Name="PotentialInheritanceP" />
+          <FieldRef Name="Qantas" />
+          <FieldRef Name="QantasP" />
+          <FieldRef Name="Qualifications" />
+          <FieldRef Name="QualificationsP" />
+          <FieldRef Name="RACV" />
+          <FieldRef Name="RACVP" />
+          <FieldRef Name="Referrer" />
+          <FieldRef Name="Relation1" />
+          <FieldRef Name="Relation2" />
+          <FieldRef Name="Relation3" />
+          <FieldRef Name="Relation4" />
+          <FieldRef Name="Relation5" />
+          <FieldRef Name="Remuneration" />
+          <FieldRef Name="RemunerationP" />
+          <FieldRef Name="Residential" />
+          <FieldRef Name="MobileP" />
+          <FieldRef Name="Shares" />
+          <FieldRef Name="SharesJ" />
+          <FieldRef Name="SharesP" />
+          <FieldRef Name="Sister" />
+          <FieldRef Name="Sister2" />
+          <FieldRef Name="Sister2P" />
+          <FieldRef Name="Sister2PDOB" />
+          <FieldRef Name="SisterDOB" />
+          <FieldRef Name="SisterDOB2" />
+          <FieldRef Name="SisterHealth" />
+          <FieldRef Name="SisterHealth2" />
+          <FieldRef Name="SisterHealth2P" />
+          <FieldRef Name="SisterHealthP" />
+          <FieldRef Name="SisterP" />
+          <FieldRef Name="SisterPDOB" />
+          <FieldRef Name="Smoker" />
+          <FieldRef Name="SmokerP" />
+          <FieldRef Name="Solicitor" />
+          <FieldRef Name="SolicitorP" />
+          <FieldRef Name="Supe" />
+          <FieldRef Name="SuperJ" />
+          <FieldRef Name="SuperP" />
+          <FieldRef Name="SurNameP" />
+          <FieldRef Name="Title" />
+          <FieldRef Name="Trauma" />
+          <FieldRef Name="_UIVersionString" />
+          <FieldRef Name="Will" />
+          <FieldRef Name="WillP" />
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="2" Type="HTML" FileDialog="TRUE" TabularView="FALSE" DisplayName="$Resources:core,File_Dialog_View;" Hidden="TRUE" Path="filedlg.htm" ModerationType="Moderator">
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="BaseName"></FieldRef>
+          <FieldRef Name="Editor" TextOnly="TRUE"></FieldRef>
+          <FieldRef Name="Modified" TextOnly="TRUE"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FSObjType" Key="Primary" />
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Explorer_View;" TabularView="FALSE" Url="Forms/WebFldr.aspx" SetupPath="pages\webfldr.aspx" RequiresClientIntegration="TRUE" ReadOnly="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink>main.xsl</XslLink>
+        <ViewFields />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" />
+        </ParameterBindings>
+        <Query />
+      </View>
+      <View BaseViewID="6" Type="HTML" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilename"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="7" AggregateView="TRUE" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Merge_Documents;" TabularView="FALSE" ToolbarTemplate="MergeToolBar" DefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/Combine.aspx" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilename"></FieldRef>
+          <FieldRef Name="Combine"></FieldRef>
+          <FieldRef Name="Modified"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="9" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Relink_Documents;" ToolbarTemplate="RelinkToolBar" TabularView="FALSE" DefaultView="FALSE" Url="Forms/repair.aspx" ImageUrl="/_layouts/images/dlicon.png" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilenameNoMenu"></FieldRef>
+          <FieldRef Name="RepairDocument"></FieldRef>
+          <FieldRef Name="Modified"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+          <FieldRef Name="ContentType"></FieldRef>
+          <FieldRef Name="TemplateUrl"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+          <Where>
+            <Neq>
+              <FieldRef Name="xd_Signature" />
+              <Value Type="Boolean">1</Value>
+            </Neq>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="40" Type="HTML" WebPartZoneID="Main" DisplayName="assetLibTemp" DefaultView="FALSE" MobileView="FALSE" MobileDefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/Thumbnails.aspx" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="LinkFilename"></FieldRef>
+        </ViewFields>
+        <RowLimit>20</RowLimit>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="LinkFilename" />
+          </OrderBy>
+        </Query>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" SetupPath="pages\form.aspx" Url="Forms/DispForm.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" SetupPath="pages\form.aspx" Url="Forms/EditForm.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="Forms/Upload.aspx" WebPartZoneID="Main" />
+      <Form Type="NewFormDialog" Path="EditDlg.htm">
+        <ListFormOpening>
+          <HTML><![CDATA[
+<script type="text/javascript">
+var frm = new OWSForm(]]></HTML>
+          <ScriptQuote>
+            <Switch>
+              <Expr>
+                <GetVar Name="HTMLFormName" />
+              </Expr>
+              <Case Value="">
+                <HTML><![CDATA[OWSForm]]></HTML>
+              </Case>
+              <Default>
+                <GetVar Name="HTMLFormName" />
+              </Default>
+            </Switch>
+          </ScriptQuote>
+          <HTML><![CDATA[, false, ]]></HTML>
+          <ScriptQuote>
+            <HttpVDir />
+            <HTML>/_layouts/</HTML>
+          </ScriptQuote>
+          <HTML><![CDATA[);
+</script>
+]]></HTML>
+          <HTML><![CDATA[
+<script type="text/javascript">]]></HTML>
+          <HTML><![CDATA[ frm.dopt.chDateSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="29" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.chTimeSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="30" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.SetTimeFormat(]]></HTML>
+          <ProjectProperty Select="Time24" />
+          <HTML><![CDATA[); frm.dopt.SetDateOrder(]]></HTML>
+          <LocaleInfo LCTYPE="33" />
+          <HTML><![CDATA[); frm.dopt.SetDOW(]]></HTML>
+          <LocaleInfo LCTYPE="4108" />
+          <HTML><![CDATA[); frm.dopt.stAM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="40" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.stPM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="41" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.TimeMarkPosn = ]]></HTML>
+          <LocaleInfo LCTYPE="4101" />
+          <HTML><![CDATA[; frm.dopt.webTZOffsetMin = ]]></HTML>
+          <ProjectProperty Select="TimeZoneBias" />
+          <HTML><![CDATA[; ]]></HTML>
+          <HTML><![CDATA[ frm.nopt.chDigSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="15" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chDecimal = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="14" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chMinus = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="81" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.iNegNumber = ]]></HTML>
+          <LocaleInfo LCTYPE="4112" />
+          <HTML><![CDATA[; frm.nopt.SetGrouping(]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="16" />
+          </ScriptQuote>
+          <HTML><![CDATA[); ]]></HTML>
+          <HTML><![CDATA[
+frm.stFieldPrefix = ]]></HTML>
+          <ScriptQuote>
+            <FieldPrefix />
+          </ScriptQuote>
+          <HTML><![CDATA[;
+frm.stImagesPath = ]]></HTML>
+          <ScriptQuote>/_layouts/images/</ScriptQuote>
+          <HTML><![CDATA[;
+frm.wBaseType = ]]></HTML>
+          <ListProperty Select="BaseType" />
+          <HTML><![CDATA[;
+</script>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[<form name="OWSForm" id="OWSForm" EncType="multipart/form-data" Action="]]></HTML>
+              <HttpPath />
+              <HTML><![CDATA[" Method=POST onSubmit="return false;">]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+<input type="Hidden" name="_charset_" value="utf-8">
+<input id="onetidCmd" type="Hidden" name="Cmd" value="Save">
+<input id="onetidIsFormValid" type="hidden" name="IsFormValid">
+<input id="onetidFormWasPosted" type="hidden" name="FormWasPosted">
+<input id="MustUpdateForm" type="hidden" name="MustUpdateForm" value="true">
+<input type="hidden" name="NextID" id="NextID" value="-1">
+<input type="hidden" name="NextUsing" id="NextUsing" value="]]></HTML>
+          <GetVar Name="Source" HTMLEncode="TRUE" />
+          <HTML><![CDATA[">
+]]></HTML>
+          <HTML><![CDATA[<span id='part1'>]]></HTML>
+          <Identity />
+        </ListFormOpening>
+        <ListFormBody>
+          <HTML><![CDATA[<table border="0" cellpadding="2">
+<script type="text/javascript">var _g_tp_fNewForm = true;</script>
+]]></HTML>
+          <Fields>
+            <Switch>
+              <Expr>
+                <Property Select="Name" />
+              </Expr>
+              <Case Value="FileLeafRef">
+                <SetVar Name="ShowField" Scope="Request">0</SetVar>
+              </Case>
+              <Default>
+                <SetVar Name="ShowField" Scope="Request">1</SetVar>
+                <HTML><![CDATA[<tr style="display:none"><th nowrap="nowrap" valign="top" class="ms-formlabel"><nobr>]]></HTML>
+                <Property Select="DisplayName" HTMLEncode="TRUE" AutoNewLine="TRUE" />
+                <Switch>
+                  <Expr>
+                    <Property Select="Required" />
+                  </Expr>
+                  <Case Value="TRUE">
+                    <HTML><![CDATA[<font color=red> *</font>]]></HTML>
+                    <SetVar Scope="Request" Name="HasRequired">TRUE</SetVar>
+                  </Case>
+                  <Default>
+                    <HTML><![CDATA[<font color=red></font>]]></HTML>
+                  </Default>
+                </Switch>
+                <HTML><![CDATA[</nobr></th><td class="ms-formbody">]]></HTML>
+                <Field />
+                <Switch>
+                  <Expr>
+                    <Property Select="RichText" />
+                  </Expr>
+                  <Case Value="TRUE" />
+                  <Default>
+                    <Switch>
+                      <Expr>
+                        <Property Select="Type" />
+                      </Expr>
+                      <Case Value="Choice" />
+                      <Case Value="MultiChoice" />
+                      <Default>
+                        <HTML><![CDATA[&#160;]]></HTML>
+                        <Switch>
+                          <Expr>
+                            <Property Select="NoEditFormBreak" />
+                          </Expr>
+                          <Case Value="TRUE" />
+                          <Default>
+                            <HTML><![CDATA[<br>]]></HTML>
+                          </Default>
+                        </Switch>
+                      </Default>
+                    </Switch>
+                  </Default>
+                </Switch>
+                <HTML><![CDATA[<span class="ms-formdescription">]]></HTML>
+                <Property Select="Description" HTMLEncode="TRUE" AutoHyperLink="TRUE" AutoNewLine="TRUE" />
+                <HTML><![CDATA[</span></td></tr>]]></HTML>
+              </Default>
+            </Switch>
+          </Fields>
+          <HTML><![CDATA[</table>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HasRequired" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML><![CDATA[
+					<table border="0" cellpadding="2">
+					<tr>
+						<td id="reqdFldTxt" class="ms-descriptiontext" colspan="2" height="150px" valign="top"><br><font color=red>*</font> 
+						 &#160;]]></HTML>
+              <HTML HTMLEncode="TRUE">$Resources:core,webview_editdlg_required_field;</HTML>
+              <HTML><![CDATA[
+						</td>
+					</tr>
+					</table>
+					]]></HTML>
+            </Case>
+          </Switch>
+          <ContentTypes>
+            <IfSubString>
+              <Expr1>0x0120</Expr1>
+              <Expr2>
+                <Property Select="ID" />
+              </Expr2>
+              <Then>
+                <HTML><![CDATA[
+						<script type="text/javascript">
+						_tp_rgctfld = new Array;
+						_g_tp_rgcts.push(_tp_rgctfld);
+						var fldct = frmCurrent.FindField("ContentType");
+						if (fldct != null)
+							fldct.AddChoice(]]></HTML>
+                <ScriptQuote>
+                  <Property Select="Name" />
+                </ScriptQuote>
+                <HTML><![CDATA[);
+						</script>
+						]]></HTML>
+              </Then>
+              <Else>
+                <HTML><![CDATA[
+						<script type="text/javascript">
+						var fldct = frmCurrent.FindField("ContentType");
+						if (fldct != null)
+							fldct.AddChoice(]]></HTML>
+                <ScriptQuote>
+                  <Property Select="Name" />
+                </ScriptQuote>
+                <HTML><![CDATA[);
+						_tp_rgctfld = new Array;            
+						]]></HTML>
+                <ForEach Select="FieldRefs/FieldRef">
+                  <HTML>
+                    _tp_ctfld = new Object(null);
+                    _tp_ctfld.stName=
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="Name" />
+                  </ScriptQuote>
+                  <HTML>
+                    ;
+                    _tp_ctfld.fRequired = BoolFromString(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="Required" />
+                  </ScriptQuote>
+                  <HTML>
+                    );
+                    _tp_ctfld.fHidden = BoolFromString(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="Hidden" />
+                  </ScriptQuote>
+                  <HTML>
+                    );
+                    _tp_ctfld.fShowInNewForm = BoolFromString2(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="ShowInNewForm" />
+                  </ScriptQuote>
+                  <HTML>
+                    , true);
+                    _tp_ctfld.fShowInEditForm = BoolFromString2(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="ShowInEditForm" />
+                  </ScriptQuote>
+                  <HTML>
+                    , true);
+                    _tp_ctfld.fShowInFileDlg = BoolFromString2(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="ShowInFileDlg" />
+                  </ScriptQuote>
+                  <HTML>
+                    , true);
+                    _tp_ctfld.fReadOnly = BoolFromString(
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="ReadOnly" />
+                  </ScriptQuote>
+                  <HTML>
+                    );
+                    _tp_ctfld.stDisplay =
+                  </HTML>
+                  <ScriptQuote>
+                    <Property Select="DisplayName" />
+                  </ScriptQuote>
+                  <HTML>;</HTML>
+                  <ForEach Select="Default">
+                    <HTML>
+                      _tp_ctfld.stDefault=
+                    </HTML>
+                    <ScriptQuote>
+                      <Property Select="." />
+                    </ScriptQuote>
+                    <HTML>;</HTML>
+                  </ForEach>
+                  <HTML>
+                    _tp_rgctfld.push(_tp_ctfld);
+                  </HTML>
+                </ForEach>
+                <HTML><![CDATA[
+						_g_tp_rgcts.push(_tp_rgctfld);
+						</script>
+						]]></HTML>
+              </Else>
+            </IfSubString>
+          </ContentTypes>
+          <HTML><![CDATA[
+<script type="text/javascript">
+var fldct = frmCurrent.FindField("ContentType");
+if (fldct != null)
+	fldct.BuildUI();
+</script>
+]]></HTML>
+        </ListFormBody>
+        <ListFormClosing>
+          <HTML><![CDATA[
+</span>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[</form>]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+<script type="text/javascript">
+</script>
+]]></HTML>
+        </ListFormClosing>
+      </Form>
+    </Forms>
+    <DefaultDescription>$Resources:core,camlidDc5;</DefaultDescription>
+  </MetaData>
+</List>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="52943514-6762-4b93-a128-378a75c6f3ec" solutionId="52943514-6762-4b93-a128-378a75c6f3ec" resetWebServer="false" name="TTK.SP.CustomerRecordsEvents" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f89a5a08-d68a-4813-bbef-4f1797c11ebf" />
+  </features>
+</package>

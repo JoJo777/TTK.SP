@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Module\" Type="ElementManifest" />
+    <ProjectItemFile Source="js\jquery-1.9.1.min.js" Target="Module\js\" Type="ElementFile" />
+    <ProjectItemFile Source="images\ajax-loader2.gif" Target="Module\images\" Type="ElementFile" />
+    <ProjectItemFile Source="CustomForms\Sandbox\CustomerWizard.aspx" Target="Module\CustomForms\Sandbox\" Type="ElementFile" />
+    <ProjectItemFile Source="CustomForms\NeedsAnalysis.docx" Target="Module\CustomForms\" Type="ElementFile" />
+    <ProjectItemFile Source="CustomForms\template.dotx" Target="Module\CustomForms\" Type="ElementFile" />
+    <ProjectItemFile Source="CustomForms\CustomerWizard.aspx" Target="Module\CustomForms\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

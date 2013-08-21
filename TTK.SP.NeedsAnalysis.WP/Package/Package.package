@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="ddab976c-f2b1-4427-9593-1e0cdf07e515" solutionId="ddab976c-f2b1-4427-9593-1e0cdf07e515" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="TTK.SP.NeedsAnalysis.WP">
+    <features>
+        <featureReference itemId="cf8bddc6-a42b-49d6-8004-86b548bd1ba6" />
+    </features>
+</package>
