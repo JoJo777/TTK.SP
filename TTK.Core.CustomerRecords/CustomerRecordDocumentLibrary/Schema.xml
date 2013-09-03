@@ -1,0 +1,1073 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Customer Records" Direction="$Resources:Direction;" Url="CustomerRecords" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      <ContentTypeRef ID="0x0101" />
+      <ContentType ID="0x010100728E6ABBF6164BBC9A96D73680ED991B" NewDocumentControl="" Name="CustomerRecord" Group="TTK" Description="Used for create Customer Records" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{523fba7d-00c8-43b7-af1d-dfb17f67b856}" DisplayName="Accountant" Required="FALSE" Name="Accountant" />
+          <FieldRef ID="{25dedf99-045a-4509-8b8f-851b4dc4b97c}" DisplayName="Business" Required="FALSE" Name="Business" />
+          <FieldRef ID="{36666d60-8cdd-48c2-9b8d-501b742930d7}" DisplayName="Correspondance Preference" Required="FALSE" Name="CorrespondancePreference" />
+          <FieldRef ID="{7eff6ff9-0b81-4e4e-8f39-a90b2d58f64b}" DisplayName="Date Captured" Required="FALSE" Name="DateCaptured" />
+          <FieldRef ID="{a8b3ab9f-9a3e-492d-80e6-bfe77c8cbf84}" DisplayName="DOB" Required="FALSE" Name="DOB" Format="DateOnly" />
+          <FieldRef ID="{7fed5b40-3e02-4771-9473-14a52b5429fc}" DisplayName="Email" Required="FALSE" Name="Email" />
+          <FieldRef ID="{64c6d9bc-337d-47c9-ae8c-8be087bd396e}" DisplayName="Gender" Required="FALSE" Name="Gender" />
+          <FieldRef ID="{77c5ccb8-8dea-4042-bb94-75b9308b6972}" DisplayName="Home" Required="FALSE" Name="Home" />
+          <FieldRef ID="{564fbd7f-81d0-4e87-aaff-fab99253ab09}" DisplayName="Mobile" Required="FALSE" Name="Mobile" />
+          <FieldRef ID="{a77d8d07-480e-445f-9cb6-7381e1c8fecd}" DisplayName="Marital" Required="FALSE" Name="Marital" />
+          <FieldRef ID="{bf4d9aec-0292-4884-a205-6b5c1828653b}" DisplayName="Qantas" Required="FALSE" Name="Qantas" />
+          <FieldRef ID="{4ff2d501-5d26-4551-b711-c5b6b1c59cdc}" DisplayName="RACV" Required="FALSE" Name="RACV" />
+          <FieldRef ID="{784b9816-f42e-4793-befa-b827a4a7ee1e}" DisplayName="Referrer" Required="FALSE" Name="Referrer" />
+          <FieldRef ID="{eabbe789-fa5b-438c-b7c9-e0add3b74874}" DisplayName="Residential" Required="FALSE" Name="Residential" />
+          <FieldRef ID="{1d9d4ab0-65ed-48d6-a693-48856a93867f}" DisplayName="Solicitor" Required="FALSE" Name="Solicitor" />
+          <FieldRef ID="{67c671ec-8350-46a5-b1b0-efd08ab195c9}" DisplayName="Will" Required="FALSE" Name="Will" />
+          <FieldRef ID="{38c10f6d-6eab-4ac7-80d7-ae2717c11d42}" DisplayName="First Name" Required="FALSE" Name="FirstName" />
+          <FieldRef ID="{4e074d8f-ff17-4bd5-a4d7-3b8d300176d1}" DisplayName="Accountant P" Required="FALSE" Name="AccountantP" />
+          <FieldRef ID="{706fd68f-9c31-4541-9d0e-2bd98be179b3}" DisplayName="Business P" Required="FALSE" Name="BusinessP" />
+          <FieldRef ID="{77d1cc06-108d-4b51-afba-984872180cd8}" DisplayName="Correspondance Preference P" Required="FALSE" Name="CorrespondancePreferenceP" />
+          <FieldRef ID="{634bbf3c-00b2-4e18-8d51-1b8ac587ed30}" DisplayName="Date of Birth P" Required="FALSE" Name="DoBP" />
+          <FieldRef ID="{37ba847d-6611-4160-b766-9a9fed688867}" DisplayName="Email P" Required="FALSE" Name="EmailP" />
+          <FieldRef ID="{e8587c95-4f6f-4772-ab1c-de930c669744}" DisplayName="First Name P" Required="FALSE" Name="FirstNameP" />
+          <FieldRef ID="{2e1a1c2d-68f3-42d3-a283-98ab7626e88d}" DisplayName="Gender P" Required="FALSE" Name="GenderP" />
+          <FieldRef ID="{3d622c9f-aa03-4892-a2dc-b181b22354db}" DisplayName="Home P" Required="FALSE" Name="HomeP" />
+          <FieldRef ID="{60db2fa0-7319-4cd3-97b0-354d4d85674c}" DisplayName="Marital P" Required="FALSE" Name="MaritalP" />
+          <FieldRef ID="{a408e3cc-ec04-4f17-aa14-c030c9aa07ae}" DisplayName="Mobile P" Required="FALSE" Name="MobileP" />
+          <FieldRef ID="{f2e498dc-ec3c-46cb-87a7-790d9e66b85f}" DisplayName="Qantas P" Required="FALSE" Name="QantasP" />
+          <FieldRef ID="{1a3d258c-3ae8-49e0-94f2-1ff212216cd3}" DisplayName="RACVP" Required="FALSE" Name="RACVP" />
+          <FieldRef ID="{2812ff6a-8d65-4730-9807-61de30013ca4}" DisplayName="Smoker P" Required="FALSE" Name="SmokerP" />
+          <FieldRef ID="{109d65da-e82c-4a6b-99db-04e77294ef12}" DisplayName="Smoker" Required="FALSE" Name="SmokerTTK" />
+          <FieldRef ID="{5a5d64dc-5e89-4d34-8909-fa45481ed6ea}" DisplayName="Solicitor P" Required="FALSE" Name="SolicitorP" />
+          <FieldRef ID="{59d67124-6f0c-4163-b23d-f6d8d2d22f0e}" DisplayName="Sur Name P" Required="FALSE" Name="SurNameP" />
+          <FieldRef ID="{1b28061e-8aec-4890-a9c4-baed77c4b021}" DisplayName="Will P" Required="FALSE" Name="WillP" />
+          <FieldRef ID="{a02de64c-b8be-4072-8dbd-438c60733ede}" DisplayName="Residential P" Required="FALSE" Name="ResidentialP" />
+          <FieldRef ID="{ad0ad554-9ad9-433e-8e11-03722970dffd}" DisplayName="Father" Required="FALSE" Name="Father" />
+          <FieldRef ID="{40a80eaa-e7ee-43f1-9c00-da2448c99000}" DisplayName="Father DOB" Required="FALSE" Name="FatherDOB" />
+          <FieldRef ID="{95d6be1c-66e6-4881-962a-bc6772490360}" DisplayName="Father Health" Required="FALSE" Name="FatherHealth" />
+          <FieldRef ID="{d814664b-8aec-45e7-83a0-07b99cf9280a}" DisplayName="Mother" Required="FALSE" Name="Mother" />
+          <FieldRef ID="{0ce0d00d-74f1-4e70-bc4b-2d1122cbcb62}" DisplayName="Mother DOB" Required="FALSE" Name="MotherDOB" />
+          <FieldRef ID="{556d124e-b0eb-4bf9-85e0-0861a22c7025}" DisplayName="Mother Health" Required="FALSE" Name="MotherHealth" />
+          <FieldRef ID="{e4731154-0233-43b7-824a-6c1b2dd61b6e}" DisplayName="Brother" Required="FALSE" Name="Brother" />
+          <FieldRef ID="{76ab88d7-7ec5-4a54-9f84-56c66d2b466a}" DisplayName="Brother DOB" Required="FALSE" Name="BrotherDOB" />
+          <FieldRef ID="{e12811ec-2718-45f0-8d36-eba5cec6b4b0}" DisplayName="Brother Health" Required="FALSE" Name="BrotherHealth" />
+          <FieldRef ID="{a48ab0ed-3d1d-4387-857c-01f84eb9ec79}" DisplayName="Brother 2" Required="FALSE" Name="Brother2" />
+          <FieldRef ID="{a19ef383-bb44-4596-9cba-97a130b537c9}" DisplayName="Brother 2 DOB" Required="FALSE" Name="Brother2DOB" />
+          <FieldRef ID="{c55e6ae4-85c1-49ea-a024-bf2aebc1b220}" DisplayName="Brother Health 2" Required="FALSE" Name="BrotherHealth2" />
+          <FieldRef ID="{2a7c5557-4a67-4b07-89af-182f5f9a9ba1}" DisplayName="Sister" Required="FALSE" Name="Sister" />
+          <FieldRef ID="{7485b877-cbf0-4b91-bd10-cda6757fbb20}" DisplayName="Sister DOB" Required="FALSE" Name="SisterDOB" />
+          <FieldRef ID="{585f62d2-055d-4c65-a2ff-33f29917e81b}" DisplayName="Sister Health" Required="FALSE" Name="SisterHealth" />
+          <FieldRef ID="{5e6f1d73-7c9e-48ff-98ea-c1c426aab96b}" DisplayName="Sister 2" Required="FALSE" Name="Sister2" />
+          <FieldRef ID="{ab76875d-e36e-485f-abb8-0da4b3878d73}" DisplayName="Sister DOB 2" Required="FALSE" Name="SisterDOB@" />
+          <FieldRef ID="{dbc433d7-68c2-4f26-8d8b-d9ae6c9b1b91}" DisplayName="Sister Health 2" Required="FALSE" Name="SisterHealth2" />
+          <FieldRef ID="{7bd55bad-965e-4438-890c-af5306f68139}" DisplayName="Father P" Required="FALSE" Name="FatherP" />
+          <FieldRef ID="{291b6f2d-322d-4d9a-aaeb-c1d3e03ed792}" DisplayName="Father PDOB" Required="FALSE" Name="FatherPDOB" />
+          <FieldRef ID="{d2a52188-6a7b-4173-99c7-38ddb40ca848}" DisplayName="Father Health 1" Required="FALSE" Name="FatherHealth1" />
+          <FieldRef ID="{aa3034fd-2894-43c2-bc6e-38340de1290a}" DisplayName="Mother P" Required="FALSE" Name="MotherP" />
+          <FieldRef ID="{87678a3d-2f3e-4ac6-b368-c9e3bc1d5efb}" DisplayName="Mother PDOB" Required="FALSE" Name="MotherPDOB" />
+          <FieldRef ID="{6121e463-a173-43b9-8989-c52b2c6e4eb4}" DisplayName="Mother Health P" Required="FALSE" Name="MotherHealthP" />
+          <FieldRef ID="{db8a3edd-3cc3-4d40-8bfb-609d93676ba7}" DisplayName="Brother P" Required="FALSE" Name="BrotherP" />
+          <FieldRef ID="{bf8c82a6-250e-4e89-acdf-15f0c663ff3e}" DisplayName="Brother PDOB" Required="FALSE" Name="BrotherPDOB" />
+          <FieldRef ID="{6bbf75a0-7c9c-48eb-832b-bfdc59241a36}" DisplayName="Brother Health P" Required="FALSE" Name="BrotherHealthP" />
+          <FieldRef ID="{bd997e7f-4f4e-412b-be58-4fe26bf68821}" DisplayName="Brother 2 P" Required="FALSE" Name="Brother2P" />
+          <FieldRef ID="{ba0e0741-8142-4aad-8e95-61ce1786aa20}" DisplayName="Brother 2 PDOB" Required="FALSE" Name="Brother2PDOB" />
+          <FieldRef ID="{e1d99a21-1d18-44ae-8a47-c6b15b1fb616}" DisplayName="Brother Health 2 P" Required="FALSE" Name="BrotherHealth2P" />
+          <FieldRef ID="{f43d177b-d92d-4a5e-bf53-c09646c588c4}" DisplayName="Sister P" Required="FALSE" Name="SisterP" />
+          <FieldRef ID="{c4c6c6bb-5bea-490d-888d-a7180554370e}" DisplayName="Sister PDOB" Required="FALSE" Name="SisterPDOB" />
+          <FieldRef ID="{d9068ff6-8ada-4d19-ae41-1345fd21fe50}" DisplayName="Sister P Health" Required="FALSE" Name="SisterPHealth" />
+          <FieldRef ID="{0467eecf-6c43-4557-910d-3114f2b3272f}" DisplayName="Sister 2 P" Required="FALSE" Name="Sister2P" />
+          <FieldRef ID="{7fcddd91-f7df-421e-b70f-d7ea4d552588}" DisplayName="Sister 2 PDOB" Required="FALSE" Name="Sister2PDOB" />
+          <FieldRef ID="{08734e03-f0f3-4b82-9687-31dba02a49f1}" DisplayName="Sister Health 2 P" Required="FALSE" Name="SisterHealth2P" />
+          <FieldRef ID="{97db42ad-9f39-49b7-b182-7e9b5058bdf6}" DisplayName="Dependants First 1" Required="FALSE" Name="DependantsFirst1" />
+          <FieldRef ID="{071c37e5-ab29-4cc2-9b25-578c37ad91fd}" DisplayName="Dependants Education Occupation Level 1" Required="FALSE" Name="DependantsEducationOccupationLevel1" />
+          <FieldRef ID="{77214515-512a-4b14-9fb2-bcc5472899af}" DisplayName="Dependants School University 1" Required="FALSE" Name="DependantsSchoolUniversity1" />
+          <FieldRef ID="{7bc11a51-4d6a-4954-8427-828d93098e53}" DisplayName="Dependants Surname 1" Required="FALSE" Name="DependantsSurname1" />
+          <FieldRef ID="{38d79d51-4d9c-40cd-b080-e4faa6d76afe}" DisplayName="Dependants" Required="FALSE" Name="Dependants" />
+          <FieldRef ID="{8c5a8368-449a-442d-8a0d-0a839a7e4b50}" DisplayName="Relation 1" Required="FALSE" Name="Relation1" />
+          <FieldRef ID="{c85dbeb4-3185-47f8-b58b-d19d939c4c9b}" DisplayName="Dependants Health 1" Required="FALSE" Name="DependantsHealth1" />
+          <FieldRef ID="{0d03883b-b862-4864-9a23-4194e9c78a74}" DisplayName="Dependants First 2" Required="FALSE" Name="DependantsFirst2" />
+          <FieldRef ID="{b815fcab-a189-420a-8b52-da3fdbac0531}" DisplayName="Dependants Surname 2" Required="FALSE" Name="DependantsSurname2" />
+          <FieldRef ID="{8d2ce9f3-e2f9-4fc5-a314-e8fe36755336}" DisplayName="Dependants 2" Required="FALSE" Name="Dependants2" />
+          <FieldRef ID="{9e1f6385-75ff-485e-8cc8-d76a4db96c47}" DisplayName="Relation 2" Required="FALSE" Name="Relation2" />
+          <FieldRef ID="{fbe99369-c839-4466-b871-e2fca463d8a2}" DisplayName="Dependants Education Occupation Level 2" Required="FALSE" Name="DependanstEducationOccupationLevel2" />
+          <FieldRef ID="{8ac631d4-6fb2-4e72-9076-00781fb15324}" DisplayName="Dependants School University 2" Required="FALSE" Name="DependantsSchoolUniversity2" />
+          <FieldRef ID="{0a43b902-52a2-4152-87a5-8028a2fec46e}" DisplayName="Dependants Health 2" Required="FALSE" Name="DependantsHealth2" />
+          <FieldRef ID="{1f13c716-1bd6-4d65-ab72-53394220508b}" DisplayName="Dependants First 3" Required="FALSE" Name="DependantsFirst3" />
+          <FieldRef ID="{4976168c-66b5-4699-ac9b-4fcf8c469897}" DisplayName="Dependants Surname 3" Required="FALSE" Name="DependantsSurname3" />
+          <FieldRef ID="{a97db919-f254-4013-80a9-98c960e40135}" DisplayName="Dependants 3" Required="FALSE" Name="Dependants3" />
+          <FieldRef ID="{6c6adb67-140d-40dc-b114-0458372b166d}" DisplayName="Relation 3" Required="FALSE" Name="Relation3" />
+          <FieldRef ID="{6a07a59b-fb26-4e77-be33-cc1d650aee98}" DisplayName="Dependants Education Occupation Level 3" Required="FALSE" Name="DependantsEducationOccupationLevel3" />
+          <FieldRef ID="{9b00ea85-5b78-4565-8597-5b10b9d50d84}" DisplayName="Dependants School University 3" Required="FALSE" Name="DependantsSchoolUniversity3" />
+          <FieldRef ID="{2f010ac1-283b-4d28-822e-1af372ada7be}" DisplayName="Dependants Health 3" Required="FALSE" Name="DependantsHealth3" />
+          <FieldRef ID="{dde14054-2cea-41ae-9571-502260b94b13}" DisplayName="Dependants First 4" Required="FALSE" Name="DependantsFirst4" />
+          <FieldRef ID="{db799b18-cc95-4080-bca8-afbaf8cedbfa}" DisplayName="Dependants Surname 4" Required="FALSE" Name="DependantsSurname4" />
+          <FieldRef ID="{f2fb8d56-6b00-465c-ac21-cf8144cf8061}" DisplayName="Dependants 4" Required="FALSE" Name="Dependants4" />
+          <FieldRef ID="{de3613aa-2aba-4b39-85fe-62aa66625e00}" DisplayName="Relation 4" Required="FALSE" Name="Relation4" />
+          <FieldRef ID="{de5f985a-b650-40a0-ab1e-77d43c2b610a}" DisplayName="Dependants Education Occupation Level 4" Required="FALSE" Name="DependantsEducationOccupationLevel4" />
+          <FieldRef ID="{137cca0e-0ee8-46b7-bda2-17c65a89e563}" DisplayName="Dependants School University 4" Required="FALSE" Name="DependantsSchoolUniversity4" />
+          <FieldRef ID="{c9514f83-1b26-4eae-a73b-8bf900520a23}" DisplayName="Dependants Health 4" Required="FALSE" Name="DependantsHealth4" />
+          <FieldRef ID="{19de62a6-29c1-41d2-a914-9668b3da6b04}" DisplayName="Dependants First 5" Required="FALSE" Name="DependantsFirst5" />
+          <FieldRef ID="{c80e9288-ae9b-4d60-8ab1-05b8019d03d4}" DisplayName="Dependants Surname 5" Required="FALSE" Name="DependantsSurname5" />
+          <FieldRef ID="{aaef4d1c-7d6d-4ca5-aee7-18a305468092}" DisplayName="Dependants 5" Required="FALSE" Name="Dependants5" />
+          <FieldRef ID="{3bcf1eb9-0a2c-4dae-b350-15ecf7525a77}" DisplayName="Relation 5" Required="FALSE" Name="Relation5" />
+          <FieldRef ID="{f47c392d-fa15-4fe0-9f0a-c55e59cc32fc}" DisplayName="Dependants Education Occupation Level 5" Required="FALSE" Name="DependantsEducationOccupationLevel5" />
+          <FieldRef ID="{3e6d0e8f-7bcd-4eea-84c3-47cd164fe4cc}" DisplayName="Dependants School University 5" Required="FALSE" Name="DependantsSchoolUniversity5" />
+          <FieldRef ID="{261ddb58-5052-4b3e-bff3-67e85899f23d}" DisplayName="Dependants Health 5" Required="FALSE" Name="DependantsHealth5" />
+          <FieldRef ID="{e477263c-c777-4a3c-9329-787b1c8a398b}" DisplayName="Job Title 1" Required="FALSE" Name="JobTitle1" />
+          <FieldRef ID="{018fa0e1-d6ff-46a2-a38a-2f57d153ef99}" DisplayName="Employment Status" Required="FALSE" Name="EmploymentStatus" />
+          <FieldRef ID="{85a34e78-bb5f-4431-9d9e-a267f5ae172f}" DisplayName="Employer" Required="FALSE" Name="Employer" />
+          <FieldRef ID="{1afb77eb-150a-49e0-bca9-b02d54e66be9}" DisplayName="Hours Per Week" Required="FALSE" Name="HoursPerWeek" />
+          <FieldRef ID="{315ecd0c-e427-4aa1-99ad-ceebe1747ec5}" DisplayName="Qualifications" Required="FALSE" Name="Qualifications" />
+          <FieldRef ID="{7d1c1eb4-8583-4d01-a35b-5c5e871900fd}" DisplayName="Remuneration" Required="FALSE" Name="Remuneration" />
+          <FieldRef ID="{b660e8b7-0b4c-4f57-bb0f-5bd4a390bbe7}" DisplayName="Duties" Required="FALSE" Name="Duties" />
+          <FieldRef ID="{e475b174-6eaa-40d5-add5-a04c65108d0f}" DisplayName="Job Title P" Required="FALSE" Name="JobTitleP" />
+          <FieldRef ID="{9840983b-704c-45ba-8527-cc15c0fe91b6}" DisplayName="Employment Status P" Required="FALSE" Name="EmploymentStatusP" />
+          <FieldRef ID="{83431797-0564-4677-bffa-0f6c47534adb}" DisplayName="Employer P" Required="FALSE" Name="EmployerP" />
+          <FieldRef ID="{42df7017-27b1-4cc3-83c2-aec34fd102fb}" DisplayName="Hours Per Week P" Required="FALSE" Name="HoursPerWeekP" />
+          <FieldRef ID="{083d4eab-2c99-4ff4-b6d1-aa3bc5e0d029}" DisplayName="Qualifications P" Required="FALSE" Name="QualificationsP" />
+          <FieldRef ID="{ddf96140-68f8-4f1d-8300-4e72e6e1aa95}" DisplayName="Remuneration P" Required="FALSE" Name="RemunerationP" />
+          <FieldRef ID="{66f92d07-2d53-4fd5-ad53-24dfa521ee0a}" DisplayName="Duties P" Required="FALSE" Name="DutiesP" />
+          <FieldRef ID="{d5095be0-42fe-4c69-a7d0-fbd980c03241}" DisplayName="Health Condition" Required="FALSE" Name="HealthCondition" />
+          <FieldRef ID="{915bd095-2b5d-419c-83aa-38b1f9a60b7c}" DisplayName="Health Condition P" Required="FALSE" Name="HealthConditionP" />
+          <FieldRef ID="{b43e9490-4c9d-478d-89de-2b9cefefefe3}" DisplayName="House" Required="FALSE" Name="House" />
+          <FieldRef ID="{1811cba0-ef3e-49ab-87e7-632266b265ab}" DisplayName="Contents" Required="FALSE" Name="Contents" />
+          <FieldRef ID="{dbc04864-5335-4621-bf18-3342525bd853}" DisplayName="Super" Required="FALSE" Name="Super" />
+          <FieldRef ID="{d679d4a7-b090-47e6-9a2e-6e926eacae07}" DisplayName="Cash" Required="FALSE" Name="Cash" />
+          <FieldRef ID="{51a12de6-94b2-423e-a5b0-2b085f7a62a8}" DisplayName="Shares" Required="FALSE" Name="Shares" />
+          <FieldRef ID="{5028e531-a250-4517-b49c-5708d0b1c646}" DisplayName="Investment Properties" Required="FALSE" Name="InvestmentProperties" />
+          <FieldRef ID="{58d268e6-e914-4338-b732-3825dc809570}" DisplayName="Business Value" Required="FALSE" Name="BusinessValue" />
+          <FieldRef ID="{ccb2f724-ca16-4b29-ba73-8e37b1b92e1c}" DisplayName="Potential Inheritance" Required="FALSE" Name="PotentialInheritance" />
+          <FieldRef ID="{50f44516-061a-4116-b4d4-44d62e828929}" DisplayName="Mortgage" Required="FALSE" Name="Mortgage" />
+          <FieldRef ID="{53344ac7-90db-496a-beeb-6fef31d0c801}" DisplayName="Personal Loans" Required="FALSE" Name="PersonalLoans" />
+          <FieldRef ID="{5fb53c5b-0138-4c5b-8c70-e0a6e417bebc}" DisplayName="Credit Card Debt" Required="FALSE" Name="CreditCardDebt" />
+          <FieldRef ID="{8329a94d-a185-4ac2-b247-5c0dafd041ef}" DisplayName="Investment Loans" Required="FALSE" Name="InvestmentLoans" />
+          <FieldRef ID="{eb97bcac-45b2-4c44-900d-8b8324b900fa}" DisplayName="Leases" Required="FALSE" Name="Leases" />
+          <FieldRef ID="{d5b1b3f1-8457-499f-a275-ead9de2e45a1}" DisplayName="Business Debt" Required="FALSE" Name="BusinessDebt" />
+          <FieldRef ID="{61959fed-f879-4790-9817-2cbd92e0d393}" DisplayName="Liabilities" Required="FALSE" Name="Liabilities" />
+          <FieldRef ID="{219f5d5c-3d94-45df-97f0-67c86e3245b9}" DisplayName="House P" Required="FALSE" Name="HouseP" />
+          <FieldRef ID="{0f817487-06d8-4e85-b350-e7ceccad69e5}" DisplayName="Contents P" Required="FALSE" Name="ContentsP" />
+          <FieldRef ID="{2b0d1bfe-fda8-4861-845d-2009bbe22269}" DisplayName="Super P" Required="FALSE" Name="SuperP" />
+          <FieldRef ID="{5cfcedff-de67-4748-91a9-f55480bdc4fe}" DisplayName="Cash P" Required="FALSE" Name="CashP" />
+          <FieldRef ID="{6f73287f-3b97-4dee-b97d-2afec3419319}" DisplayName="Shares P" Required="FALSE" Name="SharesP" />
+          <FieldRef ID="{5a8088f6-0d07-4d7d-848c-bd00e214ff86}" DisplayName="Investment Properties P" Required="FALSE" Name="InvestmentPropertiesP" />
+          <FieldRef ID="{4b252de7-6b97-483f-8bf8-26d38c00cb7b}" DisplayName="Business Value P" Required="FALSE" Name="BusinessValueP" />
+          <FieldRef ID="{6d5e70e8-9af9-47cb-b191-6f77fa344a06}" DisplayName="Potential Inheritance P" Required="FALSE" Name="PotentialInheritanceP" />
+          <FieldRef ID="{cc5d634b-3fc0-42a9-b092-a2fb7a156f58}" DisplayName="Mortgage P" Required="FALSE" Name="MortgageP" />
+          <FieldRef ID="{cc092899-1fad-4358-b0ea-23ecc6c0e1d4}" DisplayName="Personal Loans P" Required="FALSE" Name="PersonalLoansP" />
+          <FieldRef ID="{e2b67bb9-2d81-4909-8573-9f975f7c330e}" DisplayName="Credit Card Debt P" Required="FALSE" Name="CreditCardDebtP" />
+          <FieldRef ID="{a273b33e-8098-4ee2-8f41-f332db8d5dd2}" DisplayName="Investment Loans P" Required="FALSE" Name="InvestmentLoansP" />
+          <FieldRef ID="{4240392d-0610-48e8-a124-462d052b75df}" DisplayName="Leases P" Required="FALSE" Name="LeasesP" />
+          <FieldRef ID="{c2b11c46-130a-4c17-b941-4db1d5720a51}" DisplayName="Business Debt P" Required="FALSE" Name="BusinessDebtP" />
+          <FieldRef ID="{feb40f46-2ed1-4eb3-bac2-40d62a742b70}" DisplayName="Liabilities P" Required="FALSE" Name="LiabilitiesP" />
+          <FieldRef ID="{09f5ec10-b8fc-449a-9c74-6600ed5185ae}" DisplayName="House J" Required="FALSE" Name="HouseJ" />
+          <FieldRef ID="{314d8e5a-2b21-4f06-9271-0894ea20cf00}" DisplayName="Contents J" Required="FALSE" Name="ContentsJ" />
+          <FieldRef ID="{1755d2b7-bc8c-4e61-8454-b448cf43eb9e}" DisplayName="Super J" Required="FALSE" Name="SuperJ" />
+          <FieldRef ID="{11d58c64-7079-4ee4-b838-1a5b5e0a1d96}" DisplayName="Cash J" Required="FALSE" Name="CashJ" />
+          <FieldRef ID="{4d938fe7-14fb-4e8f-8eb6-9ed9207c1cdd}" DisplayName="Shares J" Required="FALSE" Name="SharesJ" />
+          <FieldRef ID="{4f73e971-8847-46f5-b7bd-709966441cfe}" DisplayName="Investment Properties J" Required="FALSE" Name="InvestmentPropertiesJ" />
+          <FieldRef ID="{bd1983be-6c8e-43d4-8578-86df6b91ea13}" DisplayName="Business Value J" Required="FALSE" Name="BusinessValueJ" />
+          <FieldRef ID="{e48c9056-6e79-44dd-8cbc-93ed2f6297d0}" DisplayName="Potential Inheritance J" Required="FALSE" Name="PotentialInheritanceJ" />
+          <FieldRef ID="{220852e8-488a-4cb9-b7f2-a351180e6a62}" DisplayName="Mortgage J" Required="FALSE" Name="MortgageJ" />
+          <FieldRef ID="{8b16cf04-6bef-47f7-8603-0dcfd8ccc26d}" DisplayName="Personal Loans J" Required="FALSE" Name="PersonalLoansJ" />
+          <FieldRef ID="{d9f7f1c1-aaab-409c-a6ea-b5b6642d6e93}" DisplayName="Credit Card Debt J" Required="FALSE" Name="CreditCardDebtJ" />
+          <FieldRef ID="{5ad1dfef-26de-4fa6-9836-d886dcc8d8c4}" DisplayName="Investment Loans J" Required="FALSE" Name="InvestmentLoansJ" />
+          <FieldRef ID="{5580ff7e-bc59-457b-a278-581fdecd96dd}" DisplayName="Leases J" Required="FALSE" Name="LeasesJ" />
+          <FieldRef ID="{bc0b11bd-8f5a-4553-bfdd-025d3e3fa0df}" DisplayName="Business Debt J" Required="FALSE" Name="BusinessDebtJ" />
+          <FieldRef ID="{9c655c64-7301-4b74-b739-d70623bbe646}" DisplayName="Liabilities J" Required="FALSE" Name="LiabilitiesJ" />
+          <FieldRef ID="{fab4e62d-3778-4211-9c8a-f4c7b033c098}" DisplayName="Income" Required="FALSE" Name="Income" />
+          <FieldRef ID="{3aa7c6e3-2d8e-44c2-843f-769ae5be8f84}" DisplayName="Client Income" Required="FALSE" Name="ClientIncome" />
+          <FieldRef ID="{d84c441d-07ef-4b25-ae60-290f1acf824d}" DisplayName="Partner Income" Required="FALSE" Name="PartnerIncome" />
+          <FieldRef ID="{16602ae2-e44a-49fc-8033-ff30e586253b}" DisplayName="Income Protection" Required="FALSE" Name="IncomeProtection" />
+          <FieldRef ID="{7f55be1c-e149-42ce-9aab-571d1b7ed436}" DisplayName="Income Protection C" Required="FALSE" Name="IncomeProtectionC" />
+          <FieldRef ID="{b4ae2b83-16a9-400b-9266-763257adb903}" DisplayName="Income Protection P" Required="FALSE" Name="IncomeProtectionP" />
+          <FieldRef ID="{79fe4b0b-fd7f-475a-80cb-3aeb695b89fa}" DisplayName="Life Cover" Required="FALSE" Name="LifeCover" />
+          <FieldRef ID="{a48390a2-53ff-4bac-ba09-bcbcab847782}" DisplayName="Disable" Required="FALSE" Name="Disable" />
+          <FieldRef ID="{cbcbf1cd-47ac-45e1-9a1d-cdd18424fe4e}" DisplayName="Trauma" Required="FALSE" Name="Trauma" />
+          <FieldRef ID="{f8c01802-5f90-45b1-8db9-c29b90e92874}" DisplayName="Other Insured" Required="FALSE" Name="OtherInsured" />
+          <FieldRef ID="{53551e19-963a-4f5b-b759-36eae9bc1ac2}" DisplayName="Life Cover P" Required="FALSE" Name="LifeCoverP" />
+          <FieldRef ID="{38411479-f396-4ad0-9b6d-d8f2d5dfebc5}" DisplayName="Disable P" Required="FALSE" Name="DisableP" />
+          <FieldRef ID="{05763799-0bbe-47d7-96d6-56488f60db50}" DisplayName="Trauma P" Required="FALSE" Name="TraumaP" />
+          <FieldRef ID="{908477bd-2e5b-4abc-808b-c98728884899}" DisplayName="Other Insured P" Required="FALSE" Name="OtherInsuredP" />
+          <FieldRef ID="{08eb1414-f255-4680-a424-4233c05d5f44}" DisplayName="Life Cover C" Required="FALSE" Name="LifeCoverC" />
+          <FieldRef ID="{40f8d795-cc40-4fdd-ba5d-1958da4eec9a}" DisplayName="Disable C" Required="FALSE" Name="DisableC" />
+          <FieldRef ID="{c6ef3cc4-ee54-476b-a58e-b419a46a1875}" DisplayName="Trauma C" Required="FALSE" Name="TraumaC" />
+          <FieldRef ID="{49efab3d-7556-46b4-a4c6-36bb2ec5acab}" DisplayName="Other Insured C" Required="FALSE" Name="OtherInsuredC" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" DisplayName="$Resources:core,Title;" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title"></Field>
+      <Field ID="{4b1bf6c6-4f39-45ac-acd5-16fe7a214e5e}" Type="Text" Name="TemplateUrl" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Template_Link;" XName="TemplateUrl" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" PITarget="mso-infoPathSolution" PIAttribute="href" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="TemplateUrl"></Field>
+      <Field ID="{cd1ecb9f-dd4e-4f29-ab9e-e9ff40048d64}" Type="Text" Name="xd_ProgID" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Html_File_Link;" XName="ProgID" Filterable="TRUE" Sortable="TRUE" Hidden="TRUE" FromBaseType="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_ProgID"></Field>
+      <Field ID="{fbf29b2d-cae5-49aa-8e0a-29955b540122}" Type="Boolean" Group="_Hidden" Name="xd_Signature" DisplaceOnUpgrade="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="xd_Signature" DisplayName="$Resources:core,Xml_signed;" XName="{FBF29B2D-CAE5-49aa-8E0A-29955B540122}" Filterable="TRUE" Sortable="TRUE" Sealed="TRUE" Hidden="TRUE" FromBaseType="TRUE" ReadOnly="TRUE"></Field>
+      <Field ID="{e52012a0-51eb-4c0c-8dfb-9b8a0ebedcb6}" ReadOnly="TRUE" Type="Computed" Name="Combine" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Merge;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Combine">
+        <FieldRefs>
+          <FieldRef Name="FSObjType" Key="Primary" />
+          <FieldRef Name="EncodedAbsUrl" />
+          <FieldRef Name="TemplateUrl" />
+        </FieldRefs>
+      </Field>
+      <Field ID="{5d36727b-bcb2-47d2-a231-1f0bc63b7439}" ReadOnly="TRUE" Type="Computed" Name="RepairDocument" DisplaceOnUpgrade="TRUE" DisplayName="$Resources:core,Relink;" Filterable="FALSE" Sortable="FALSE" Hidden="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RepairDocument">
+        <FieldRefs>
+          <FieldRef Name="FSObjType" Key="Primary" />
+          <FieldRef Name="ID" />
+        </FieldRefs>
+      </Field>
+      <Field ID="{523fba7d-00c8-43b7-af1d-dfb17f67b856}" Name="AccountantTTK" DisplayName="Accountant" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{25dedf99-045a-4509-8b8f-851b4dc4b97c}" Name="BusinessTTK" DisplayName="Business" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{36666d60-8cdd-48c2-9b8d-501b742930d7}" Name="CorrespondancePreferenceTTK" DisplayName="Correspondance Preference" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{7eff6ff9-0b81-4e4e-8f39-a90b2d58f64b}" Name="DateCapturedTTK" DisplayName="Date Captured" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field Type="DateTime" DisplayName="DOB" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="Spike" ID="{a8b3ab9f-9a3e-492d-80e6-bfe77c8cbf84}" SourceID="{b65ade8b-8cf5-424c-8a4b-72c36972886c}" StaticName="DOB" Name="DOB"></Field>
+      <Field ID="{7fed5b40-3e02-4771-9473-14a52b5429fc}" Name="EmailTTK" DisplayName="Email" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{64c6d9bc-337d-47c9-ae8c-8be087bd396e}" Name="GenderTTK" DisplayName="Gender" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{77c5ccb8-8dea-4042-bb94-75b9308b6972}" Name="HomeTTK" DisplayName="Home" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{564fbd7f-81d0-4e87-aaff-fab99253ab09}" Name="Mobile" DisplayName="Mobile" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{a77d8d07-480e-445f-9cb6-7381e1c8fecd}" Name="MaritalTTK" DisplayName="Marital" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{bf4d9aec-0292-4884-a205-6b5c1828653b}" Name="QantasTTK" DisplayName="Qantas" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{4ff2d501-5d26-4551-b711-c5b6b1c59cdc}" Name="RACVTTK" DisplayName="RACV" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{784b9816-f42e-4793-befa-b827a4a7ee1e}" Name="ReferrerTTK" DisplayName="Referrer" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{eabbe789-fa5b-438c-b7c9-e0add3b74874}" Name="ResidentialTTK" DisplayName="Residential" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{1d9d4ab0-65ed-48d6-a693-48856a93867f}" Name="SolicitorTTK" DisplayName="Solicitor" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{67c671ec-8350-46a5-b1b0-efd08ab195c9}" Name="WillTTK" DisplayName="Will" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{38c10f6d-6eab-4ac7-80d7-ae2717c11d42}" Name="FirstNameTTK" DisplayName="First Name" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{4e074d8f-ff17-4bd5-a4d7-3b8d300176d1}" Name="AccountantP" DisplayName="Accountant P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{706fd68f-9c31-4541-9d0e-2bd98be179b3}" Name="BusinessP" DisplayName="Business P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{77d1cc06-108d-4b51-afba-984872180cd8}" Name="CorrespondancePreferenceP" DisplayName="Correspondance Preference P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{634bbf3c-00b2-4e18-8d51-1b8ac587ed30}" Name="DoBP" DisplayName="Date of Birth P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{37ba847d-6611-4160-b766-9a9fed688867}" Name="EmailP" DisplayName="Email P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{e8587c95-4f6f-4772-ab1c-de930c669744}" Name="FirstNameP" DisplayName="First Name P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{2e1a1c2d-68f3-42d3-a283-98ab7626e88d}" Name="GenderP" DisplayName="Gender P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{3d622c9f-aa03-4892-a2dc-b181b22354db}" Name="HomeP" DisplayName="Home P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{60db2fa0-7319-4cd3-97b0-354d4d85674c}" Name="MaritalP" DisplayName="Marital P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{a408e3cc-ec04-4f17-aa14-c030c9aa07ae}" Name="MobileP" DisplayName="Mobile P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{f2e498dc-ec3c-46cb-87a7-790d9e66b85f}" Name="QantasP" DisplayName="Qantas P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{1a3d258c-3ae8-49e0-94f2-1ff212216cd3}" Name="RACVP" DisplayName="RACVP" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{2812ff6a-8d65-4730-9807-61de30013ca4}" Name="SmokerP" DisplayName="Smoker P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{109d65da-e82c-4a6b-99db-04e77294ef12}" Name="SmokerTTK" DisplayName="Smoker" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{5a5d64dc-5e89-4d34-8909-fa45481ed6ea}" Name="SolicitorP" DisplayName="Solicitor P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{59d67124-6f0c-4163-b23d-f6d8d2d22f0e}" Name="SurNameP" DisplayName="Sur Name P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{1b28061e-8aec-4890-a9c4-baed77c4b021}" Name="WillP" DisplayName="Will P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{a02de64c-b8be-4072-8dbd-438c60733ede}" Name="ResidentialP" DisplayName="Residential P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{ad0ad554-9ad9-433e-8e11-03722970dffd}" Name="Father" DisplayName="Father" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{40a80eaa-e7ee-43f1-9c00-da2448c99000}" Name="FatherDOB" DisplayName="Father DOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{95d6be1c-66e6-4881-962a-bc6772490360}" Name="FatherHealth" DisplayName="Father Health" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d814664b-8aec-45e7-83a0-07b99cf9280a}" Name="Mother" DisplayName="Mother" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{0ce0d00d-74f1-4e70-bc4b-2d1122cbcb62}" Name="MotherDOB" DisplayName="Mother DOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{556d124e-b0eb-4bf9-85e0-0861a22c7025}" Name="MotherHealth" DisplayName="Mother Health" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{e4731154-0233-43b7-824a-6c1b2dd61b6e}" Name="Brother" DisplayName="Brother" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{76ab88d7-7ec5-4a54-9f84-56c66d2b466a}" Name="BrotherDOB" DisplayName="Brother DOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{e12811ec-2718-45f0-8d36-eba5cec6b4b0}" Name="BrotherHealth" DisplayName="Brother Health" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{a48ab0ed-3d1d-4387-857c-01f84eb9ec79}" Name="Brother2" DisplayName="Brother 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{a19ef383-bb44-4596-9cba-97a130b537c9}" Name="Brother2DOB" DisplayName="Brother 2 DOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{c55e6ae4-85c1-49ea-a024-bf2aebc1b220}" Name="BrotherHealth2" DisplayName="Brother Health 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{2a7c5557-4a67-4b07-89af-182f5f9a9ba1}" Name="Sister" DisplayName="Sister" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{7485b877-cbf0-4b91-bd10-cda6757fbb20}" Name="SisterDOB" DisplayName="Sister DOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{585f62d2-055d-4c65-a2ff-33f29917e81b}" Name="SisterHealth" DisplayName="Sister Health" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{5e6f1d73-7c9e-48ff-98ea-c1c426aab96b}" Name="Sister2" DisplayName="Sister 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{ab76875d-e36e-485f-abb8-0da4b3878d73}" Name="SisterDOB@" DisplayName="Sister DOB 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{dbc433d7-68c2-4f26-8d8b-d9ae6c9b1b91}" Name="SisterHealth2" DisplayName="Sister Health 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{7bd55bad-965e-4438-890c-af5306f68139}" Name="FatherP" DisplayName="Father P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{291b6f2d-322d-4d9a-aaeb-c1d3e03ed792}" Name="FatherPDOB" DisplayName="Father PDOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d2a52188-6a7b-4173-99c7-38ddb40ca848}" Name="FatherHealth1" DisplayName="Father Health 1" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{aa3034fd-2894-43c2-bc6e-38340de1290a}" Name="MotherP" DisplayName="Mother P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{87678a3d-2f3e-4ac6-b368-c9e3bc1d5efb}" Name="MotherPDOB" DisplayName="Mother PDOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{6121e463-a173-43b9-8989-c52b2c6e4eb4}" Name="MotherHealthP" DisplayName="Mother Health P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{db8a3edd-3cc3-4d40-8bfb-609d93676ba7}" Name="BrotherP" DisplayName="Brother P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{bf8c82a6-250e-4e89-acdf-15f0c663ff3e}" Name="BrotherPDOB" DisplayName="Brother PDOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{6bbf75a0-7c9c-48eb-832b-bfdc59241a36}" Name="BrotherHealthP" DisplayName="Brother Health P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{bd997e7f-4f4e-412b-be58-4fe26bf68821}" Name="Brother2P" DisplayName="Brother 2 P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{ba0e0741-8142-4aad-8e95-61ce1786aa20}" Name="Brother2PDOB" DisplayName="Brother 2 PDOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{e1d99a21-1d18-44ae-8a47-c6b15b1fb616}" Name="BrotherHealth2P" DisplayName="Brother Health 2 P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{f43d177b-d92d-4a5e-bf53-c09646c588c4}" Name="SisterP" DisplayName="Sister P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{c4c6c6bb-5bea-490d-888d-a7180554370e}" Name="SisterPDOB" DisplayName="Sister PDOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d9068ff6-8ada-4d19-ae41-1345fd21fe50}" Name="SisterPHealth" DisplayName="Sister P Health" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{0467eecf-6c43-4557-910d-3114f2b3272f}" Name="Sister2P" DisplayName="Sister 2 P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{7fcddd91-f7df-421e-b70f-d7ea4d552588}" Name="Sister2PDOB" DisplayName="Sister 2 PDOB" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{08734e03-f0f3-4b82-9687-31dba02a49f1}" Name="SisterHealth2P" DisplayName="Sister Health 2 P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{97db42ad-9f39-49b7-b182-7e9b5058bdf6}" Name="DependantsFirst1" DisplayName="Dependants First 1" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{071c37e5-ab29-4cc2-9b25-578c37ad91fd}" Name="DependantsEducationOccupationLevel1" DisplayName="Dependants Education Occupation Level 1" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{77214515-512a-4b14-9fb2-bcc5472899af}" Name="DependantsSchoolUniversity1" DisplayName="Dependants School University 1" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{7bc11a51-4d6a-4954-8427-828d93098e53}" Name="DependantsSurname1" DisplayName="Dependants Surname 1" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{38d79d51-4d9c-40cd-b080-e4faa6d76afe}" Name="Dependants" DisplayName="Dependants" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{8c5a8368-449a-442d-8a0d-0a839a7e4b50}" Name="Relation1" DisplayName="Relation 1" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{c85dbeb4-3185-47f8-b58b-d19d939c4c9b}" Name="DependantsHealth1" DisplayName="Dependants Health 1" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{0d03883b-b862-4864-9a23-4194e9c78a74}" Name="DependantsFirst2" DisplayName="Dependants First 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{b815fcab-a189-420a-8b52-da3fdbac0531}" Name="DependantsSurname2" DisplayName="Dependants Surname 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{8d2ce9f3-e2f9-4fc5-a314-e8fe36755336}" Name="Dependants2" DisplayName="Dependants 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{9e1f6385-75ff-485e-8cc8-d76a4db96c47}" Name="Relation2" DisplayName="Relation 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{fbe99369-c839-4466-b871-e2fca463d8a2}" Name="DependantsEducationOccupationLevel2" DisplayName="Dependants Education Occupation Level 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{8ac631d4-6fb2-4e72-9076-00781fb15324}" Name="DependantsSchoolUniversity2" DisplayName="Dependants School University 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{0a43b902-52a2-4152-87a5-8028a2fec46e}" Name="DependantsHealth2" DisplayName="Dependants Health 2" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{1f13c716-1bd6-4d65-ab72-53394220508b}" Name="DependantsFirst3" DisplayName="Dependants First 3" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{4976168c-66b5-4699-ac9b-4fcf8c469897}" Name="DependantsSurname3" DisplayName="Dependants Surname 3" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{a97db919-f254-4013-80a9-98c960e40135}" Name="Dependants3" DisplayName="Dependants 3" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{6c6adb67-140d-40dc-b114-0458372b166d}" Name="Relation3" DisplayName="Relation 3" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{6a07a59b-fb26-4e77-be33-cc1d650aee98}" Name="DependantsEducationOccupationLevel3" DisplayName="Dependants Education Occupation Level 3" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{9b00ea85-5b78-4565-8597-5b10b9d50d84}" Name="DependantsSchoolUniversity3" DisplayName="Dependants School University 3" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{2f010ac1-283b-4d28-822e-1af372ada7be}" Name="DependantsHealth3" DisplayName="Dependants Health 3" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{dde14054-2cea-41ae-9571-502260b94b13}" Name="DependantsFirst4" DisplayName="Dependants First 4" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{db799b18-cc95-4080-bca8-afbaf8cedbfa}" Name="DependantsSurname4" DisplayName="Dependants Surname 4" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{f2fb8d56-6b00-465c-ac21-cf8144cf8061}" Name="Dependants4" DisplayName="Dependants 4" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{de3613aa-2aba-4b39-85fe-62aa66625e00}" Name="Relation4" DisplayName="Relation 4" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{de5f985a-b650-40a0-ab1e-77d43c2b610a}" Name="DependantsEducationOccupationLevel4" DisplayName="Dependants Education Occupation Level 4" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{137cca0e-0ee8-46b7-bda2-17c65a89e563}" Name="DependantsSchoolUniversity4" DisplayName="Dependants School University 4" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{c9514f83-1b26-4eae-a73b-8bf900520a23}" Name="DependantsHealth4" DisplayName="Dependants Health 4" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{19de62a6-29c1-41d2-a914-9668b3da6b04}" Name="DependantsFirst5" DisplayName="Dependants First 5" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{c80e9288-ae9b-4d60-8ab1-05b8019d03d4}" Name="DependantsSurname5" DisplayName="Dependants Surname 5" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{aaef4d1c-7d6d-4ca5-aee7-18a305468092}" Name="Dependants5" DisplayName="Dependants 5" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{3bcf1eb9-0a2c-4dae-b350-15ecf7525a77}" Name="Relation5" DisplayName="Relation 5" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{f47c392d-fa15-4fe0-9f0a-c55e59cc32fc}" Name="DependantsEducationOccupationLevel5" DisplayName="Dependants Education Occupation Level 5" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{3e6d0e8f-7bcd-4eea-84c3-47cd164fe4cc}" Name="DependantsSchoolUniversity5" DisplayName="Dependants School University 5" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{261ddb58-5052-4b3e-bff3-67e85899f23d}" Name="DependantsHealth5" DisplayName="Dependants Health 5" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{e477263c-c777-4a3c-9329-787b1c8a398b}" Name="JobTitle1" DisplayName="Job Title 1" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{018fa0e1-d6ff-46a2-a38a-2f57d153ef99}" Name="EmploymentStatus" DisplayName="Employment Status" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{85a34e78-bb5f-4431-9d9e-a267f5ae172f}" Name="Employer" DisplayName="Employer" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{1afb77eb-150a-49e0-bca9-b02d54e66be9}" Name="HoursPerWeek" DisplayName="Hours Per Week" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{315ecd0c-e427-4aa1-99ad-ceebe1747ec5}" Name="Qualifications" DisplayName="Qualifications" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{7d1c1eb4-8583-4d01-a35b-5c5e871900fd}" Name="Remuneration" DisplayName="Remuneration" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{b660e8b7-0b4c-4f57-bb0f-5bd4a390bbe7}" Name="Duties" DisplayName="Duties" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{e475b174-6eaa-40d5-add5-a04c65108d0f}" Name="JobTitleP" DisplayName="Job Title P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{9840983b-704c-45ba-8527-cc15c0fe91b6}" Name="EmploymentStatusP" DisplayName="Employment Status P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{83431797-0564-4677-bffa-0f6c47534adb}" Name="EmployerP" DisplayName="Employer P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{42df7017-27b1-4cc3-83c2-aec34fd102fb}" Name="HoursPerWeekP" DisplayName="Hours Per Week P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{083d4eab-2c99-4ff4-b6d1-aa3bc5e0d029}" Name="QualificationsP" DisplayName="Qualifications P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{ddf96140-68f8-4f1d-8300-4e72e6e1aa95}" Name="RemunerationP" DisplayName="Remuneration P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{66f92d07-2d53-4fd5-ad53-24dfa521ee0a}" Name="DutiesP" DisplayName="Duties P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d5095be0-42fe-4c69-a7d0-fbd980c03241}" Name="HealthCondition" DisplayName="Health Condition" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{915bd095-2b5d-419c-83aa-38b1f9a60b7c}" Name="HealthConditionP" DisplayName="Health Condition P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{b43e9490-4c9d-478d-89de-2b9cefefefe3}" Name="House" DisplayName="House" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{1811cba0-ef3e-49ab-87e7-632266b265ab}" Name="Contents" DisplayName="Contents" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{dbc04864-5335-4621-bf18-3342525bd853}" Name="Super" DisplayName="Super" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d679d4a7-b090-47e6-9a2e-6e926eacae07}" Name="Cash" DisplayName="Cash" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{51a12de6-94b2-423e-a5b0-2b085f7a62a8}" Name="Shares" DisplayName="Shares" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{5028e531-a250-4517-b49c-5708d0b1c646}" Name="InvestmentProperties" DisplayName="Investment Properties" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{58d268e6-e914-4338-b732-3825dc809570}" Name="BusinessValue" DisplayName="Business Value" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{ccb2f724-ca16-4b29-ba73-8e37b1b92e1c}" Name="PotentialInheritance" DisplayName="Potential Inheritance" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{50f44516-061a-4116-b4d4-44d62e828929}" Name="Mortgage" DisplayName="Mortgage" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{53344ac7-90db-496a-beeb-6fef31d0c801}" Name="PersonalLoans" DisplayName="Personal Loans" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{5fb53c5b-0138-4c5b-8c70-e0a6e417bebc}" Name="CreditCardDebt" DisplayName="Credit Card Debt" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{8329a94d-a185-4ac2-b247-5c0dafd041ef}" Name="InvestmentLoans" DisplayName="Investment Loans" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{eb97bcac-45b2-4c44-900d-8b8324b900fa}" Name="Leases" DisplayName="Leases" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d5b1b3f1-8457-499f-a275-ead9de2e45a1}" Name="BusinessDebt" DisplayName="Business Debt" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{61959fed-f879-4790-9817-2cbd92e0d393}" Name="Liabilities" DisplayName="Liabilities" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{219f5d5c-3d94-45df-97f0-67c86e3245b9}" Name="HouseP" DisplayName="House P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{0f817487-06d8-4e85-b350-e7ceccad69e5}" Name="ContentsP" DisplayName="Contents P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{2b0d1bfe-fda8-4861-845d-2009bbe22269}" Name="SuperP" DisplayName="Super P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{5cfcedff-de67-4748-91a9-f55480bdc4fe}" Name="CashP" DisplayName="Cash P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{6f73287f-3b97-4dee-b97d-2afec3419319}" Name="SharesP" DisplayName="Shares P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{5a8088f6-0d07-4d7d-848c-bd00e214ff86}" Name="InvestmentPropertiesP" DisplayName="Investment Properties P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{4b252de7-6b97-483f-8bf8-26d38c00cb7b}" Name="BusinessValueP" DisplayName="Business Value P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{6d5e70e8-9af9-47cb-b191-6f77fa344a06}" Name="PotentialInheritanceP" DisplayName="Potential Inheritance P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{cc5d634b-3fc0-42a9-b092-a2fb7a156f58}" Name="MortgageP" DisplayName="Mortgage P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{cc092899-1fad-4358-b0ea-23ecc6c0e1d4}" Name="PersonalLoansP" DisplayName="Personal Loans P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{e2b67bb9-2d81-4909-8573-9f975f7c330e}" Name="CreditCardDebtP" DisplayName="Credit Card Debt P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{a273b33e-8098-4ee2-8f41-f332db8d5dd2}" Name="InvestmentLoansP" DisplayName="Investment Loans P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{4240392d-0610-48e8-a124-462d052b75df}" Name="LeasesP" DisplayName="Leases P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{c2b11c46-130a-4c17-b941-4db1d5720a51}" Name="BusinessDebtP" DisplayName="Business Debt P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{feb40f46-2ed1-4eb3-bac2-40d62a742b70}" Name="LiabilitiesP" DisplayName="Liabilities P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{09f5ec10-b8fc-449a-9c74-6600ed5185ae}" Name="HouseJ" DisplayName="House J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{314d8e5a-2b21-4f06-9271-0894ea20cf00}" Name="ContentsJ" DisplayName="Contents J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{1755d2b7-bc8c-4e61-8454-b448cf43eb9e}" Name="SuperJ" DisplayName="Super J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{11d58c64-7079-4ee4-b838-1a5b5e0a1d96}" Name="CashJ" DisplayName="Cash J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{4d938fe7-14fb-4e8f-8eb6-9ed9207c1cdd}" Name="SharesJ" DisplayName="Shares J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{4f73e971-8847-46f5-b7bd-709966441cfe}" Name="InvestmentPropertiesJ" DisplayName="Investment Properties J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{bd1983be-6c8e-43d4-8578-86df6b91ea13}" Name="BusinessValueJ" DisplayName="Business Value J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{e48c9056-6e79-44dd-8cbc-93ed2f6297d0}" Name="PotentialInheritanceJ" DisplayName="Potential Inheritance J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{220852e8-488a-4cb9-b7f2-a351180e6a62}" Name="MortgageJ" DisplayName="Mortgage J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{8b16cf04-6bef-47f7-8603-0dcfd8ccc26d}" Name="PersonalLoansJ" DisplayName="Personal Loans J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d9f7f1c1-aaab-409c-a6ea-b5b6642d6e93}" Name="CreditCardDebtJ" DisplayName="Credit Card Debt J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{5ad1dfef-26de-4fa6-9836-d886dcc8d8c4}" Name="InvestmentLoansJ" DisplayName="Investment Loans J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{5580ff7e-bc59-457b-a278-581fdecd96dd}" Name="LeasesJ" DisplayName="Leases J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{bc0b11bd-8f5a-4553-bfdd-025d3e3fa0df}" Name="BusinessDebtJ" DisplayName="Business Debt J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{9c655c64-7301-4b74-b739-d70623bbe646}" Name="LiabilitiesJ" DisplayName="Liabilities J" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{fab4e62d-3778-4211-9c8a-f4c7b033c098}" Name="Income" DisplayName="Income" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{3aa7c6e3-2d8e-44c2-843f-769ae5be8f84}" Name="ClientIncome" DisplayName="Client Income" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{d84c441d-07ef-4b25-ae60-290f1acf824d}" Name="PartnerIncome" DisplayName="Partner Income" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{16602ae2-e44a-49fc-8033-ff30e586253b}" Name="IncomeProtection" DisplayName="Income Protection" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{7f55be1c-e149-42ce-9aab-571d1b7ed436}" Name="IncomeProtectionC" DisplayName="Income Protection C" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{b4ae2b83-16a9-400b-9266-763257adb903}" Name="IncomeProtectionP" DisplayName="Income Protection P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{79fe4b0b-fd7f-475a-80cb-3aeb695b89fa}" Name="LifeCover" DisplayName="Life Cover" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{a48390a2-53ff-4bac-ba09-bcbcab847782}" Name="Disable" DisplayName="Disable" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{cbcbf1cd-47ac-45e1-9a1d-cdd18424fe4e}" Name="Trauma" DisplayName="Trauma" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{f8c01802-5f90-45b1-8db9-c29b90e92874}" Name="OtherInsured" DisplayName="Other Insured" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{53551e19-963a-4f5b-b759-36eae9bc1ac2}" Name="LifeCoverP" DisplayName="Life Cover P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{38411479-f396-4ad0-9b6d-d8f2d5dfebc5}" Name="DisableP" DisplayName="Disable P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{05763799-0bbe-47d7-96d6-56488f60db50}" Name="TraumaP" DisplayName="Trauma P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{908477bd-2e5b-4abc-808b-c98728884899}" Name="OtherInsuredP" DisplayName="Other Insured P" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{08eb1414-f255-4680-a424-4233c05d5f44}" Name="LifeCoverC" DisplayName="Life Cover C" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{40f8d795-cc40-4fdd-ba5d-1958da4eec9a}" Name="DisableC" DisplayName="Disable C" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{c6ef3cc4-ee54-476b-a58e-b419a46a1875}" Name="TraumaC" DisplayName="Trauma C" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+      <Field ID="{49efab3d-7556-46b4-a4c6-36bb2ec5acab}" Name="OtherInsuredC" DisplayName="Other Insured C" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE" FreeForm="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilenameNoMenu"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto)" />
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,Add_New_Document)" />
+          <ParameterBinding Name="MoreAnnouncements" Location="Resource(wss,MoreDocuments)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,All_Documents;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilename"></FieldRef>
+          <FieldRef Name="Modified"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+          <FieldRef Name="Created" />
+          <FieldRef Name="Author" />
+          <FieldRef Name="Title" />
+          <FieldRef Name="_UIVersionString" />
+          <FieldRef Name="AccountantTTK" />
+          <FieldRef Name="BusinessTTK" />
+          <FieldRef Name="CorrespondancePreferenceTTK" />
+          <FieldRef Name="DateCapturedTTK" />
+          <FieldRef Name="DOB" />
+          <FieldRef Name="EmailTTK" />
+          <FieldRef Name="GenderTTK" />
+          <FieldRef Name="HomeTTK" />
+          <FieldRef Name="Mobile" />
+          <FieldRef Name="MaritalTTK" />
+          <FieldRef Name="QantasTTK" />
+          <FieldRef Name="RACVTTK" />
+          <FieldRef Name="ReferrerTTK" />
+          <FieldRef Name="ResidentialTTK" />
+          <FieldRef Name="SolicitorTTK" />
+          <FieldRef Name="WillTTK" />
+          <FieldRef Name="FirstNameTTK" />
+          <FieldRef Name="AccountantP" />
+          <FieldRef Name="BusinessP" />
+          <FieldRef Name="CorrespondancePreferenceP" />
+          <FieldRef Name="DoBP" />
+          <FieldRef Name="EmailP" />
+          <FieldRef Name="FirstNameP" />
+          <FieldRef Name="GenderP" />
+          <FieldRef Name="HomeP" />
+          <FieldRef Name="MaritalP" />
+          <FieldRef Name="MobileP" />
+          <FieldRef Name="QantasP" />
+          <FieldRef Name="RACVP" />
+          <FieldRef Name="SmokerP" />
+          <FieldRef Name="SmokerTTK" />
+          <FieldRef Name="SolicitorP" />
+          <FieldRef Name="SurNameP" />
+          <FieldRef Name="WillP" />
+          <FieldRef Name="ResidentialP" />
+          <FieldRef Name="Father" />
+          <FieldRef Name="FatherDOB" />
+          <FieldRef Name="FatherHealth" />
+          <FieldRef Name="Mother" />
+          <FieldRef Name="MotherDOB" />
+          <FieldRef Name="MotherHealth" />
+          <FieldRef Name="Brother" />
+          <FieldRef Name="BrotherDOB" />
+          <FieldRef Name="BrotherHealth" />
+          <FieldRef Name="Brother2" />
+          <FieldRef Name="Brother2DOB" />
+          <FieldRef Name="BrotherHealth2" />
+          <FieldRef Name="Sister" />
+          <FieldRef Name="SisterDOB" />
+          <FieldRef Name="SisterHealth" />
+          <FieldRef Name="Sister2" />
+          <FieldRef Name="SisterDOB@" />
+          <FieldRef Name="SisterHealth2" />
+          <FieldRef Name="FatherP" />
+          <FieldRef Name="FatherPDOB" />
+          <FieldRef Name="FatherHealth1" />
+          <FieldRef Name="MotherP" />
+          <FieldRef Name="MotherPDOB" />
+          <FieldRef Name="MotherHealthP" />
+          <FieldRef Name="BrotherP" />
+          <FieldRef Name="BrotherPDOB" />
+          <FieldRef Name="BrotherHealthP" />
+          <FieldRef Name="Brother2P" />
+          <FieldRef Name="Brother2PDOB" />
+          <FieldRef Name="BrotherHealth2P" />
+          <FieldRef Name="SisterP" />
+          <FieldRef Name="SisterPDOB" />
+          <FieldRef Name="SisterPHealth" />
+          <FieldRef Name="Sister2P" />
+          <FieldRef Name="Sister2PDOB" />
+          <FieldRef Name="SisterHealth2P" />
+          <FieldRef Name="DependantsFirst1" />
+          <FieldRef Name="DependantsEducationOccupationLevel1" />
+          <FieldRef Name="DependantsSchoolUniversity1" />
+          <FieldRef Name="DependantsSurname1" />
+          <FieldRef Name="Dependants" />
+          <FieldRef Name="Relation1" />
+          <FieldRef Name="DependantsHealth1" />
+          <FieldRef Name="DependantsFirst2" />
+          <FieldRef Name="DependantsSurname2" />
+          <FieldRef Name="Dependants2" />
+          <FieldRef Name="Relation2" />
+          <FieldRef Name="DependantsEducationOccupationLevel2" />
+          <FieldRef Name="DependantsSchoolUniversity2" />
+          <FieldRef Name="DependantsHealth2" />
+          <FieldRef Name="DependantsFirst3" />
+          <FieldRef Name="DependantsSurname3" />
+          <FieldRef Name="Dependants3" />
+          <FieldRef Name="Relation3" />
+          <FieldRef Name="DependantsEducationOccupationLevel3" />
+          <FieldRef Name="DependantsSchoolUniversity3" />
+          <FieldRef Name="DependantsHealth3" />
+          <FieldRef Name="DependantsFirst4" />
+          <FieldRef Name="DependantsSurname4" />
+          <FieldRef Name="Dependants4" />
+          <FieldRef Name="Relation4" />
+          <FieldRef Name="DependantsEducationOccupationLevel4" />
+          <FieldRef Name="DependantsSchoolUniversity4" />
+          <FieldRef Name="DependantsHealth4" />
+          <FieldRef Name="DependantsFirst5" />
+          <FieldRef Name="DependantsSurname5" />
+          <FieldRef Name="Dependants5" />
+          <FieldRef Name="Relation5" />
+          <FieldRef Name="DependantsEducationOccupationLevel5" />
+          <FieldRef Name="DependantsSchoolUniversity5" />
+          <FieldRef Name="DependantsHealth5" />
+          <FieldRef Name="JobTitle1" />
+          <FieldRef Name="EmploymentStatus" />
+          <FieldRef Name="Employer" />
+          <FieldRef Name="HoursPerWeek" />
+          <FieldRef Name="Qualifications" />
+          <FieldRef Name="Remuneration" />
+          <FieldRef Name="Duties" />
+          <FieldRef Name="JobTitleP" />
+          <FieldRef Name="EmploymentStatusP" />
+          <FieldRef Name="EmployerP" />
+          <FieldRef Name="HoursPerWeekP" />
+          <FieldRef Name="QualificationsP" />
+          <FieldRef Name="RemunerationP" />
+          <FieldRef Name="DutiesP" />
+          <FieldRef Name="HealthCondition" />
+          <FieldRef Name="HealthConditionP" />
+          <FieldRef Name="House" />
+          <FieldRef Name="Contents" />
+          <FieldRef Name="Super" />
+          <FieldRef Name="Cash" />
+          <FieldRef Name="Shares" />
+          <FieldRef Name="InvestmentProperties" />
+          <FieldRef Name="BusinessValue" />
+          <FieldRef Name="PotentialInheritance" />
+          <FieldRef Name="Mortgage" />
+          <FieldRef Name="PersonalLoans" />
+          <FieldRef Name="CreditCardDebt" />
+          <FieldRef Name="InvestmentLoans" />
+          <FieldRef Name="Leases" />
+          <FieldRef Name="BusinessDebt" />
+          <FieldRef Name="Liabilities" />
+          <FieldRef Name="HouseP" />
+          <FieldRef Name="ContentsP" />
+          <FieldRef Name="SuperP" />
+          <FieldRef Name="CashP" />
+          <FieldRef Name="SharesP" />
+          <FieldRef Name="InvestmentPropertiesP" />
+          <FieldRef Name="BusinessValueP" />
+          <FieldRef Name="PotentialInheritanceP" />
+          <FieldRef Name="MortgageP" />
+          <FieldRef Name="PersonalLoansP" />
+          <FieldRef Name="CreditCardDebtP" />
+          <FieldRef Name="InvestmentLoansP" />
+          <FieldRef Name="LeasesP" />
+          <FieldRef Name="BusinessDebtP" />
+          <FieldRef Name="LiabilitiesP" />
+          <FieldRef Name="HouseJ" />
+          <FieldRef Name="ContentsJ" />
+          <FieldRef Name="SuperJ" />
+          <FieldRef Name="CashJ" />
+          <FieldRef Name="SharesJ" />
+          <FieldRef Name="InvestmentPropertiesJ" />
+          <FieldRef Name="BusinessValueJ" />
+          <FieldRef Name="PotentialInheritanceJ" />
+          <FieldRef Name="MortgageJ" />
+          <FieldRef Name="PersonalLoansJ" />
+          <FieldRef Name="CreditCardDebtJ" />
+          <FieldRef Name="InvestmentLoansJ" />
+          <FieldRef Name="LeasesJ" />
+          <FieldRef Name="BusinessDebtJ" />
+          <FieldRef Name="LiabilitiesJ" />
+          <FieldRef Name="Income" />
+          <FieldRef Name="ClientIncome" />
+          <FieldRef Name="PartnerIncome" />
+          <FieldRef Name="IncomeProtection" />
+          <FieldRef Name="IncomeProtectionC" />
+          <FieldRef Name="IncomeProtectionP" />
+          <FieldRef Name="LifeCover" />
+          <FieldRef Name="Disable" />
+          <FieldRef Name="Trauma" />
+          <FieldRef Name="OtherInsured" />
+          <FieldRef Name="LifeCoverP" />
+          <FieldRef Name="DisableP" />
+          <FieldRef Name="TraumaP" />
+          <FieldRef Name="OtherInsuredP" />
+          <FieldRef Name="LifeCoverC" />
+          <FieldRef Name="DisableC" />
+          <FieldRef Name="TraumaC" />
+          <FieldRef Name="OtherInsuredC" />
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="2" Type="HTML" FileDialog="TRUE" TabularView="FALSE" DisplayName="$Resources:core,File_Dialog_View;" Hidden="TRUE" Path="filedlg.htm" ModerationType="Moderator">
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="BaseName"></FieldRef>
+          <FieldRef Name="Editor" TextOnly="TRUE"></FieldRef>
+          <FieldRef Name="Modified" TextOnly="TRUE"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FSObjType" Key="Primary" />
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Explorer_View;" TabularView="FALSE" Url="Forms/WebFldr.aspx" SetupPath="pages\webfldr.aspx" RequiresClientIntegration="TRUE" ReadOnly="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink>main.xsl</XslLink>
+        <ViewFields />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" />
+        </ParameterBindings>
+        <Query />
+      </View>
+      <View BaseViewID="6" Type="HTML" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilename"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="7" AggregateView="TRUE" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Merge_Documents;" TabularView="FALSE" ToolbarTemplate="MergeToolBar" DefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/Combine.aspx" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilename"></FieldRef>
+          <FieldRef Name="Combine"></FieldRef>
+          <FieldRef Name="Modified"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+        </Query>
+      </View>
+      <View BaseViewID="9" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Relink_Documents;" ToolbarTemplate="RelinkToolBar" TabularView="FALSE" DefaultView="FALSE" Url="Forms/repair.aspx" ImageUrl="/_layouts/images/dlicon.png" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="DocIcon"></FieldRef>
+          <FieldRef Name="LinkFilenameNoMenu"></FieldRef>
+          <FieldRef Name="RepairDocument"></FieldRef>
+          <FieldRef Name="Modified"></FieldRef>
+          <FieldRef Name="Editor"></FieldRef>
+          <FieldRef Name="ContentType"></FieldRef>
+          <FieldRef Name="TemplateUrl"></FieldRef>
+        </ViewFields>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
+        </ParameterBindings>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="FileLeafRef" />
+          </OrderBy>
+          <Where>
+            <Neq>
+              <FieldRef Name="xd_Signature" />
+              <Value Type="Boolean">1</Value>
+            </Neq>
+          </Where>
+        </Query>
+      </View>
+      <View BaseViewID="40" Type="HTML" WebPartZoneID="Main" DisplayName="assetLibTemp" DefaultView="FALSE" MobileView="FALSE" MobileDefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/Thumbnails.aspx" Hidden="TRUE">
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="LinkFilename"></FieldRef>
+        </ViewFields>
+        <RowLimit>20</RowLimit>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="LinkFilename" />
+          </OrderBy>
+        </Query>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" SetupPath="pages\form.aspx" Url="Forms/DispForm.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" SetupPath="pages\form.aspx" Url="Forms/EditForm.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="Forms/Upload.aspx" WebPartZoneID="Main" />
+      <Form Type="NewFormDialog" Path="EditDlg.htm">
+        <ListFormOpening>
+          <HTML><![CDATA[
+<script type="text/javascript">
+var frm = new OWSForm(]]></HTML>
+          <ScriptQuote>
+            <Switch>
+              <Expr>
+                <GetVar Name="HTMLFormName" />
+              </Expr>
+              <Case Value="">
+                <HTML><![CDATA[OWSForm]]></HTML>
+              </Case>
+              <Default>
+                <GetVar Name="HTMLFormName" />
+              </Default>
+            </Switch>
+          </ScriptQuote>
+          <HTML><![CDATA[, false, ]]></HTML>
+          <ScriptQuote>
+            <HttpVDir />
+            <HTML>/_layouts/</HTML>
+          </ScriptQuote>
+          <HTML><![CDATA[);
+</script>
+]]></HTML>
+          <HTML><![CDATA[
+<script type="text/javascript">]]></HTML>
+          <HTML><![CDATA[ frm.dopt.chDateSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="29" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.chTimeSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="30" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.SetTimeFormat(]]></HTML>
+          <ProjectProperty Select="Time24" />
+          <HTML><![CDATA[); frm.dopt.SetDateOrder(]]></HTML>
+          <LocaleInfo LCTYPE="33" />
+          <HTML><![CDATA[); frm.dopt.SetDOW(]]></HTML>
+          <LocaleInfo LCTYPE="4108" />
+          <HTML><![CDATA[); frm.dopt.stAM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="40" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.stPM = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="41" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.dopt.TimeMarkPosn = ]]></HTML>
+          <LocaleInfo LCTYPE="4101" />
+          <HTML><![CDATA[; frm.dopt.webTZOffsetMin = ]]></HTML>
+          <ProjectProperty Select="TimeZoneBias" />
+          <HTML><![CDATA[; ]]></HTML>
+          <HTML><![CDATA[ frm.nopt.chDigSep = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="15" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chDecimal = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="14" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.chMinus = ]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="81" />
+          </ScriptQuote>
+          <HTML><![CDATA[; frm.nopt.iNegNumber = ]]></HTML>
+          <LocaleInfo LCTYPE="4112" />
+          <HTML><![CDATA[; frm.nopt.SetGrouping(]]></HTML>
+          <ScriptQuote>
+            <LocaleInfo LCTYPE="16" />
+          </ScriptQuote>
+          <HTML><![CDATA[); ]]></HTML>
+          <HTML><![CDATA[
+frm.stFieldPrefix = ]]></HTML>
+          <ScriptQuote>
+            <FieldPrefix />
+          </ScriptQuote>
+          <HTML><![CDATA[;
+frm.stImagesPath = ]]></HTML>
+          <ScriptQuote>/_layouts/images/</ScriptQuote>
+          <HTML><![CDATA[;
+frm.wBaseType = ]]></HTML>
+          <ListProperty Select="BaseType" />
+          <HTML><![CDATA[;
+</script>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[<form name="OWSForm" id="OWSForm" EncType="multipart/form-data" Action="]]></HTML>
+              <HttpPath />
+              <HTML><![CDATA[" Method=POST onSubmit="return false;">]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+<input type="Hidden" name="_charset_" value="utf-8">
+<input id="onetidCmd" type="Hidden" name="Cmd" value="Save">
+<input id="onetidIsFormValid" type="hidden" name="IsFormValid">
+<input id="onetidFormWasPosted" type="hidden" name="FormWasPosted">
+<input id="MustUpdateForm" type="hidden" name="MustUpdateForm" value="true">
+<input type="hidden" name="NextID" id="NextID" value="-1">
+<input type="hidden" name="NextUsing" id="NextUsing" value="]]></HTML>
+          <GetVar Name="Source" HTMLEncode="TRUE" />
+          <HTML><![CDATA[">
+]]></HTML>
+          <HTML><![CDATA[<span id='part1'>]]></HTML>
+          <Identity />
+        </ListFormOpening>
+        <ListFormBody>
+          <HTML><![CDATA[<table border="0" cellpadding="2">
+<script type="text/javascript">var _g_tp_fNewForm = true;</script>
+]]></HTML>
+          <Fields>
+            <Switch>
+              <Expr>
+                <Property Select="Name" />
+              </Expr>
+              <Case Value="FileLeafRef">
+                <SetVar Name="ShowField" Scope="Request">0</SetVar>
+              </Case>
+              <Default>
+                <SetVar Name="ShowField" Scope="Request">1</SetVar>
+                <HTML><![CDATA[<tr style="display:none"><th nowrap="nowrap" valign="top" class="ms-formlabel"><nobr>]]></HTML>
+                <Property Select="DisplayName" HTMLEncode="TRUE" AutoNewLine="TRUE" />
+                <Switch>
+                  <Expr>
+                    <Property Select="Required" />
+                  </Expr>
+                  <Case Value="TRUE">
+                    <HTML><![CDATA[<font color=red> *</font>]]></HTML>
+                    <SetVar Scope="Request" Name="HasRequired">TRUE</SetVar>
+                  </Case>
+                  <Default>
+                    <HTML><![CDATA[<font color=red></font>]]></HTML>
+                  </Default>
+                </Switch>
+                <HTML><![CDATA[</nobr></th><td class="ms-formbody">]]></HTML>
+                <Field />
+                <Switch>
+                  <Expr>
+                    <Property Select="RichText" />
+                  </Expr>
+                  <Case Value="TRUE" />
+                  <Default>
+                    <Switch>
+                      <Expr>
+                        <Property Select="Type" />
+                      </Expr>
+                      <Case Value="Choice" />
+                      <Case Value="MultiChoice" />
+                      <Default>
+                        <HTML><![CDATA[&#160;]]></HTML>
+                        <Switch>
+                          <Expr>
+                            <Property Select="NoEditFormBreak" />
+                          </Expr>
+                          <Case Value="TRUE" />
+                          <Default>
+                            <HTML><![CDATA[<br>]]></HTML>
+                          </Default>
+                        </Switch>
+                      </Default>
+                    </Switch>
+                  </Default>
+                </Switch>
+                <HTML><![CDATA[<span class="ms-formdescription">]]></HTML>
+                <Property Select="Description" HTMLEncode="TRUE" AutoHyperLink="TRUE" AutoNewLine="TRUE" />
+                <HTML><![CDATA[</span></td></tr>]]></HTML>
+              </Default>
+            </Switch>
+          </Fields>
+          <HTML><![CDATA[</table>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HasRequired" />
+            </Expr>
+            <Case Value="TRUE">
+              <HTML><![CDATA[
+					<table border="0" cellpadding="2">
+					<tr>
+						<td id="reqdFldTxt" class="ms-descriptiontext" colspan="2" height="150px" valign="top"><br><font color=red>*</font> 
+						 &#160;]]></HTML>
+              <HTML HTMLEncode="TRUE">$Resources:core,webview_editdlg_required_field;</HTML>
+              <HTML><![CDATA[
+						</td>
+					</tr>
+					</table>
+					]]></HTML>
+            </Case>
+          </Switch>
+          <ContentTypes>
+            <IfSubString>
+              <Expr1>0x0120</Expr1>
+              <Expr2>
+                <Property Select="ID" />
+              </Expr2>
+              <Then>
+                <HTML><![CDATA[
+						<script type="text/javascript">
+						_tp_rgctfld = new Array;
+						_g_tp_rgcts.push(_tp_rgctfld);
+						var fldct = frmCurrent.FindField("ContentType");
+						if (fldct != null)
+							fldct.AddChoice(]]></HTML>
+                <ScriptQuote>
+                  <Property Select="Name" />
+                </ScriptQuote>
+                <HTML><![CDATA[);
+						</script>
+						]]></HTML>
+              </Then>
+              <Else>
+                <HTML><![CDATA[
+						<script type="text/javascript">
+						var fldct = frmCurrent.FindField("ContentType");
+						if (fldct != null)
+							fldct.AddChoice(]]></HTML>
+                <ScriptQuote>
+                  <Property Select="Name" />
+                </ScriptQuote>
+                <HTML><![CDATA[);
+						_tp_rgctfld = new Array;            
+						]]></HTML>
+                <ForEach Select="FieldRefs/FieldRef">
+                  <HTML>
+										_tp_ctfld = new Object(null);
+										_tp_ctfld.stName=
+									</HTML>
+                  <ScriptQuote>
+                    <Property Select="Name" />
+                  </ScriptQuote>
+                  <HTML>
+										;
+										_tp_ctfld.fRequired = BoolFromString(
+									</HTML>
+                  <ScriptQuote>
+                    <Property Select="Required" />
+                  </ScriptQuote>
+                  <HTML>
+										);
+										_tp_ctfld.fHidden = BoolFromString(
+									</HTML>
+                  <ScriptQuote>
+                    <Property Select="Hidden" />
+                  </ScriptQuote>
+                  <HTML>
+										);
+										_tp_ctfld.fShowInNewForm = BoolFromString2(
+									</HTML>
+                  <ScriptQuote>
+                    <Property Select="ShowInNewForm" />
+                  </ScriptQuote>
+                  <HTML>
+										, true);
+										_tp_ctfld.fShowInEditForm = BoolFromString2(
+									</HTML>
+                  <ScriptQuote>
+                    <Property Select="ShowInEditForm" />
+                  </ScriptQuote>
+                  <HTML>
+										, true);
+										_tp_ctfld.fShowInFileDlg = BoolFromString2(
+									</HTML>
+                  <ScriptQuote>
+                    <Property Select="ShowInFileDlg" />
+                  </ScriptQuote>
+                  <HTML>
+										, true);
+										_tp_ctfld.fReadOnly = BoolFromString(
+									</HTML>
+                  <ScriptQuote>
+                    <Property Select="ReadOnly" />
+                  </ScriptQuote>
+                  <HTML>
+										);
+										_tp_ctfld.stDisplay =
+									</HTML>
+                  <ScriptQuote>
+                    <Property Select="DisplayName" />
+                  </ScriptQuote>
+                  <HTML>;</HTML>
+                  <ForEach Select="Default">
+                    <HTML>
+											_tp_ctfld.stDefault=
+										</HTML>
+                    <ScriptQuote>
+                      <Property Select="." />
+                    </ScriptQuote>
+                    <HTML>;</HTML>
+                  </ForEach>
+                  <HTML>
+										_tp_rgctfld.push(_tp_ctfld);
+									</HTML>
+                </ForEach>
+                <HTML><![CDATA[
+						_g_tp_rgcts.push(_tp_rgctfld);
+						</script>
+						]]></HTML>
+              </Else>
+            </IfSubString>
+          </ContentTypes>
+          <HTML><![CDATA[
+<script type="text/javascript">
+var fldct = frmCurrent.FindField("ContentType");
+if (fldct != null)
+	fldct.BuildUI();
+</script>
+]]></HTML>
+        </ListFormBody>
+        <ListFormClosing>
+          <HTML><![CDATA[
+</span>]]></HTML>
+          <Switch>
+            <Expr>
+              <GetVar Name="HTMLFormName" />
+            </Expr>
+            <Case Value="">
+              <HTML><![CDATA[</form>]]></HTML>
+            </Case>
+          </Switch>
+          <HTML><![CDATA[
+<script type="text/javascript">
+</script>
+]]></HTML>
+        </ListFormClosing>
+      </Form>
+    </Forms>
+    <DefaultDescription>$Resources:core,camlidDc5;</DefaultDescription>
+  </MetaData>
+</List>

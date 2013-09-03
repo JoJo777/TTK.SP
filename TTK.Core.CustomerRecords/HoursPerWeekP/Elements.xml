@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{42df7017-27b1-4cc3-83c2-aec34fd102fb}"
+       Name="HoursPerWeekP"
+       DisplayName="Hours Per Week P"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

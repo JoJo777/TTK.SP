@@ -8,5 +8,8 @@
     <ProjectItemFile Source="CustomForms\NeedsAnalysis.docx" Target="Module\CustomForms\" Type="ElementFile" />
     <ProjectItemFile Source="CustomForms\template.dotx" Target="Module\CustomForms\" Type="ElementFile" />
     <ProjectItemFile Source="CustomForms\CustomerWizard.aspx" Target="Module\CustomForms\" Type="ElementFile" />
+    <ProjectItemFile Source="js\mod.jquery.SPServices-0.7.2.js" Target="Module\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\mod.jquery.SPServices-0.7.2.min.js.map" Target="Module\js\" Type="ElementFile" />
+    <ProjectItemFile Source="js\mod.jquery.SPServices-0.7.2.min.js" Target="Module\js\" Type="ElementFile" />
   </Files>
 </ProjectItem>

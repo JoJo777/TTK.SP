@@ -4,16 +4,17 @@
     <File Path="Module\js\jquery-1.9.1.min.js" Url="js/jquery-1.9.1.min.js" Type="GhostableInLibrary" />
     <File Path="Module\images\ajax-loader2.gif" Url="images/ajax-loader2.gif" />
     <File Path="Module\CustomForms\CustomerWizard.aspx" Url="Module/CustomForms/CustomerWizard.aspx" />
-  </Module>
-
-  <Module Name="Needs Analysis Content Type" Path="Module\CustomForms\" Url="_cts/NeedsAnalysisContentType" RootWebOnly="TRUE">
-    <File Url="NeedsAnalysis.docx" Type="Ghostable" />
-    <File Path="template.dotx" Url="Module/CustomForms/template.dotx" />
+    <File Path="Module\js\mod.jquery.SPServices-0.7.2.min.js" Url="Tickbox.Metro/js/mod.jquery.SPServices-0.7.2.min.js" />
 </Module>
 
-  <Module Name="XXX Content Type" Path="Module\CustomForms\" Url="_cts/XXXContentType" RootWebOnly="TRUE">
+  <!--<Module Name="Needs Analysis Content Type" Path="Module\CustomForms\" Url="_cts/NeedsAnalysisContentType" RootWebOnly="TRUE">
+    <File Url="NeedsAnalysis.docx" Type="Ghostable" />
+    <File Path="template.dotx" Url="Module/CustomForms/template.dotx" />
+</Module>-->
+
+  <!--<Module Name="XXX Content Type" Path="Module\CustomForms\" Url="_cts/XXXContentType" RootWebOnly="TRUE">
     <File Url="template.dotx" Type="Ghostable" />
     <File Path="template.dotx" Url="Module/CustomForms/template.dotx" />
-  </Module>
+  </Module>-->
   
 </Elements>

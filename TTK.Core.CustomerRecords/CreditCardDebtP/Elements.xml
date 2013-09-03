@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e2b67bb9-2d81-4909-8573-9f975f7c330e}"
+       Name="CreditCardDebtP"
+       DisplayName="Credit Card Debt P"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

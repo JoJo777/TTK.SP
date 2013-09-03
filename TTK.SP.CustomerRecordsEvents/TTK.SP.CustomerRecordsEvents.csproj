@@ -40,6 +40,10 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Open XML SDK\V2.0\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Word.Server, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.Office.Word.Server.dll</HintPath>
@@ -50,19 +54,16 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerNeedsEventReceiver\CustomerNeedsEventReceiver.cs" />
-    <Compile Include="CustomerNeedsEventReceiver\Logging.cs" />
-    <Compile Include="EventReceiver1\EventReceiver1.cs" />
+    <Compile Include="Customers2CustomerRecord\Logging.cs" />
+    <Compile Include="Customers2CustomerRecord\Customers2CustomerRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CustomerNeedsEventReceiver\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{d0099f84-7a0f-4ed5-9417-bd151121d79c}</SharePointProjectItemId>
-    </None>
-    <None Include="EventReceiver1\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{40b5b0e5-c2d0-4106-a120-9a8e75dfe457}</SharePointProjectItemId>
+    <None Include="Customers2CustomerRecord\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{31d35751-3681-4a6c-8f40-9219647e1fd8}</SharePointProjectItemId>
     </None>
     <None Include="Features\FeatureCustomerRecords\FeatureCustomerRecords.feature">
       <FeatureId>{f89a5a08-d68a-4813-bbef-4f1797c11ebf}</FeatureId>
@@ -76,10 +77,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CustomerNeedsEventReceiver\Elements.xml" />
-    <Content Include="EventReceiver1\Elements.xml" />
+    <Content Include="Customers2CustomerRecord\Elements.xml" />
     <Content Include="Features\FeatureCustomerRecords\FeatureCustomerRecords.Template.xml">
       <DependentUpon>FeatureCustomerRecords.feature</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

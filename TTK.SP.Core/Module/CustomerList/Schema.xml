@@ -7,6 +7,8 @@
           <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
           <FieldRef ID="{1c23b352-9620-4f63-af3f-2f3878620ccf}" Name="Referrer" />
           <FieldRef ID="{22b9000d-688e-4747-88f7-2b5338f6a328}" Name="DateCaptured" />
+          <FieldRef ID="{4c902187-2459-4edc-bf83-ac5a3bb46491}" Name="NewBusinessRegister" />
+          <FieldRef ID="{b49ff27f-e0ba-49b3-bc98-9fb7b51849c2}" Name="UnderwritingRegister" />
           <FieldRef ID="{1f5aec80-262b-43ec-8e71-a669a0c9007a}" Name="DoB" />
           <FieldRef ID="{8b5f2626-24ff-47af-af35-ab62110e9fae}" Name="Gender" />
           <FieldRef ID="{5b79880d-b9bc-445c-be3c-8c346ea51ba9}" Name="Mobile" />
@@ -191,7 +193,6 @@
           <FieldRef ID="{9b55670d-e8d9-4852-9fae-d2730e27c346}" Name="TraumaC" />
           <FieldRef ID="{e708fda1-c6c5-4070-b7e7-0ea770b67a4a}" Name="OtherInsuredC" />
           <FieldRef ID="{f02cc94f-5865-4e31-bf7e-00a6bcf20de6}" Name="ResidentialP" />
-          <FieldRef ID="{4c902187-2459-4edc-bf83-ac5a3bb46491}" Name="CustomerStatus" />
         </FieldRefs>
       </ContentType>
       <ContentTypeRef ID="0x01">
@@ -202,8 +203,22 @@
     <Fields>
       <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
       <Field Name="Referrer" ID="{1c23b352-9620-4f63-af3f-2f3878620ccf}" DisplayName="Referrer" Type="Text" />
-      <Field Name="DateCaptured" ID="{22b9000d-688e-4747-88f7-2b5338f6a328}" DisplayName="Date" Type="DateTime" />
-      <Field Name="DoB" ID="{1f5aec80-262b-43ec-8e71-a669a0c9007a}" DisplayName="DoB" Type="DateTime" />
+      <Field Name="DateCaptured" ID="{22b9000d-688e-4747-88f7-2b5338f6a328}" DisplayName="Date" Type="DateTime" Format="DateOnly" />
+      <Field Name="NewBusinessRegister" ID="{4c902187-2459-4edc-bf83-ac5a3bb46491}" DisplayName="New Business Register" Type="Choice">
+        <CHOICES>
+          <CHOICE>Not Started</CHOICE>
+          <CHOICE>In Progress</CHOICE>
+          <CHOICE>Complete</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="UnderwritingRegister" ID="{b49ff27f-e0ba-49b3-bc98-9fb7b51849c2}" DisplayName="Underwriting Register" Type="Choice" >
+        <CHOICES>
+          <CHOICE>Inactive</CHOICE>
+          <CHOICE>In Progress</CHOICE>
+          <CHOICE>Complete</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="DoB" ID="{1f5aec80-262b-43ec-8e71-a669a0c9007a}" DisplayName="DoB" Type="DateTime" Format="DateOnly" />
       <Field Name="Gender" ID="{8b5f2626-24ff-47af-af35-ab62110e9fae}" DisplayName="Gender" Type="Choice">
         <CHOICES>
           <CHOICE>Female</CHOICE>
@@ -244,7 +259,7 @@
       </Field>
       <Field Name="SurNameP" ID="{6dfe9ea1-9569-4f53-af94-96ccf1c0fc75}" DisplayName="SurNameP" Type="Text" />
       <Field Name="FirstNameP" ID="{50e49422-0bff-4ca7-acf5-540096aaf28c}" DisplayName="FirstNameP" Type="Text" />
-      <Field Name="DoBP" ID="{3e495036-d601-48ba-aa30-fadc1b87fd04}" DisplayName="DoBP" Type="DateTime" />
+      <Field Name="DoBP" ID="{3e495036-d601-48ba-aa30-fadc1b87fd04}" DisplayName="DoBP" Type="DateTime" Format="DateOnly" />
       <Field Name="GenderP" ID="{f661bf9c-47e6-4dbd-abff-29a661c9020e}" DisplayName="GenderP" Type="Choice">
         <CHOICES>
           <CHOICE>Female</CHOICE>
@@ -277,7 +292,7 @@
         </CHOICES>
       </Field>
       <Field Name="Father" ID="{2da8120f-be12-4222-bb5f-091c79aa1aa4}" DisplayName="Father" Type="Text" />
-      <Field Name="FatherDOB" ID="{2ec651d6-c683-43fe-a3db-7d2a804f8b1e}" DisplayName="FatherDOB" Type="DateTime" />
+      <Field Name="FatherDOB" ID="{2ec651d6-c683-43fe-a3db-7d2a804f8b1e}" DisplayName="FatherDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="FatherHealth" ID="{a3d3fc77-fad2-4a45-9867-75127f364c12}" Type="MultiChoice" Format="RadioButtons" DisplayName="FatherHealth">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -295,7 +310,7 @@
         </CHOICES>
       </Field>
       <Field Name="Mother" ID="{436bf713-7060-475d-8086-b75d12ce9951}" DisplayName="Mother" Type="Text" />
-      <Field Name="MotherDOB" ID="{91254bc4-df2b-45ff-a5bb-d29a820f7d58}" DisplayName="MotherDOB" Type="DateTime" />
+      <Field Name="MotherDOB" ID="{91254bc4-df2b-45ff-a5bb-d29a820f7d58}" DisplayName="MotherDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="MotherHealth" ID="{2dbe53a8-f07d-47f2-aa77-f0ac3f542956}" Type="MultiChoice" Format="RadioButtons" DisplayName="MotherHealth">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -313,7 +328,7 @@
         </CHOICES>
       </Field>
       <Field Name="Brother" ID="{05082b8c-9642-4b33-9b6f-f32965fa03ca}" DisplayName="Brother" Type="Text" />
-      <Field Name="BrotherDOB" ID="{3815ffca-459c-47e1-a0e6-ee23f6a817a8}" DisplayName="BrotherDOB" Type="DateTime" />
+      <Field Name="BrotherDOB" ID="{3815ffca-459c-47e1-a0e6-ee23f6a817a8}" DisplayName="BrotherDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="BrotherHealth" ID="{d2ae9db4-65ac-4374-a0a7-5c9517c0ccc7}" Type="MultiChoice" Format="RadioButtons" DisplayName="BrotherHealth">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -331,7 +346,7 @@
         </CHOICES>
       </Field>
       <Field Name="Brother2" ID="{03a9a9cc-6804-4ec4-91ee-331ecdbe8770}" DisplayName="Brother2" Type="Text" />
-      <Field Name="Brother2DOB" ID="{e5f017c0-c904-4cde-93d6-385324e437f7}" DisplayName="Brother2DOB" Type="DateTime" />
+      <Field Name="Brother2DOB" ID="{e5f017c0-c904-4cde-93d6-385324e437f7}" DisplayName="Brother2DOB" Type="DateTime" Format="DateOnly" />
       <Field Name="BrotherHealth2" ID="{523b7d34-0aae-445b-b028-29060373cb72}" Type="MultiChoice" Format="RadioButtons" DisplayName="BrotherHealth2">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -349,10 +364,10 @@
         </CHOICES>
       </Field>
       <Field Name="Sister" ID="{a27dfcb2-2899-447c-8e86-a597c0d3039d}" DisplayName="Sister" Type="Text" />
-      <Field Name="SisterDOB" ID="{5bdcfa94-91da-4a92-9807-95a8dcadfb7c}" DisplayName="SisterDOB" Type="DateTime" />
+      <Field Name="SisterDOB" ID="{5bdcfa94-91da-4a92-9807-95a8dcadfb7c}" DisplayName="SisterDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="SisterHealth" ID="{c1b35c89-62d9-4ba8-a088-08202ab98e49}" DisplayName="SisterHealth" Type="Text" />
       <Field Name="Sister2" ID="{50168b76-bd5c-4d6a-840d-661d37eca20f}" DisplayName="Sister2" Type="Text" />
-      <Field Name="SisterDOB2" ID="{5573ea6f-ab56-4498-98bd-c594ef38826e}" DisplayName="SisterDOB2" Type="DateTime" />
+      <Field Name="SisterDOB2" ID="{5573ea6f-ab56-4498-98bd-c594ef38826e}" DisplayName="SisterDOB2" Type="DateTime" Format="DateOnly" />
       <Field Name="SisterHealth2" ID="{ff3222c4-024c-4860-afac-b579e7e8643f}" Type="MultiChoice" Format="RadioButtons" DisplayName="SisterHealth2">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -370,7 +385,7 @@
         </CHOICES>
       </Field>
       <Field Name="FatherP" ID="{e432c87b-da60-45d6-a478-7621cc79644b}" DisplayName="FatherP" Type="Text" />
-      <Field Name="FatherPDOB" ID="{b0bce503-1723-4dba-83d6-ddcad55eef2f}" DisplayName="FatherPDOB" Type="DateTime" />
+      <Field Name="FatherPDOB" ID="{b0bce503-1723-4dba-83d6-ddcad55eef2f}" DisplayName="FatherPDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="FatherHealth1" ID="{3f83721c-120f-4827-a46b-eb474d1820db}" Type="MultiChoice" Format="RadioButtons" DisplayName="FatherHealthP">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -388,7 +403,7 @@
         </CHOICES>
       </Field>
       <Field Name="MotherP" ID="{c9f84442-435f-43cf-9ee4-b7d9f34bae79}" DisplayName="MotherP" Type="Text" />
-      <Field Name="MotherPDOB" ID="{15b03e34-80f4-4e90-b373-cd0291a04fc2}" DisplayName="MotherPDOB" Type="DateTime" />
+      <Field Name="MotherPDOB" ID="{15b03e34-80f4-4e90-b373-cd0291a04fc2}" DisplayName="MotherPDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="MotherHealthP" ID="{518d3123-3190-4125-a6dd-551748e0637b}" Type="MultiChoice" Format="RadioButtons" DisplayName="MotherHealthP">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -406,7 +421,7 @@
         </CHOICES>
       </Field>
       <Field Name="BrotherP" ID="{8212a146-1ad7-4824-8f77-a65d602c7ece}" DisplayName="BrotherP" Type="Text" />
-      <Field Name="BrotherPDOB" ID="{cf73d2f1-10ed-4b4f-9018-888d40597773}" DisplayName="BrotherPDOB" Type="DateTime" />
+      <Field Name="BrotherPDOB" ID="{cf73d2f1-10ed-4b4f-9018-888d40597773}" DisplayName="BrotherPDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="BrotherHealthP" ID="{1c86fe0b-faef-4ac5-a4f0-efe0e53974bb}" Type="MultiChoice" Format="RadioButtons" DisplayName="BrotherHealthP">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -424,7 +439,7 @@
         </CHOICES>
       </Field>
       <Field Name="Brother2P" ID="{1d7ec34e-bb2e-4919-94a1-012d744a4cc0}" DisplayName="Brother2P" Type="Text" />
-      <Field Name="Brother2PDOB" ID="{f76a9597-84cb-42f0-b58e-57090ae9e0a0}" DisplayName="Brother2PDOB" Type="DateTime" />
+      <Field Name="Brother2PDOB" ID="{f76a9597-84cb-42f0-b58e-57090ae9e0a0}" DisplayName="Brother2PDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="BrotherHealth2P" ID="{193c036f-17a4-4e07-bc24-5683a34ff226}" Type="MultiChoice" Format="RadioButtons" DisplayName="BrotherHealth2P">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -442,7 +457,7 @@
         </CHOICES>
       </Field>
       <Field Name="SisterP" ID="{832862f0-e1d1-4f03-a299-e8bc0198aba9}" DisplayName="SisterP" Type="Text" />
-      <Field Name="SisterPDOB" ID="{ca752ada-7a81-4144-a991-be6c79b2a94c}" DisplayName="SisterPDOB" Type="DateTime" />
+      <Field Name="SisterPDOB" ID="{ca752ada-7a81-4144-a991-be6c79b2a94c}" DisplayName="SisterPDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="SisterHealthP" ID="{8e7dd569-ba76-4b55-841a-ce75b7958a4c}" Type="MultiChoice" Format="RadioButtons" DisplayName="SisterHealthP">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -460,7 +475,7 @@
         </CHOICES>
       </Field>
       <Field Name="Sister2P" ID="{198c3f20-5b7e-401e-8a09-7c8dda1231ac}" DisplayName="Sister2P" Type="Text" />
-      <Field Name="Sister2PDOB" ID="{16894424-c26c-4cad-bfbe-9ecc8faaf3b9}" DisplayName="Sister2PDOB" Type="DateTime" />
+      <Field Name="Sister2PDOB" ID="{16894424-c26c-4cad-bfbe-9ecc8faaf3b9}" DisplayName="Sister2PDOB" Type="DateTime" Format="DateOnly" />
       <Field Name="SisterHealth2P" ID="{a972d3c9-416c-496a-bf23-d28939cce4d3}" Type="MultiChoice" Format="RadioButtons" DisplayName="SisterHealth2P">
         <CHOICES>
           <CHOICE>Back</CHOICE>
@@ -479,7 +494,7 @@
       </Field>
       <Field Name="DependantsFirst1" ID="{4d950eee-51f0-41f0-a812-1997ccf6ff39}" DisplayName="DependantsFirst1" Type="Text" />
       <Field Name="DependantsSurName1" ID="{3125b53c-3ab9-4a21-9d51-60c81583bdb9}" DisplayName="DependantsSurName1" Type="Text" />
-      <Field Name="Dependants1" ID="{0b53675d-c5ae-4043-9e13-02343a2f2ef0}" DisplayName="Dependants1" Type="DateTime" />
+      <Field Name="Dependants1" ID="{0b53675d-c5ae-4043-9e13-02343a2f2ef0}" DisplayName="Dependants1" Type="DateTime" Format="DateOnly" />
       <Field Name="Relation1" ID="{aeb27fc6-b35a-4857-bfb5-cd855be06ee8}" DisplayName="Relation1" Type="Choice">
         <CHOICES>
           <CHOICE>Daughter</CHOICE>
@@ -508,7 +523,7 @@
       </Field>
       <Field Name="DependantsFirst2" ID="{962c1e04-a520-42c3-b415-37b6ac92c682}" DisplayName="DependantsFirst2" Type="Text" />
       <Field Name="DependantsSurName1ddRelation2" ID="{a02e3b7d-afdd-4ff4-bee8-f8514e5c0353}" DisplayName="DependantsSurName2" Type="Text" />
-      <Field Name="Dependants2" ID="{b1ee6b0d-c00d-4cfa-8609-4587d605cba5}" DisplayName="Dependants2" Type="DateTime" />
+      <Field Name="Dependants2" ID="{b1ee6b0d-c00d-4cfa-8609-4587d605cba5}" DisplayName="Dependants2" Type="DateTime" Format="DateOnly" />
       <Field Name="Relation2" ID="{a43c5bf5-2117-4830-bba8-bbbed768530a}" DisplayName="Relation2" Type="Choice">
         <CHOICES>
           <CHOICE>Daughter</CHOICE>
@@ -537,7 +552,7 @@
       </Field>
       <Field Name="DependantsFirst3" ID="{162f85dc-dc07-403f-aca2-a3e7fa23b751}" DisplayName="DependantsFirst3" Type="Text" />
       <Field Name="DependantsSurName3" ID="{73f03521-0d70-4a59-8ab1-583df5de7cb6}" DisplayName="DependantsSurName3" Type="Text" />
-      <Field Name="Dependants3" ID="{c0c99ee3-65fc-4036-95dd-4dc61d69a85b}" DisplayName="Dependants3" Type="DateTime" />
+      <Field Name="Dependants3" ID="{c0c99ee3-65fc-4036-95dd-4dc61d69a85b}" DisplayName="Dependants3" Type="DateTime" Format="DateOnly" />
       <Field Name="Relation3" ID="{61fae296-a66f-4ab2-82b0-9eb3add8fde4}" DisplayName="Relation3" Type="Choice">
         <CHOICES>
           <CHOICE>Daughter</CHOICE>
@@ -566,7 +581,7 @@
       </Field>
       <Field Name="DependantsFirst4" ID="{6a7423db-6eed-4dd3-8475-17e6a7d8f703}" DisplayName="DependantsFirst4" Type="Text" />
       <Field Name="DependantsSurName4" ID="{c1c52fb1-e669-4171-882b-8fd1b5bf553a}" DisplayName="DependantsSurName4" Type="Text" />
-      <Field Name="Dependants4" ID="{54aee872-892a-494c-872c-62ac65737d07}" DisplayName="Dependants4" Type="DateTime" />
+      <Field Name="Dependants4" ID="{54aee872-892a-494c-872c-62ac65737d07}" DisplayName="Dependants4" Type="DateTime" Format="DateOnly" />
       <Field Name="Relation4" ID="{8a0f2a53-7ab1-4c38-b2bb-caa5447cebaf}" DisplayName="Relation4" Type="Choice">
         <CHOICES>
           <CHOICE>Daughter</CHOICE>
@@ -595,7 +610,7 @@
       </Field>
       <Field Name="DependantsFirst5" ID="{078cbe1c-4738-4f0b-b0ca-74d9a25886a4}" DisplayName="DependantsFirst5" Type="Text" />
       <Field Name="DependantsSurName5" ID="{f7df757b-9141-4edc-b28d-6b8bf9022cd1}" DisplayName="DependantsSurName5" Type="Text" />
-      <Field Name="Dependants5" ID="{44b14243-83c6-4fc6-9c78-eeac3315443f}" DisplayName="Dependants5" Type="DateTime" />
+      <Field Name="Dependants5" ID="{44b14243-83c6-4fc6-9c78-eeac3315443f}" DisplayName="Dependants5" Type="DateTime" Format="DateOnly" />
       <Field Name="Relation5" ID="{f577ef60-bf37-4d66-83fd-b5d03a9133a8}" DisplayName="Relation5" Type="Choice">
         <CHOICES>
           <CHOICE>Daughter</CHOICE>
@@ -762,13 +777,6 @@
       <Field Name="TraumaC" ID="{9b55670d-e8d9-4852-9fae-d2730e27c346}" DisplayName="TraumaC" Type="Text" />
       <Field Name="OtherInsuredC" ID="{e708fda1-c6c5-4070-b7e7-0ea770b67a4a}" DisplayName="OtherInsuredC" Type="Text" />
       <Field Name="ResidentialP" ID="{f02cc94f-5865-4e31-bf7e-00a6bcf20de6}" DisplayName="ResidentialP" Type="Text" />
-      <Field Name="CustomerStatus" ID="{4c902187-2459-4edc-bf83-ac5a3bb46491}" DisplayName="Customer Status"  Type="Choice">
-        <CHOICES>
-          <CHOICE>In progress</CHOICE>
-          <CHOICE>Complete</CHOICE>
-          <CHOICE>Inactive</CHOICE>
-        </CHOICES>
-      </Field>
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
@@ -796,10 +804,11 @@
         <ViewFields>
           <FieldRef Name="Attachments"></FieldRef>
           <FieldRef Name="LinkTitle"></FieldRef>
-          <FieldRef Name="CustomerStatus" />
           <FieldRef Name="FirstName" />
           <FieldRef Name="Referrer" />
           <FieldRef Name="DateCaptured" />
+          <FieldRef Name="NewBusinessRegister" />
+          <FieldRef Name="UnderwritingRegister" />
           <FieldRef Name="Residential" />
           <FieldRef Name="Business" />
           <FieldRef Name="Home" />
@@ -809,6 +818,7 @@
           <FieldRef Name="RACV" />
           <FieldRef Name="Solicitor" />
           <FieldRef Name="Accountant" />
+          <FieldRef Name="CustomerStatus" />
           <FieldRef Name="FirstNameP" />
           <FieldRef Name="DoBP" />
           <FieldRef Name="MobileP" />
@@ -994,6 +1004,27 @@
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
         </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="8ab7576d-a35c-4c9c-8de3-9496bc6710c0" DisplayName="SummaryWP" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SummaryWP.aspx">
+        <RowLimit>30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="FirstName" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Gender" />
+          <FieldRef Name="DoB" />
+          <FieldRef Name="CorrespondancePreference" />
+          <FieldRef Name="Email" />
+          <FieldRef Name="Home" />
+          <FieldRef Name="Business" />
+          <FieldRef Name="Mobile" />
+          <FieldRef Name="CustomerStatus" />
+          <FieldRef Name="NewBusinessRegister" />
+          <FieldRef Name="UnderwritingRegister" />
+          <FieldRef Name="FirstLetter" />
+        </ViewFields>
+        <Query />
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
     </Views>
     <Forms>

@@ -1,12 +1,10 @@
-﻿using System;
+﻿using Microsoft.SharePoint;
+using System;
 using System.ComponentModel;
-using System.Web.UI;
-using System.Web.UI.WebControls.WebParts;
-using Microsoft.SharePoint;
-using System.Web.UI.WebControls;
 using System.Globalization;
-using Microsoft.SharePoint.WebControls;
-using Microsoft.SharePoint.Utilities;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
 
 namespace TTK.SP.NeedsAnalysis.WP
 {
@@ -22,7 +20,10 @@ namespace TTK.SP.NeedsAnalysis.WP
         const int WizardTabsFinance6 = 6;
         const int WizardTabsInsurance7 = 7;
 
-        static string CustomerList = "Customer2";
+        static string CustomerList = "Customers";
+        static string NewBusinessRegisterList = "New Business Register";
+        static string UnderwritingRegisterList = "Underwriting Register";
+
         int ListItemId = 0;
 
         CultureInfo australiaCulture = new CultureInfo("en-AU");
@@ -53,7 +54,10 @@ namespace TTK.SP.NeedsAnalysis.WP
                 if (ListItemId > 0)
                     LoadCustomerData(ListItemId);
                 else
-                    ddCustomerStatus.SelectedValue = "In progress"; ///default for new.
+                {
+                    ddNewBusinessRegister.SelectedValue = "In Progress"; ///default for new.
+                    ddUnderWritingRegister.SelectedValue = "Not Started"; ///default for new.
+                }
             }
 
             EnablePartner(IsPartnerActive());
@@ -92,7 +96,8 @@ namespace TTK.SP.NeedsAnalysis.WP
             //Tab1
             txtLastName.Text = customerListItem["Title"].ToString();
 
-            ddCustomerStatus.SelectedValue = GetEmptyStringIfNull(customerListItem["CustomerStatus"]);
+            ddNewBusinessRegister.SelectedValue = GetEmptyStringIfNull(customerListItem["NewBusinessRegister"]);
+            ddUnderWritingRegister.SelectedValue = GetEmptyStringIfNull(customerListItem["UnderwritingRegister"]);
 
             txtFirstName.Text = GetEmptyStringIfNull(customerListItem["FirstName"]);
 
@@ -122,9 +127,9 @@ namespace TTK.SP.NeedsAnalysis.WP
                 txtFirstNameP.Text = GetEmptyStringIfNull(customerListItem["FirstNameP"]);
 
                 calDOBP.SelectedDate = (DateTime)customerListItem["DoBP"];
-                ddGenderP.SelectedValue = GetEmptyStringIfNull(customerListItem["GenderP"].ToString());
+                ddGenderP.SelectedValue = GetEmptyStringIfNull(customerListItem["GenderP"]);
 
-                ddMaritalP.SelectedValue = customerListItem["MaritalStatusP"].ToString();
+                ddMaritalP.SelectedValue = GetEmptyStringIfNull(customerListItem["MaritalStatusP"]);
                 txtResidentialP.Text = GetEmptyStringIfNull(customerListItem["ResidentialP"]);
 
                 txtBusinessP.Text = GetEmptyStringIfNull(customerListItem["BusinessP"]);
@@ -339,9 +344,6 @@ namespace TTK.SP.NeedsAnalysis.WP
                 return "";
             else
                 return item.ToString();
-
-
-            //return string.IsNullOrEmpty(item.ToString()) ? "" :item.ToString(); 
         }
 
         private void SetCheckBoxValues(CheckBoxList checkBoxList, object item)
@@ -469,18 +471,18 @@ namespace TTK.SP.NeedsAnalysis.WP
             txtAccountantP.Enabled = partnerActive;
             ddSmokerP.Enabled = partnerActive;
 
-            RequiredFieldValidator11.Enabled = partnerActive;
-            RequiredFieldValidator12.Enabled = partnerActive;
-            RequiredFieldValidator21.Enabled = partnerActive;
-            RequiredFieldValidator14.Enabled = partnerActive;
-            RequiredFieldValidator15.Enabled = partnerActive;
+            //RequiredFieldValidator11.Enabled = partnerActive;
+            //RequiredFieldValidator12.Enabled = partnerActive;
+            //RequiredFieldValidator21.Enabled = partnerActive;
+            //RequiredFieldValidator14.Enabled = partnerActive;
+            //RequiredFieldValidator15.Enabled = partnerActive;
 
-            RequiredFieldValidator19.Enabled = partnerActive;
+            //RequiredFieldValidator19.Enabled = partnerActive;
 
-            RequiredFieldValidator16.Enabled = partnerActive;
-            RequiredFieldValidator17.Enabled = partnerActive;
-            RequiredFieldValidator18.Enabled = partnerActive;
-            RequiredFieldValidator20.Enabled = partnerActive;
+            //RequiredFieldValidator16.Enabled = partnerActive;
+            //RequiredFieldValidator17.Enabled = partnerActive;
+            //RequiredFieldValidator18.Enabled = partnerActive;
+            //RequiredFieldValidator20.Enabled = partnerActive;
 
             //Partner family details
             txtFatherP.Enabled = partnerActive;
@@ -536,7 +538,7 @@ namespace TTK.SP.NeedsAnalysis.WP
             //txtLeasesP.Enabled = partnerActive;
             //txtBusinessDebtP.Enabled = partnerActive;
             //txtLiabilitesP.Enabled = partnerActive;
-            
+
 
             txtHouseJ.Enabled = partnerActive;
             txtContentsJ.Enabled = partnerActive;
@@ -553,7 +555,7 @@ namespace TTK.SP.NeedsAnalysis.WP
             txtLeasesJ.Enabled = partnerActive;
             txtBusinessDebtJ.Enabled = partnerActive;
             txtLiabilitesJ.Enabled = partnerActive;
-            
+
 
             //insured
             txtIncomeProtectionP.Enabled = partnerActive;
@@ -613,30 +615,41 @@ namespace TTK.SP.NeedsAnalysis.WP
 
         protected void wizNeeds_FinishButtonClick(object sender, System.Web.UI.WebControls.WizardNavigationEventArgs e)
         {
+            SaveCustomer();
+        }
+
+        private void SaveCustomer()
+        {
             try
             {
-                string NeedsAnalysisList = "Customer2";
-
                 SPContext.Current.Web.AllowUnsafeUpdates = true;
-                SPList listCustomer = SPContext.Current.Web.Lists[NeedsAnalysisList];
+
+
+                SPList listCustomer = SPContext.Current.Web.Lists[CustomerList];
                 ListItemId = GetItemId();
 
                 SPListItem item = GetItemAsNewOrUpdate(listCustomer, ListItemId);
 
+                DateTime NeedsAnalysisDate = DateTime.Now;
+
+                ModifyNewBusinessRegister(txtLastName.Text, txtFirstName.Text, NeedsAnalysisDate);
+                ModifyUnderWritingRegister(txtLastName.Text, txtFirstName.Text);
+
                 //top
-                item["DateCaptured"] = System.DateTime.Now;
+                item["DateCaptured"] = NeedsAnalysisDate;
                 item["Referrer"] = txtReferrer.Text;
 
                 //Tab1
                 item["Title"] = txtLastName.Text;
 
-                item["CustomerStatus"] = ddCustomerStatus.SelectedValue;
-                
+                item["NewBusinessRegister"] = ddNewBusinessRegister.SelectedValue;
+                item["UnderwritingRegister"] = ddUnderWritingRegister.SelectedValue;
+
                 item["FirstName"] = txtFirstName.Text;
 
                 item["DoB"] = calDOB.SelectedDate;
                 item["Gender"] = ddGender.SelectedValue;
-                
+
                 item["MaritalStatus"] = ddMarital.SelectedValue;
                 item["Residential"] = txtResidential.Text;
                 item["Business"] = txtBusiness.Text;
@@ -875,7 +888,143 @@ namespace TTK.SP.NeedsAnalysis.WP
                 Literal litControl = new Literal();
                 phForLiteral.Controls.Add(litControl);
 
-                litControl.Text = "<script type='text/javascript'> window.location ='/Lists/Customer2'; </script>";
+                litControl.Text = "<script type='text/javascript'> window.location ='/Lists/" + CustomerList + "'; </script>";
+            }
+            catch (Exception ex)
+            {
+                ErrorLabel.Visible = true;
+                ErrorLabel.Text = ex.Message;
+
+                Logging.WriteToLog(SPContext.Current, ex);
+            }
+            finally
+            {
+                SPContext.Current.Web.AllowUnsafeUpdates = false;
+            }
+        }
+
+        private void ModifyNewBusinessRegister(string customerSurname, string customerFirstname, DateTime NeedsAnalysisDate)
+        {
+            try
+            {
+                string ClientName = customerFirstname + " " + customerSurname;
+
+                SPQuery myQuery = new SPQuery();
+
+                myQuery.Query = "<Where><Eq><FieldRef Name='Client'></FieldRef><Value Type='Text'>" + ClientName + "</Value></Eq></Where>";
+
+                SPListItemCollection newBusinessRegisterSPListItemCollection = SPContext.Current.Web.Lists[NewBusinessRegisterList].GetItems(myQuery);
+
+                if (newBusinessRegisterSPListItemCollection.Count > 0) //updates
+                {
+                    if (ddNewBusinessRegister.SelectedValue == "Complete" || ddNewBusinessRegister.SelectedValue == "Inactive")
+                    {
+                        SPListItem updateItem = newBusinessRegisterSPListItemCollection[0];
+                        updateItem["Status"] = "Yes";
+
+                        updateItem.Update();
+                    }
+                    else
+                    {
+                        if (ddNewBusinessRegister.SelectedValue == "In Progress")
+                        {
+                            SPListItem updateItem = newBusinessRegisterSPListItemCollection[0];
+                            updateItem["Status"] = "No";
+
+                            updateItem.Update();
+                        }
+                    }
+                }
+                else //add new record
+                {
+                    if (ddNewBusinessRegister.SelectedValue == "In Progress")
+                    {
+                        SPListItem newBusinessRegister = OptimizedAddItem(SPContext.Current.Web.Lists[NewBusinessRegisterList]);
+
+                        newBusinessRegister["Client"] = ClientName;
+                        newBusinessRegister["Need_x0020_Analysis"] = NeedsAnalysisDate;
+                        newBusinessRegister["Status"] = "No";
+
+                        newBusinessRegister.Update();
+                    }
+                    if (ddNewBusinessRegister.SelectedValue == "Complete")
+                    {
+                        SPListItem newBusinessRegister = OptimizedAddItem(SPContext.Current.Web.Lists[NewBusinessRegisterList]);
+
+                        newBusinessRegister["Client"] = ClientName;
+                        newBusinessRegister["Need_x0020_Analysis"] = NeedsAnalysisDate;
+                        newBusinessRegister["Status"] = "Yes";
+
+                        newBusinessRegister.Update();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorLabel.Visible = true;
+                ErrorLabel.Text = ex.Message;
+
+                Logging.WriteToLog(SPContext.Current, ex);
+            }
+            finally
+            {
+                SPContext.Current.Web.AllowUnsafeUpdates = false;
+            }
+        }
+
+        private void ModifyUnderWritingRegister(string customerSurname, string customerFirstname)
+        {
+            try
+            {
+                string ClientName = customerFirstname + " " + customerSurname;
+
+                SPQuery myQuery = new SPQuery();
+
+                myQuery.Query = "<Where><Eq><FieldRef Name='Client'></FieldRef><Value Type='Text'>" + ClientName + "</Value></Eq></Where>";
+
+                SPListItemCollection underWritingRegisterSPListItemCollection = SPContext.Current.Web.Lists[UnderwritingRegisterList].GetItems(myQuery);
+
+                if (underWritingRegisterSPListItemCollection.Count > 0)
+                {
+                    if (ddUnderWritingRegister.SelectedValue == "Complete" || ddUnderWritingRegister.SelectedValue == "Not Started")
+                    {
+                        SPListItem updateItem = underWritingRegisterSPListItemCollection[0];
+                        updateItem["Status"] = "Yes";
+
+                        updateItem.Update();
+                    }
+                    else
+                        if (ddUnderWritingRegister.SelectedValue == "In Progress")
+                        {
+                            SPListItem updateItem = underWritingRegisterSPListItemCollection[0];
+                            updateItem["Status"] = "No";
+
+                            updateItem.Update();
+                        }
+                }
+                else
+                {
+                    if (ddUnderWritingRegister.SelectedValue == "In Progress")
+                    {
+                        //add new record
+                        SPListItem newUnderWritingRegister = OptimizedAddItem(SPContext.Current.Web.Lists[UnderwritingRegisterList]);
+
+                        newUnderWritingRegister["Client"] = ClientName;
+                        newUnderWritingRegister["Status"] = "No";
+
+                        newUnderWritingRegister.Update();
+                    }
+                    if (ddUnderWritingRegister.SelectedValue == "Complete")
+                    {
+                        //add new record
+                        SPListItem newUnderWritingRegister = OptimizedAddItem(SPContext.Current.Web.Lists[UnderwritingRegisterList]);
+
+                        newUnderWritingRegister["Client"] = ClientName;
+                        newUnderWritingRegister["Status"] = "Yes";
+
+                        newUnderWritingRegister.Update();
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -933,4 +1082,5 @@ namespace TTK.SP.NeedsAnalysis.WP
         }
     }
 }
+
 

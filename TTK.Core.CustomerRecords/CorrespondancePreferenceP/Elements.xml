@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{77d1cc06-108d-4b51-afba-984872180cd8}"
+       Name="CorrespondancePreferenceP"
+       DisplayName="Correspondance Preference P"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

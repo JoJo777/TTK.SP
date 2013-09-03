@@ -38,10 +38,6 @@
         width: 298px;
     }
 
-    .auto-style10 {
-        width: 86px;
-    }
-
     .auto-style12 {
         width: 124px;
     }
@@ -61,6 +57,17 @@
     .auto-style20 {
         width: 737px;
     }
+
+    .auto-style22 {
+        width: 292px;
+    }
+
+    .auto-style23 {
+        width: 265px;
+    }
+    .auto-style24 {
+        font-weight: bold;
+    }
 </style>
 
 
@@ -69,25 +76,31 @@
 
 <script type="text/javascript" src="/_layouts/datepicker.js"></script>
 
-
 <asp:PlaceHolder ID="phForLiteral" runat="server"></asp:PlaceHolder>
 
 <table>
     <tr>
-        <td>
+        <td colspan="1" class="auto-style24">
             <label>Referrer:</label>
             <asp:TextBox ID="txtReferrer" runat="server"></asp:TextBox>
         </td>
-        <td>
+        <td colspan="1">
+            <b>
             <label>
                 Date:
             </label>
-            <asp:Label runat="server" ID="lbDateCaptured" Style="font-weight: 700"></asp:Label>
+            </b>
+            <asp:Label runat="server" ID="lbDateCaptured"></asp:Label>
         </td>
-        <td>Status:<asp:DropDownList ID="ddCustomerStatus" runat="server">
-            <asp:ListItem>In progress</asp:ListItem>
-            <asp:ListItem>Complete</asp:ListItem>
+        <td colspan="1"><b>New Business Register:</b><asp:DropDownList ID="ddNewBusinessRegister" runat="server">
             <asp:ListItem>Inactive</asp:ListItem>
+            <asp:ListItem>In Progress</asp:ListItem>
+            <asp:ListItem>Complete</asp:ListItem>
+        </asp:DropDownList></td>
+        <td colspan="1"><b>Underwriting Register:</b><asp:DropDownList ID="ddUnderWritingRegister" runat="server">
+            <asp:ListItem>Not Started</asp:ListItem>
+            <asp:ListItem>In Progress</asp:ListItem>
+            <asp:ListItem>Complete</asp:ListItem>
         </asp:DropDownList></td>
     </tr>
 </table>
@@ -268,15 +281,14 @@
                             (first, last)</label></td>
                     <td class="auto-style20">
                         <asp:TextBox runat="server" ID="txtSurNameP"></asp:TextBox><asp:TextBox runat="server" ID="txtFirstNameP"></asp:TextBox>
-                        <asp:RequiredFieldValidator runat="server" ControlToValidate="txtSurNameP" ErrorMessage="Please enter First Name" ID="RequiredFieldValidator11"></asp:RequiredFieldValidator>
-                        <asp:RequiredFieldValidator runat="server" ControlToValidate="txtFirstNameP" ErrorMessage="Please enter Last Name" ID="RequiredFieldValidator12"></asp:RequiredFieldValidator>
+                        <%--<asp:RequiredFieldValidator runat="server" ControlToValidate="txtSurNameP" ErrorMessage="Please enter First Name" ID="RequiredFieldValidator11"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator runat="server" ControlToValidate="txtFirstNameP" ErrorMessage="Please enter Last Name" ID="RequiredFieldValidator12"></asp:RequiredFieldValidator>--%>
                     </td>
                     <td class="auto-style2">
                         <label>
                             Date of Birth</label></td>
                     <td class="auto-style2">
                         <SharePoint:DateTimeControl runat="server" ID="calDOBP" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" ToolTip=""></SharePoint:DateTimeControl>
-
                     </td>
                 </tr>
                 <tr>
@@ -289,7 +301,7 @@
                             <asp:ListItem>Female</asp:ListItem>
                             <asp:ListItem>Male</asp:ListItem>
                         </asp:DropDownList>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="txtMobileP" ErrorMessage="Please select a gender"></asp:RequiredFieldValidator>
+                        <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="ddGenderP" ErrorMessage="Please select a gender"></asp:RequiredFieldValidator>--%>
                     </td>
                     <td>
                         <label>
@@ -314,14 +326,14 @@
                             <asp:ListItem>Divorced</asp:ListItem>
                             <asp:ListItem>Seperated</asp:ListItem>
                         </asp:DropDownList>
-                        <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator14" ControlToValidate="ddMaritalP" ErrorMessage="Please select a Marital Status" />
+                        <%--<asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator14" ControlToValidate="ddMaritalP" ErrorMessage="Please select a Marital Status" />--%>
                     </td>
                     <td class="auto-style1">
                         <label>
                             Residential Address</label></td>
                     <td class="auto-style1">
                         <asp:TextBox ID="txtResidentialP" runat="server" TextMode="MultiLine"></asp:TextBox>
-                        <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator15" ControlToValidate="txtResidentialP" ErrorMessage="Please enter a Residential Address" />
+                        <%--<asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator15" ControlToValidate="txtResidentialP" ErrorMessage="Please enter a Residential Address" />--%>
                     </td>
                 </tr>
                 <tr>
@@ -330,7 +342,7 @@
                             Mobile</label></td>
                     <td class="auto-style20">
                         <asp:TextBox ID="txtMobileP" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator16" ControlToValidate="txtMobileP" ErrorMessage="Please enter a Mobile Number" />
+                        <%--<asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator16" ControlToValidate="txtMobileP" ErrorMessage="Please enter a Mobile Number" />--%>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtMobileP" Display="Dynamic" ErrorMessage="Invalid phone format" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
                     </td>
                     <td>
@@ -338,7 +350,7 @@
                             Business Telephone</label></td>
                     <td>
                         <asp:TextBox ID="txtBusinessP" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator17" ControlToValidate="txtBusinessP" ErrorMessage="Please enter a Business Number" />
+                        <%--<asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator17" ControlToValidate="txtBusinessP" ErrorMessage="Please enter a Business Number" />--%>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="txtBusinessP" Display="Dynamic" ErrorMessage="Invalid phone format" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
@@ -348,7 +360,7 @@
                             Home Telephone</label></td>
                     <td class="auto-style20">
                         <asp:TextBox ID="txtHomeP" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="txtMobileP" ErrorMessage="Please enter a Home Number"></asp:RequiredFieldValidator>
+                        <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="txtMobileP" ErrorMessage="Please enter a Home Number"></asp:RequiredFieldValidator>--%>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtHomeP" Display="Dynamic" ErrorMessage="Invalid phone format" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
                     </td>
                     <td>
@@ -356,7 +368,7 @@
                             Email</label></td>
                     <td>
                         <asp:TextBox ID="txtEmailP" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="txtEmailP" ErrorMessage="Please enter a Email"></asp:RequiredFieldValidator>
+                        <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="txtEmailP" ErrorMessage="Please enter a Email"></asp:RequiredFieldValidator>--%>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ControlToValidate="txtEmailP" Display="Dynamic" ErrorMessage="Invalid email format" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
@@ -370,7 +382,7 @@
                             <asp:ListItem>Email</asp:ListItem>
                             <asp:ListItem>Post</asp:ListItem>
                         </asp:DropDownList>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="ddCorrespondencePreferenceP" ErrorMessage="Please select a Correspondance Preference"></asp:RequiredFieldValidator>
+                        <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="ddCorrespondencePreferenceP" ErrorMessage="Please select a Correspondance Preference"></asp:RequiredFieldValidator>--%>
                     </td>
                     <td>
                         <label>
@@ -1157,30 +1169,36 @@
         <asp:WizardStep ID="WizardStepFinance" runat="server" Title="Financial Position">
             <table class="wizard-table">
                 <tr>
-                    <th colspan="2">Please capture the Client&#39;s and Partner&#39;s (if may be a business partner) Financial Details</th>
+                    <th colspan="3">Please capture the Client&#39;s and Partner&#39;s (if may be a business partner) Financial Details</th>
                 </tr>
                 <tr>
-                    <td>
-                        <label>Assets</label></td>
-                    <td class="auto-style10">
-                        <label><strong>Client Value ($)</strong></label></td>
-                    <td>
-                        <b>
-                            <label>
-                                Partner Value ($)</label></b></td>
-                    <td>
-                        <b>
-                            <label>
-                                Value if Joint ($)</label></b></td>
+                    <td>&nbsp;</td>
+                    <td class="auto-style23">&nbsp;</td>
+                    <td class="auto-style22">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 700">
+                        <label>
+                            Assets</label></td>
+                    <td class="auto-style23">
+                        <label>
+                            <strong>Client Value ($)</strong></label></td>
+                    <td class="auto-style22"><b>
+                        <label>
+                            Partner Value ($)</label></b></td>
+                    <td><b>
+                        <label>
+                            Value if Joint ($)</label></b></td>
                 </tr>
                 <tr>
                     <td>
                         <label>House/Domicile</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtHouse" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator24" runat="server" ControlToValidate="txtHouse" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtHouseP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator25" runat="server" ControlToValidate="txtHouseP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1192,11 +1210,11 @@
                 <tr>
                     <td>
                         <label>Contents</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtContents" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator27" runat="server" ControlToValidate="txtContents" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtContentsP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator28" runat="server" ControlToValidate="txtContentsP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1208,11 +1226,11 @@
                 <tr>
                     <td>
                         <label>Super Annuation Account</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtSuper" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator30" runat="server" ControlToValidate="txtSuper" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtSuperP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator31" runat="server" ControlToValidate="txtSuperP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1224,11 +1242,11 @@
                 <tr>
                     <td>
                         <label>Cash</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtCash" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator33" runat="server" ControlToValidate="txtCash" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtCashP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator34" runat="server" ControlToValidate="txtCashP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1240,11 +1258,11 @@
                 <tr>
                     <td>
                         <label>Shares</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtShares" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator36" runat="server" ControlToValidate="txtShares" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtSharesP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator37" runat="server" ControlToValidate="txtSharesP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1256,11 +1274,11 @@
                 <tr>
                     <td>
                         <label>Investment Properties</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtInvestmentProperties" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator39" runat="server" ControlToValidate="txtInvestmentProperties" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtInvestmentPropertiesP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator40" runat="server" ControlToValidate="txtInvestmentPropertiesP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1272,11 +1290,11 @@
                 <tr>
                     <td>
                         <label>Value of Business</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtBusinessValue" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator42" runat="server" ControlToValidate="txtBusinessValue" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtBusinessValueP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator43" runat="server" ControlToValidate="txtBusinessValueP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1288,11 +1306,11 @@
                 <tr>
                     <td>
                         <label>Potential Inheritance</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtPotentialInheritance" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator45" runat="server" ControlToValidate="txtPotentialInheritance" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtPotentialInheritanceP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator46" runat="server" ControlToValidate="txtPotentialInheritanceP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1302,11 +1320,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="font-weight: 700">
                         <label>Liabilities</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <label><strong>Client Value ($)</strong></label></td>
-                    <td>
+                    <td class="auto-style22">
                         <b>
                             <label>
                                 Partner Value ($)</label></b></td>
@@ -1318,11 +1336,11 @@
                 <tr>
                     <td>
                         <label>Mortgage</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtMortgage" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator48" runat="server" ControlToValidate="txtMortgage" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtMortgageP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator49" runat="server" ControlToValidate="txtMortgageP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1334,11 +1352,11 @@
                 <tr>
                     <td>
                         <label>Personal Loans</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtPersonalLoans" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator51" runat="server" ControlToValidate="txtPersonalLoans" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtPersonalLoansP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator52" runat="server" ControlToValidate="txtPersonalLoansP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1350,11 +1368,11 @@
                 <tr>
                     <td>
                         <label>Credit Card Debt</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtCreditCardDebt" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator54" runat="server" ControlToValidate="txtCreditCardDebt" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtCreditCardDebtP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator55" runat="server" ControlToValidate="txtCreditCardDebtP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1366,11 +1384,11 @@
                 <tr>
                     <td>
                         <label>Investment Loans</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtInvestmentLoans" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator57" runat="server" ControlToValidate="txtInvestmentLoans" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtInvestmentLoansP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator58" runat="server" ControlToValidate="txtInvestmentLoansP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1382,11 +1400,11 @@
                 <tr>
                     <td>
                         <label>Leases</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtLeases" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator60" runat="server" ControlToValidate="txtLeases" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtLeasesP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator61" runat="server" ControlToValidate="txtLeasesP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1398,11 +1416,11 @@
                 <tr>
                     <td>
                         <label>Business Debt</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtBusinessDebt" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator63" runat="server" ControlToValidate="txtBusinessDebt" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtBusinessDebtP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator64" runat="server" ControlToValidate="txtBusinessDebtP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1414,11 +1432,11 @@
                 <tr>
                     <td>
                         <label>Other Liabilities</label></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:TextBox ID="txtLiabilites" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator66" runat="server" ControlToValidate="txtLiabilites" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtLiabilitesP" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator67" runat="server" ControlToValidate="txtLiabilitesP" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
@@ -1428,11 +1446,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td style="font-weight: 700">
                         <label>Investment Income</label>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <label><strong>Other Income Details</strong></label></td>
-                    <td>
+                    <td class="auto-style22">
                         <b>
                             <label>
                                 Client ($ per Annum)</label></b></td>
@@ -1443,14 +1461,14 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td class="auto-style10">
+                    <td class="auto-style23">
                         <asp:DropDownList runat="server" ID="ddIncome">
                             <asp:ListItem>Rental Income</asp:ListItem>
                             <asp:ListItem>Dividends from Shares</asp:ListItem>
                             <asp:ListItem>Interest Income</asp:ListItem>
                             <asp:ListItem>Other Income</asp:ListItem>
                         </asp:DropDownList></td>
-                    <td>
+                    <td class="auto-style22">
                         <asp:TextBox ID="txtClientIncome" runat="server" />
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator69" runat="server" ControlToValidate="txtClientIncome" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     <td>

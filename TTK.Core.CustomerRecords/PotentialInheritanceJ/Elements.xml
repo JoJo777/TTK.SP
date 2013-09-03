@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e48c9056-6e79-44dd-8cbc-93ed2f6297d0}"
+       Name="PotentialInheritanceJ"
+       DisplayName="Potential Inheritance J"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

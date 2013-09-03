@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{87678a3d-2f3e-4ac6-b368-c9e3bc1d5efb}"
+       Name="MotherPDOB"
+       DisplayName="Mother PDOB"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{36666d60-8cdd-48c2-9b8d-501b742930d7}"
+       Name="CorrespondancePreferenceTTK"
+       DisplayName="Correspondance Preference"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

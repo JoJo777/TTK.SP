@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{dbc433d7-68c2-4f26-8d8b-d9ae6c9b1b91}"
+       Name="SisterHealth2"
+       DisplayName="Sister Health 2"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="10002">
+      <Receiver>
+        <Name>Customers2CustomerRecordItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>TTK.SP.CustomerRecordsEvents.Customers2CustomerRecord.Customers2CustomerRecord</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>Customers2CustomerRecordItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>TTK.SP.CustomerRecordsEvents.Customers2CustomerRecord.Customers2CustomerRecord</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

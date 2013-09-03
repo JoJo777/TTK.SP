@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7eff6ff9-0b81-4e4e-8f39-a90b2d58f64b}"
+       Name="DateCapturedTTK"
+       DisplayName="Date Captured"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

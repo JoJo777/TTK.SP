@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{bc0b11bd-8f5a-4553-bfdd-025d3e3fa0df}"
+       Name="BusinessDebtJ"
+       DisplayName="Business Debt J"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>
