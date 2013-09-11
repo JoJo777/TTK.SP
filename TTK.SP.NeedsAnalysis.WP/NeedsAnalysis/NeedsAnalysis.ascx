@@ -102,6 +102,9 @@
             <asp:ListItem>In Progress</asp:ListItem>
             <asp:ListItem>Complete</asp:ListItem>
         </asp:DropDownList></td>
+         <td colspan="1">
+             <asp:Label Visible="false" runat="server" ID="lbVersion"></asp:Label>
+         </td>
     </tr>
 </table>
 

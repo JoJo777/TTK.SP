@@ -44,6 +44,8 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.DropDownList ddUnderWritingRegister;
         
+        protected global::System.Web.UI.WebControls.Label lbVersion;
+        
         protected global::System.Web.UI.WebControls.TextBox txtFirstName;
         
         protected global::System.Web.UI.WebControls.TextBox txtLastName;
@@ -730,6 +732,17 @@ namespace TTK.SP.NeedsAnalysis.WP {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "ddUnderWritingRegister";
             this.@__BuildControl__control6(@__ctrl.Items);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.Label @__BuildControllbVersion() {
+            global::System.Web.UI.WebControls.Label @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Label();
+            this.lbVersion = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.Visible = false;
+            @__ctrl.ID = "lbVersion";
             return @__ctrl;
         }
         
@@ -9009,14 +9022,18 @@ namespace TTK.SP.NeedsAnalysis.WP {
             global::System.Web.UI.WebControls.DropDownList @__ctrl6;
             @__ctrl6 = this.@__BuildControlddUnderWritingRegister();
             @__parser.AddParsedSubObject(@__ctrl6);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n    </tr>\r\n</table>\r\n\r\n"));
-            global::System.Web.UI.WebControls.Wizard @__ctrl7;
-            @__ctrl7 = this.@__BuildControlwizNeeds();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n         <td colspan=\"1\">\r\n             "));
+            global::System.Web.UI.WebControls.Label @__ctrl7;
+            @__ctrl7 = this.@__BuildControllbVersion();
             @__parser.AddParsedSubObject(@__ctrl7);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n"));
-            global::System.Web.UI.WebControls.Label @__ctrl8;
-            @__ctrl8 = this.@__BuildControlErrorLabel();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n         </td>\r\n    </tr>\r\n</table>\r\n\r\n"));
+            global::System.Web.UI.WebControls.Wizard @__ctrl8;
+            @__ctrl8 = this.@__BuildControlwizNeeds();
             @__parser.AddParsedSubObject(@__ctrl8);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n"));
+            global::System.Web.UI.WebControls.Label @__ctrl9;
+            @__ctrl9 = this.@__BuildControlErrorLabel();
+            @__parser.AddParsedSubObject(@__ctrl9);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n\r\n"));
         }
         
