@@ -5,8 +5,7 @@
 <%@ Register TagPrefix="asp" Namespace="System.Web.UI" Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" %>
 <%@ Import Namespace="Microsoft.SharePoint" %>
 <%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NeedsAnalysis.ascx.cs" Inherits="TTK.SP.NeedsAnalysis.WP.NeedsAnalysis" %>
-
+<%@ Control  EnableViewState="true" Language="C#" AutoEventWireup="true" CodeBehind="NeedsAnalysis.ascx.cs" Inherits="TTK.SP.NeedsAnalysis.WP.NeedsAnalysis" %>
 
 
 <style type="text/css">
@@ -65,18 +64,20 @@
     .auto-style23 {
         width: 265px;
     }
+
     .auto-style24 {
         font-weight: bold;
     }
 </style>
 
 
-<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+<asp:UpdatePanel ID="UpdatePanel1" EnableViewState="true" runat="server">
 </asp:UpdatePanel>
 
 <script type="text/javascript" src="/_layouts/datepicker.js"></script>
 
 <asp:PlaceHolder ID="phForLiteral" runat="server"></asp:PlaceHolder>
+
 
 <table>
     <tr>
@@ -86,9 +87,9 @@
         </td>
         <td colspan="1">
             <b>
-            <label>
-                Date:
-            </label>
+                <label>
+                    Date:
+                </label>
             </b>
             <asp:Label runat="server" ID="lbDateCaptured"></asp:Label>
         </td>
@@ -102,13 +103,13 @@
             <asp:ListItem>In Progress</asp:ListItem>
             <asp:ListItem>Complete</asp:ListItem>
         </asp:DropDownList></td>
-         <td colspan="1">
-             <asp:Label Visible="false" runat="server" ID="lbVersion"></asp:Label>
-         </td>
+        <td colspan="1">
+            <asp:Label Visible="false" runat="server" ID="lbVersion"></asp:Label>
+        </td>
     </tr>
 </table>
 
-<asp:Wizard ID="wizNeeds" runat="server" ActiveStepIndex="0" OnNextButtonClick="wizNeeds_NextButtonClick" BackColor="White" BorderColor="#CE244A" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" OnFinishButtonClick="wizNeeds_FinishButtonClick">
+<asp:Wizard ID="wizNeeds" EnableViewState="true" runat="server" ActiveStepIndex="0" OnNextButtonClick="wizNeeds_NextButtonClick" BackColor="White" BorderColor="#CE244A" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" OnFinishButtonClick="wizNeeds_FinishButtonClick">
     <FinishNavigationTemplate>
         <asp:Button ID="FinishPreviousButton" runat="server" BackColor="White" BorderColor="#C5BBAF" BorderStyle="Solid" BorderWidth="1px" CausesValidation="False" CommandName="MovePrevious" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#1C5E55" Text="Previous" />
         <asp:Button ID="FinishButton" runat="server" BackColor="White" BorderColor="#C5BBAF" BorderStyle="Solid" BorderWidth="1px" CommandName="MoveComplete" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#1C5E55" Text="Finish" />
@@ -119,7 +120,7 @@
     <SideBarStyle BackColor="#ce244a" Font-Size="1.2em" VerticalAlign="Top" Width="250px" />
     <StepStyle BackColor="White" BorderColor="#E6E2D8" BorderStyle="Solid" BorderWidth="2px" />
     <WizardSteps>
-        <asp:WizardStep ID="WizardStepPersonal" runat="server" StepType="Start" Title="Personal">
+        <asp:WizardStep ID="WizardStepPersonal" EnableViewState="true"  runat="server" StepType="Start" Title="Personal">
             <table class="wizard-table">
                 <tr>
                     <th colspan="2">Please capture the Client's Personal Data</th>
@@ -272,7 +273,7 @@
                 </tr>
             </table>
         </asp:WizardStep>
-        <asp:WizardStep ID="WizardStepPartner" runat="server" Title="Partner">
+        <asp:WizardStep ID="WizardStepPartner" EnableViewState="true"  runat="server" Title="Partner">
             <table class="wizard-table">
                 <tr>
                     <th colspan="2">Please capture the Partner's Personal Data</th>
@@ -429,7 +430,7 @@
                 </tr>
             </table>
         </asp:WizardStep>
-        <asp:WizardStep ID="WizardStepClientFamilyDetails" runat="server" Title="Client Family Details">
+        <asp:WizardStep ID="WizardStepClientFamilyDetails" EnableViewState="true"  runat="server" Title="Client Family Details">
             <table class="wizard-table">
                 <tr>
                     <th colspan="2">Please capture the Client's Families Data</th>
@@ -447,7 +448,7 @@
                     <td valign="top">
                         <asp:TextBox ID="txtFather" runat="server"></asp:TextBox></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calFather" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <SharePoint:DateTimeControl ID="calFather" runat="server" DateOnly="true" LocaleId="3081" SelectedDate="09/12/2013 23:54:17" />
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbFatherHealth" runat="server" RepeatColumns="2">
@@ -1599,5 +1600,10 @@
 </asp:Wizard>
 
 <asp:Label runat="server" ID="ErrorLabel" Visible="false"></asp:Label>
+
+
+
+
+
 
 

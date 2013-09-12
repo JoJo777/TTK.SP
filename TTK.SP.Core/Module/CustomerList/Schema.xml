@@ -818,7 +818,6 @@
           <FieldRef Name="RACV" />
           <FieldRef Name="Solicitor" />
           <FieldRef Name="Accountant" />
-          <FieldRef Name="CustomerStatus" />
           <FieldRef Name="FirstNameP" />
           <FieldRef Name="DoBP" />
           <FieldRef Name="MobileP" />
@@ -1017,7 +1016,6 @@
           <FieldRef Name="Home" />
           <FieldRef Name="Business" />
           <FieldRef Name="Mobile" />
-          <FieldRef Name="CustomerStatus" />
           <FieldRef Name="NewBusinessRegister" />
           <FieldRef Name="UnderwritingRegister" />
           <FieldRef Name="FirstLetter" />

@@ -607,6 +607,7 @@ namespace TTK.SP.NeedsAnalysis.WP {
             @__ctrl = new global::System.Web.UI.UpdatePanel();
             this.UpdatePanel1 = @__ctrl;
             @__ctrl.ID = "UpdatePanel1";
+            @__ctrl.EnableViewState = true;
             return @__ctrl;
         }
         
@@ -1384,6 +1385,7 @@ namespace TTK.SP.NeedsAnalysis.WP {
             @__ctrl = new global::System.Web.UI.WebControls.WizardStep();
             this.WizardStepPersonal = @__ctrl;
             @__ctrl.ID = "WizardStepPersonal";
+            @__ctrl.EnableViewState = true;
             @__ctrl.StepType = System.Web.UI.WebControls.WizardStepType.Start;
             @__ctrl.Title = "Personal";
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
@@ -1969,6 +1971,7 @@ namespace TTK.SP.NeedsAnalysis.WP {
             @__ctrl = new global::System.Web.UI.WebControls.WizardStep();
             this.WizardStepPartner = @__ctrl;
             @__ctrl.ID = "WizardStepPartner";
+            @__ctrl.EnableViewState = true;
             @__ctrl.Title = "Partner";
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
@@ -2171,8 +2174,8 @@ namespace TTK.SP.NeedsAnalysis.WP {
             this.calFather = @__ctrl;
             @__ctrl.ID = "calFather";
             @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
             @__ctrl.LocaleId = 3081;
+            @__ctrl.SelectedDate = new System.DateTime(2013, 9, 12, 23, 54, 17, 0);
             return @__ctrl;
         }
         
@@ -3180,6 +3183,7 @@ namespace TTK.SP.NeedsAnalysis.WP {
             @__ctrl = new global::System.Web.UI.WebControls.WizardStep();
             this.WizardStepClientFamilyDetails = @__ctrl;
             @__ctrl.ID = "WizardStepClientFamilyDetails";
+            @__ctrl.EnableViewState = true;
             @__ctrl.Title = "Client Family Details";
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
@@ -8895,6 +8899,7 @@ namespace TTK.SP.NeedsAnalysis.WP {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.FinishNavigationTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control10));
             @__ctrl.ID = "wizNeeds";
+            @__ctrl.EnableViewState = true;
             @__ctrl.ActiveStepIndex = 0;
             @__ctrl.BackColor = System.Drawing.Color.White;
             @__ctrl.BorderColor = ((System.Drawing.Color)(System.Drawing.Color.FromArgb(206, 36, 74)));
@@ -8929,9 +8934,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         private void @__BuildControlTree(global::TTK.SP.NeedsAnalysis.WP.NeedsAnalysis @__ctrl) {
+            @__ctrl.EnableViewState = true;
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
-
 
 
 <style type=""text/css"">
@@ -8990,6 +8995,7 @@ namespace TTK.SP.NeedsAnalysis.WP {
     .auto-style23 {
         width: 265px;
     }
+
     .auto-style24 {
         font-weight: bold;
     }
@@ -9004,13 +9010,14 @@ namespace TTK.SP.NeedsAnalysis.WP {
             global::System.Web.UI.WebControls.PlaceHolder @__ctrl2;
             @__ctrl2 = this.@__BuildControlphForLiteral();
             @__parser.AddParsedSubObject(@__ctrl2);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n<table>\r\n    <tr>\r\n        <td colspan=\"1\" class=\"auto-style24\">\r\n           " +
-                        " <label>Referrer:</label>\r\n            "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n\r\n<table>\r\n    <tr>\r\n        <td colspan=\"1\" class=\"auto-style24\">\r\n         " +
+                        "   <label>Referrer:</label>\r\n            "));
             global::System.Web.UI.WebControls.TextBox @__ctrl3;
             @__ctrl3 = this.@__BuildControltxtReferrer();
             @__parser.AddParsedSubObject(@__ctrl3);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n        <td colspan=\"1\">\r\n            <b>\r\n            <label>\r\n" +
-                        "                Date:\r\n            </label>\r\n            </b>\r\n            "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n        <td colspan=\"1\">\r\n            <b>\r\n                <labe" +
+                        "l>\r\n                    Date:\r\n                </label>\r\n            </b>\r\n     " +
+                        "       "));
             global::System.Web.UI.WebControls.Label @__ctrl4;
             @__ctrl4 = this.@__BuildControllbDateCaptured();
             @__parser.AddParsedSubObject(@__ctrl4);
@@ -9022,11 +9029,11 @@ namespace TTK.SP.NeedsAnalysis.WP {
             global::System.Web.UI.WebControls.DropDownList @__ctrl6;
             @__ctrl6 = this.@__BuildControlddUnderWritingRegister();
             @__parser.AddParsedSubObject(@__ctrl6);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n         <td colspan=\"1\">\r\n             "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n        <td colspan=\"1\">\r\n            "));
             global::System.Web.UI.WebControls.Label @__ctrl7;
             @__ctrl7 = this.@__BuildControllbVersion();
             @__parser.AddParsedSubObject(@__ctrl7);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n         </td>\r\n    </tr>\r\n</table>\r\n\r\n"));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n    </tr>\r\n</table>\r\n\r\n"));
             global::System.Web.UI.WebControls.Wizard @__ctrl8;
             @__ctrl8 = this.@__BuildControlwizNeeds();
             @__parser.AddParsedSubObject(@__ctrl8);
@@ -9034,7 +9041,7 @@ namespace TTK.SP.NeedsAnalysis.WP {
             global::System.Web.UI.WebControls.Label @__ctrl9;
             @__ctrl9 = this.@__BuildControlErrorLabel();
             @__parser.AddParsedSubObject(@__ctrl9);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n\r\n"));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"));
         }
         
         private void InitializeControl() {

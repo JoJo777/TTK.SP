@@ -46,6 +46,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!Page.IsPostBack)
             {
                 SetDates();
@@ -106,7 +107,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
             txtFirstName.Text = GetEmptyStringIfNull(customerListItem["FirstName"]);
 
-            calDOB.SelectedDate =  Convert.ToDateTime( GetEmptyStringIfNull(customerListItem["DoB"]).ToString(), australiaCulture);
+            calDOB.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["DoB"]).ToString(), australiaCulture); ;
 
             ddGender.SelectedValue = customerListItem["Gender"].ToString();
 
@@ -155,61 +156,64 @@ namespace TTK.SP.NeedsAnalysis.WP
 
             //tab3
             txtFather.Text = GetEmptyStringIfNull(customerListItem["Father"]);
-            calFather.SelectedDate = (DateTime)customerListItem["FatherDOB"];
+
+            calFather.ClearSelection();
+            calFather.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["FatherDOB"]).ToString(), australiaCulture);
+
             SetCheckBoxValues(cbFatherHealth, customerListItem["FatherHealth"]);
 
             txtMother.Text = GetEmptyStringIfNull(customerListItem["Mother"]);
-            calMother.SelectedDate = (DateTime)customerListItem["MotherDOB"];
+            calMother.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["MotherDOB"]).ToString(), australiaCulture);
             SetCheckBoxValues(cbMotherHealth, customerListItem["MotherHealth"]);
 
             txtBrother.Text = GetEmptyStringIfNull(customerListItem["Brother"]);
-            calBrother.SelectedDate = (DateTime)customerListItem["BrotherDOB"];
+            calBrother.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["BrotherDOB"]).ToString(), australiaCulture);
             SetCheckBoxValues(cbBrotherHealth, customerListItem["BrotherHealth"]);
 
             txtBrother2.Text = GetEmptyStringIfNull(customerListItem["Brother2"]);
-            calBrother2.SelectedDate = (DateTime)customerListItem["Brother2DOB"];
+            calBrother2.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["Brother2DOB"]).ToString(), australiaCulture);
             SetCheckBoxValues(cbBrotherHealth2, customerListItem["BrotherHealth2"]);
 
             txtSister.Text = GetEmptyStringIfNull(customerListItem["Sister"]);
-            calSister.SelectedDate = (DateTime)customerListItem["SisterDOB"];
+            calSister.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["SisterDOB"]).ToString(), australiaCulture);
             SetCheckBoxValues(cbSisterHealth, customerListItem["SisterHealth"]);
 
             txtSister2.Text = GetEmptyStringIfNull(customerListItem["Sister2"]);
-            calSister2.SelectedDate = (DateTime)customerListItem["SisterDOB2"];
+            calSister2.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["SisterDOB2"]).ToString(), australiaCulture);
             SetCheckBoxValues(cbSisterHealth2, customerListItem["SisterHealth2"]);
 
             //tab4
             if (IsPartnerActive())
             {
                 txtFatherP.Text = GetEmptyStringIfNull(customerListItem["FatherP"]);
-                calFatherP.SelectedDate = (DateTime)customerListItem["FatherPDOB"];
+                calFatherP.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["FatherPDOB"]).ToString(), australiaCulture);
                 SetCheckBoxValues(cbFatherHealthP, customerListItem["FatherHealthP"]);
 
                 txtMotherP.Text = GetEmptyStringIfNull(customerListItem["MotherP"]);
-                calMotherP.SelectedDate = (DateTime)customerListItem["MotherPDOB"];
+                calMotherP.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["MotherPDOB"]).ToString(), australiaCulture);
                 SetCheckBoxValues(cbMotherHealthP, customerListItem["MotherHealthP"]);
 
                 txtBrotherP.Text = GetEmptyStringIfNull(customerListItem["BrotherP"]);
-                calBrotherP.SelectedDate = (DateTime)customerListItem["BrotherPDOB"];
+                calBrotherP.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["BrotherPDOB"]).ToString(), australiaCulture);
                 SetCheckBoxValues(cbBrotherHealthP, customerListItem["BrotherHealthP"]);
 
                 txtBrother2P.Text = GetEmptyStringIfNull(customerListItem["Brother2P"]);
-                calBrother2P.SelectedDate = (DateTime)customerListItem["Brother2PDOB"];
+                calBrother2P.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["Brother2PDOB"]).ToString(), australiaCulture);
                 SetCheckBoxValues(cbBrotherHealth2P, customerListItem["BrotherHealth2P"]);
 
                 txtSisterP.Text = GetEmptyStringIfNull(customerListItem["SisterP"]);
-                calSisterP.SelectedDate = (DateTime)customerListItem["SisterPDOB"];
+                calSisterP.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["SisterPDOB"]).ToString(), australiaCulture);
                 SetCheckBoxValues(cbSisterHealthP, customerListItem["SisterHealthP"]);
 
                 txtSister2P.Text = GetEmptyStringIfNull(customerListItem["Sister2P"]);
-                calSister2P.SelectedDate = (DateTime)customerListItem["Sister2PDOB"];
+                calSister2P.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["Sister2PDOB"]).ToString(), australiaCulture);
                 SetCheckBoxValues(cbSisterHealth2P, customerListItem["SisterHealth2P"]);
             }
 
             //tab5 dependant details
             txtDependantsFirst1.Text = GetEmptyStringIfNull(customerListItem["DependantsFirst1"]);
             txtDependantsSurName1.Text = GetEmptyStringIfNull(customerListItem["DependantsSurName1"]);
-            calDependants1.SelectedDate = (DateTime)customerListItem["Dependants1"];
+            calDependants1.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["Dependants1"]).ToString(), australiaCulture); 
             ddRelation1.SelectedValue = GetEmptyStringIfNull(customerListItem["Relation1"]);
             txtDependantsEducationOccupationLevel1.Text = GetEmptyStringIfNull(customerListItem["DependantsEducationOccupationLevel1"]);
             txtDependantsSchoolUniversity1.Text = GetEmptyStringIfNull(customerListItem["DependantsSchoolUniversity1"]);
@@ -217,7 +221,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
             txtDependantsFirst2.Text = GetEmptyStringIfNull(customerListItem["DependantsFirst2"]);
             txtDependantsSurName2.Text = GetEmptyStringIfNull(customerListItem["DependantsSurName2"]);
-            calDependants2.SelectedDate = (DateTime)customerListItem["Dependants2"];
+            calDependants2.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["Dependants2"]).ToString(), australiaCulture); 
             ddRelation2.SelectedValue = GetEmptyStringIfNull(customerListItem["Relation2"]);
             txtDependantsEducationOccupationLevel2.Text = GetEmptyStringIfNull(customerListItem["DependantsEducationOccupationLevel2"]);
             txtDependantsSchoolUniversity2.Text = GetEmptyStringIfNull(customerListItem["DependantsSchoolUniversity2"]);
@@ -225,7 +229,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
             txtDependantsFirst3.Text = GetEmptyStringIfNull(customerListItem["DependantsFirst3"]);
             txtDependantsSurName3.Text = GetEmptyStringIfNull(customerListItem["DependantsSurName3"]);
-            calDependants3.SelectedDate = (DateTime)customerListItem["Dependants3"];
+            calDependants3.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["Dependants3"]).ToString(), australiaCulture);
             ddRelation3.SelectedValue = GetEmptyStringIfNull(customerListItem["Relation3"]);
             txtDependantsEducationOccupationLevel3.Text = GetEmptyStringIfNull(customerListItem["DependantsEducationOccupationLevel3"]);
             txtDependantsSchoolUniversity3.Text = GetEmptyStringIfNull(customerListItem["DependantsSchoolUniversity3"]);
@@ -233,7 +237,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
             txtDependantsFirst4.Text = GetEmptyStringIfNull(customerListItem["DependantsFirst4"]);
             txtDependantsSurName4.Text = GetEmptyStringIfNull(customerListItem["DependantsSurName4"]);
-            calDependants4.SelectedDate = (DateTime)customerListItem["Dependants4"];
+            calDependants4.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["Dependants4"]).ToString(), australiaCulture); 
             ddRelation4.SelectedValue = GetEmptyStringIfNull(customerListItem["Relation4"]);
             txtDependantsEducationOccupationLevel4.Text = GetEmptyStringIfNull(customerListItem["DependantsEducationOccupationLevel4"]);
             txtDependantsSchoolUniversity4.Text = GetEmptyStringIfNull(customerListItem["DependantsSchoolUniversity4"]);
@@ -241,7 +245,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
             txtDependantsFirst5.Text = GetEmptyStringIfNull(customerListItem["DependantsFirst5"]);
             txtDependantsSurName5.Text = GetEmptyStringIfNull(customerListItem["DependantsSurName5"]);
-            calDependants5.SelectedDate = (DateTime)customerListItem["Dependants5"];
+            calDependants5.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["Dependants5"]).ToString(), australiaCulture);
             ddRelation5.SelectedValue = GetEmptyStringIfNull(customerListItem["Relation5"]);
             txtDependantsEducationOccupationLevel5.Text = GetEmptyStringIfNull(customerListItem["DependantsEducationOccupationLevel5"]);
             txtDependantsSchoolUniversity5.Text = GetEmptyStringIfNull(customerListItem["DependantsSchoolUniversity5"]);
@@ -885,26 +889,26 @@ namespace TTK.SP.NeedsAnalysis.WP
 
         private void SetDates()
         {
-            calDOB.SelectedDate = DateTime.Now;
-            calDOBP.SelectedDate = DateTime.Now;
-            calBrother.SelectedDate = DateTime.Now;
-            calBrother2.SelectedDate = DateTime.Now;
-            calBrotherP.SelectedDate = DateTime.Now;
-            calBrother2P.SelectedDate = DateTime.Now;
-            calDependants1.SelectedDate = DateTime.Now;
-            calDependants2.SelectedDate = DateTime.Now;
-            calDependants2.SelectedDate = DateTime.Now;
-            calDependants3.SelectedDate = DateTime.Now;
-            calDependants4.SelectedDate = DateTime.Now;
-            calDependants5.SelectedDate = DateTime.Now;
-            calFather.SelectedDate = DateTime.Now;
-            calFatherP.SelectedDate = DateTime.Now;
-            calMother.SelectedDate = DateTime.Now;
-            calMotherP.SelectedDate = DateTime.Now;
-            calSister.SelectedDate = DateTime.Now;
-            calSister2.SelectedDate = DateTime.Now;
-            calSister2P.SelectedDate = DateTime.Now;
-            calSisterP.SelectedDate = DateTime.Now;
+            calDOB.SelectedDate = DateTime.Now.Date;
+            calDOBP.SelectedDate = DateTime.Now.Date;
+            calBrother.SelectedDate = DateTime.Now.Date;
+            calBrother2.SelectedDate = DateTime.Now.Date;
+            calBrotherP.SelectedDate = DateTime.Now.Date;
+            calBrother2P.SelectedDate = DateTime.Now.Date;
+            calDependants1.SelectedDate = DateTime.Now.Date;
+            calDependants2.SelectedDate = DateTime.Now.Date;
+            calDependants2.SelectedDate = DateTime.Now.Date;
+            calDependants3.SelectedDate = DateTime.Now.Date;
+            calDependants4.SelectedDate = DateTime.Now.Date;
+            calDependants5.SelectedDate = DateTime.Now.Date;
+            calFather.SelectedDate = DateTime.Now.Date;
+            calFatherP.SelectedDate = DateTime.Now.Date;
+            calMother.SelectedDate = DateTime.Now.Date;
+            calMotherP.SelectedDate = DateTime.Now.Date;
+            calSister.SelectedDate = DateTime.Now.Date;
+            calSister2.SelectedDate = DateTime.Now.Date;
+            calSister2P.SelectedDate = DateTime.Now.Date;
+            calSisterP.SelectedDate = DateTime.Now.Date;
         }
 
         protected void wizNeeds_NextButtonClick(object sender, System.Web.UI.WebControls.WizardNavigationEventArgs e)
@@ -1173,7 +1177,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
                     item["FirstName"] = txtFirstName.Text;
 
-                    item["DoB"] = calDOB.SelectedDate.ToString("dd-MM-yyyy");
+                    item["DoB"] = calDOB.SelectedDate.Date;
                     item["Gender"] = ddGender.SelectedValue;
 
                     item["MaritalStatus"] = ddMarital.SelectedValue;
@@ -1197,7 +1201,7 @@ namespace TTK.SP.NeedsAnalysis.WP
                         item["SurNameP"] = txtSurNameP.Text;
                         item["FirstNameP"] = txtFirstNameP.Text;
 
-                        item["DoBP"] = calDOBP.SelectedDate.ToString("dd-MM-yyyy");
+                        item["DoBP"] = calDOBP.SelectedDate.Date;
                         item["GenderP"] = ddGenderP.SelectedValue;
 
                         item["MaritalStatusP"] = ddMaritalP.SelectedValue;
@@ -1219,61 +1223,61 @@ namespace TTK.SP.NeedsAnalysis.WP
 
                     //tab3
                     item["Father"] = txtFather.Text;
-                    item["FatherDOB"] = calFather.SelectedDate;
+                    item["FatherDOB"] = calFather.SelectedDate.Date;
                     item["FatherHealth"] = GetSPListItemsFromCheckBoxes(cbFatherHealth);
 
                     item["Mother"] = txtMother.Text;
-                    item["MotherDOB"] = calMother.SelectedDate;
+                    item["MotherDOB"] = calMother.SelectedDate.Date;
                     item["MotherHealth"] = GetSPListItemsFromCheckBoxes(cbMotherHealth);
 
                     item["Brother"] = txtBrother.Text;
-                    item["BrotherDOB"] = calBrother.SelectedDate;
+                    item["BrotherDOB"] = calBrother.SelectedDate.Date;
                     item["BrotherHealth"] = GetSPListItemsFromCheckBoxes(cbBrotherHealth);
 
                     item["Brother2"] = txtBrother2.Text;
-                    item["Brother2DOB"] = calBrother2.SelectedDate;
+                    item["Brother2DOB"] = calBrother2.SelectedDate.Date;
                     item["BrotherHealth2"] = GetSPListItemsFromCheckBoxes(cbBrotherHealth2);
 
                     item["Sister"] = txtSister.Text;
-                    item["SisterDOB"] = calSister.SelectedDate;
+                    item["SisterDOB"] = calSister.SelectedDate.Date;
                     item["SisterHealth"] = GetSPListItemsFromCheckBoxes(cbSisterHealth);
 
                     item["Sister2"] = txtSister2.Text;
-                    item["SisterDOB2"] = calSister2.SelectedDate;
+                    item["SisterDOB2"] = calSister2.SelectedDate.Date;
                     item["SisterHealth2"] = GetSPListItemsFromCheckBoxes(cbSisterHealth2);
 
                     //tab4
                     if (IsPartnerActive())
                     {
                         item["FatherP"] = txtFatherP.Text;
-                        item["FatherPDOB"] = calFatherP.SelectedDate;
+                        item["FatherPDOB"] = calFatherP.SelectedDate.Date;
                         item["FatherHealthP"] = GetSPListItemsFromCheckBoxes(cbFatherHealthP);
 
                         item["MotherP"] = txtMotherP.Text;
-                        item["MotherPDOB"] = calMotherP.SelectedDate;
+                        item["MotherPDOB"] = calMotherP.SelectedDate.Date;
                         item["MotherHealthP"] = GetSPListItemsFromCheckBoxes(cbMotherHealthP);
 
                         item["BrotherP"] = txtBrotherP.Text;
-                        item["BrotherPDOB"] = calBrotherP.SelectedDate;
+                        item["BrotherPDOB"] = calBrotherP.SelectedDate.Date;
                         item["BrotherHealthP"] = GetSPListItemsFromCheckBoxes(cbBrotherHealthP);
 
                         item["Brother2P"] = txtBrother2P.Text;
-                        item["Brother2PDOB"] = calBrother2P.SelectedDate;
+                        item["Brother2PDOB"] = calBrother2P.SelectedDate.Date;
                         item["BrotherHealth2P"] = GetSPListItemsFromCheckBoxes(cbBrotherHealth2P);
 
                         item["SisterP"] = txtSisterP.Text;
-                        item["SisterPDOB"] = calSisterP.SelectedDate;
+                        item["SisterPDOB"] = calSisterP.SelectedDate.Date;
                         item["SisterHealthP"] = GetSPListItemsFromCheckBoxes(cbSisterHealthP);
 
                         item["Sister2P"] = txtSister2P.Text;
-                        item["Sister2PDOB"] = calSister2P.SelectedDate;
+                        item["Sister2PDOB"] = calSister2P.SelectedDate.Date;
                         item["SisterHealth2P"] = GetSPListItemsFromCheckBoxes(cbSisterHealth2P);
                     }
 
                     //tab5 dependant details
                     item["DependantsFirst1"] = txtDependantsFirst1.Text;
                     item["DependantsSurName1"] = txtDependantsSurName1.Text;
-                    item["Dependants1"] = calDependants1.SelectedDate;
+                    item["Dependants1"] = calDependants1.SelectedDate.Date;
                     item["Relation1"] = ddRelation1.SelectedValue;
                     item["DependantsEducationOccupationLevel1"] = txtDependantsEducationOccupationLevel1.Text;
                     item["DependantsSchoolUniversity1"] = txtDependantsSchoolUniversity1.Text;
@@ -1281,7 +1285,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
                     item["DependantsFirst2"] = txtDependantsFirst2.Text;
                     item["DependantsSurName2"] = txtDependantsSurName2.Text;
-                    item["Dependants2"] = calDependants2.SelectedDate;
+                    item["Dependants2"] = calDependants2.SelectedDate.Date;
                     item["Relation2"] = ddRelation2.SelectedValue;
                     item["DependantsEducationOccupationLevel2"] = txtDependantsEducationOccupationLevel2.Text;
                     item["DependantsSchoolUniversity2"] = txtDependantsSchoolUniversity2.Text;
@@ -1289,7 +1293,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
                     item["DependantsFirst3"] = txtDependantsFirst3.Text;
                     item["DependantsSurName3"] = txtDependantsSurName3.Text;
-                    item["Dependants3"] = calDependants3.SelectedDate;
+                    item["Dependants3"] = calDependants3.SelectedDate.Date;
                     item["Relation3"] = ddRelation3.SelectedValue;
                     item["DependantsEducationOccupationLevel3"] = txtDependantsEducationOccupationLevel3.Text;
                     item["DependantsSchoolUniversity3"] = txtDependantsSchoolUniversity3.Text;
@@ -1297,7 +1301,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
                     item["DependantsFirst4"] = txtDependantsFirst4.Text;
                     item["DependantsSurName4"] = txtDependantsSurName4.Text;
-                    item["Dependants4"] = calDependants4.SelectedDate;
+                    item["Dependants4"] = calDependants4.SelectedDate.Date;
                     item["Relation4"] = ddRelation4.SelectedValue;
                     item["DependantsEducationOccupationLevel4"] = txtDependantsEducationOccupationLevel4.Text;
                     item["DependantsSchoolUniversity4"] = txtDependantsSchoolUniversity4.Text;
@@ -1305,7 +1309,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
                     item["DependantsFirst5"] = txtDependantsFirst5.Text;
                     item["DependantsSurName5"] = txtDependantsSurName5.Text;
-                    item["Dependants5"] = calDependants5.SelectedDate;
+                    item["Dependants5"] = calDependants5.SelectedDate.Date;
                     item["Relation5"] = ddRelation5.SelectedValue;
                     item["DependantsEducationOccupationLevel5"] = txtDependantsEducationOccupationLevel5.Text;
                     item["DependantsSchoolUniversity5"] = txtDependantsSchoolUniversity5.Text;
@@ -1434,7 +1438,7 @@ namespace TTK.SP.NeedsAnalysis.WP
             if (((DateTime)item["DateCaptured"]).ToString("dd-MM-yyyy") != lbDateCaptured.Text)
                 return true;
 
-            if (item["Referrer"].ToString() != txtReferrer.Text)
+            if (GetEmptyStringIfNull(item["Referrer"]) != txtReferrer.Text)
                 return true;
 
             //Tab1
@@ -1450,7 +1454,7 @@ namespace TTK.SP.NeedsAnalysis.WP
             if (GetEmptyStringIfNull(item["FirstName"]) != txtFirstName.Text)
                 return true;
 
-            if (((DateTime)item["DoB"]).ToString("dd-MM-yyyy") != calDOB.SelectedDate.ToString("dd-MM-yyyy"))
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["DoB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calDOB.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
 
             if (GetEmptyStringIfNull(item["Gender"]) != ddGender.SelectedValue)
@@ -1493,8 +1497,9 @@ namespace TTK.SP.NeedsAnalysis.WP
                 if (GetEmptyStringIfNull(item["FirstNameP"]) != txtFirstNameP.Text)
                     return true;
 
-                if (((DateTime)item["DoBP"]).ToString("dd-MM-yyyy") != calDOBP.SelectedDate.ToString("dd-MM-yyyy"))
+                if (Convert.ToDateTime(GetEmptyStringIfNull(item["DoBP"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calDOBP.SelectedDate.ToString("dd-MM-yyyy"))
                     return true;
+
                 if (GetEmptyStringIfNull(item["GenderP"]) != ddGenderP.SelectedValue)
                     return true;
 
@@ -1531,43 +1536,55 @@ namespace TTK.SP.NeedsAnalysis.WP
             //tab3
             if (GetEmptyStringIfNull(item["Father"]) != txtFather.Text)
                 return true;
-            if (((DateTime)item["FatherDOB"]).ToString("dd-MM-yyyy") != calFather.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["FatherDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calFather.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["FatherHealth"]) != GetSPListItemsFromCheckBoxes(cbFatherHealth).ToString())
                 return true;
 
             if (GetEmptyStringIfNull(item["Mother"]) != txtMother.Text)
                 return true;
-            if (((DateTime)item["MotherDOB"]).ToString("dd-MM-yyyy") != calMother.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["MotherDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calMother.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["MotherHealth"]) != GetSPListItemsFromCheckBoxes(cbMotherHealth).ToString())
                 return true;
 
             if (GetEmptyStringIfNull(item["Brother"]) != txtBrother.Text)
                 return true;
-            if (((DateTime)item["BrotherDOB"]).ToString("dd-MM-yyyy") != calBrother.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["BrotherDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calBrother.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["BrotherHealth"]) != GetSPListItemsFromCheckBoxes(cbBrotherHealth).ToString())
                 return true;
 
             if (GetEmptyStringIfNull(item["Brother2"]) != txtBrother2.Text)
                 return true;
-            if (((DateTime)item["Brother2DOB"]).ToString("dd-MM-yyyy") != calBrother2.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["Brother2DOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calBrother2.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["BrotherHealth2"]) != GetSPListItemsFromCheckBoxes(cbBrotherHealth2).ToString())
                 return true;
 
             if (GetEmptyStringIfNull(item["Sister"]) != txtSister.Text)
                 return true;
-            if (((DateTime)item["SisterDOB"]).ToString("dd-MM-yyyy") != calSister.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["SisterDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calSister.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["SisterHealth"]) != GetSPListItemsFromCheckBoxes(cbSisterHealth).ToString())
                 return true;
 
             if (GetEmptyStringIfNull(item["Sister2"]) != txtSister2.Text)
                 return true;
-            if (((DateTime)item["SisterDOB2"]).ToString("dd-MM-yyyy") != calSister2.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["SisterDOB2"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calSister2.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["SisterHealth2"]) != GetSPListItemsFromCheckBoxes(cbSisterHealth2).ToString())
                 return true;
 
@@ -1575,43 +1592,56 @@ namespace TTK.SP.NeedsAnalysis.WP
             {
                 if (GetEmptyStringIfNull(item["FatherP"]) != txtFatherP.Text)
                     return true;
-                if (((DateTime)item["FatherPDOB"]).ToString("dd-MM-yyyy") != calFatherP.SelectedDate.ToString("dd-MM-yyyy"))
+
+
+                if (Convert.ToDateTime(GetEmptyStringIfNull(item["FatherPDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calFatherP.SelectedDate.ToString("dd-MM-yyyy"))
                     return true;
+
                 if (GetEmptyStringIfNull(item["FatherHealthP"]) != GetSPListItemsFromCheckBoxes(cbFatherHealthP).ToString())
                     return true;
 
                 if (GetEmptyStringIfNull(item["MotherP"]) != txtMotherP.Text)
                     return true;
-                if (((DateTime)item["MotherPDOB"]).ToString("dd-MM-yyyy") != calMotherP.SelectedDate.ToString("dd-MM-yyyy"))
+
+                if (Convert.ToDateTime(GetEmptyStringIfNull(item["MotherPDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calMotherP.SelectedDate.ToString("dd-MM-yyyy"))
                     return true;
+
                 if (GetEmptyStringIfNull(item["MotherHealthP"]) != GetSPListItemsFromCheckBoxes(cbMotherHealthP).ToString())
                     return true;
 
                 if (GetEmptyStringIfNull(item["BrotherP"]) != txtBrotherP.Text)
                     return true;
-                if (((DateTime)item["BrotherPDOB"]).ToString("dd-MM-yyyy") != calBrotherP.SelectedDate.ToString("dd-MM-yyyy"))
+
+                if (Convert.ToDateTime(GetEmptyStringIfNull(item["BrotherPDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calBrotherP.SelectedDate.ToString("dd-MM-yyyy"))
                     return true;
+
                 if (GetEmptyStringIfNull(item["BrotherHealthP"]) != GetSPListItemsFromCheckBoxes(cbBrotherHealthP).ToString())
                     return true;
 
                 if (GetEmptyStringIfNull(item["Brother2P"]) != txtBrother2P.Text)
                     return true;
-                if (((DateTime)item["Brother2PDOB"]).ToString("dd-MM-yyyy") != calBrother2P.SelectedDate.ToString("dd-MM-yyyy"))
+
+                if (Convert.ToDateTime(GetEmptyStringIfNull(item["Brother2PDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calBrother2P.SelectedDate.ToString("dd-MM-yyyy"))
                     return true;
+
                 if (GetEmptyStringIfNull(item["BrotherHealth2P"]) != GetSPListItemsFromCheckBoxes(cbBrotherHealth2P).ToString())
                     return true;
 
                 if (GetEmptyStringIfNull(item["SisterP"]) != txtSisterP.Text)
                     return true;
-                if (((DateTime)item["SisterPDOB"]).ToString("dd-MM-yyyy") != calSisterP.SelectedDate.ToString("dd-MM-yyyy"))
+
+                if (Convert.ToDateTime(GetEmptyStringIfNull(item["SisterPDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calSisterP.SelectedDate.ToString("dd-MM-yyyy"))
                     return true;
+
                 if (GetEmptyStringIfNull(item["SisterHealthP"]) != GetSPListItemsFromCheckBoxes(cbSisterHealthP).ToString())
                     return true;
 
                 if (GetEmptyStringIfNull(item["Sister2P"]) != txtSister2P.Text)
                     return true;
-                if (((DateTime)item["Sister2PDOB"]).ToString("dd-MM-yyyy") != calSister2P.SelectedDate.ToString("dd-MM-yyyy"))
+
+                if (Convert.ToDateTime(GetEmptyStringIfNull(item["Sister2PDOB"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calSister2P.SelectedDate.ToString("dd-MM-yyyy"))
                     return true;
+
                 if (GetEmptyStringIfNull(item["SisterHealth2P"]) != GetSPListItemsFromCheckBoxes(cbSisterHealth2P).ToString())
                     return true;
             }
@@ -1621,8 +1651,10 @@ namespace TTK.SP.NeedsAnalysis.WP
                 return true;
             if (GetEmptyStringIfNull(item["DependantsSurName1"]) != txtDependantsSurName1.Text)
                 return true;
-            if (((DateTime)item["Dependants1"]).ToString("dd-MM-yyyy") != calDependants1.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["Dependants1"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calDependants1.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["Relation1"]) != ddRelation1.SelectedValue)
                 return true;
             if (GetEmptyStringIfNull(item["DependantsEducationOccupationLevel1"]) != txtDependantsEducationOccupationLevel1.Text)
@@ -1636,8 +1668,10 @@ namespace TTK.SP.NeedsAnalysis.WP
                 return true;
             if (GetEmptyStringIfNull(item["DependantsSurName2"]) != txtDependantsSurName2.Text)
                 return true;
-            if (((DateTime)item["Dependants2"]).ToString("dd-MM-yyyy") != calDependants2.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["Dependants2"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calDependants2.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["Relation2"]) != ddRelation2.SelectedValue)
                 return true;
             if (GetEmptyStringIfNull(item["DependantsEducationOccupationLevel2"]) != txtDependantsEducationOccupationLevel2.Text)
@@ -1651,8 +1685,10 @@ namespace TTK.SP.NeedsAnalysis.WP
                 return true;
             if (GetEmptyStringIfNull(item["DependantsSurName3"]) != txtDependantsSurName3.Text)
                 return true;
-            if (((DateTime)item["Dependants3"]).ToString("dd-MM-yyyy") != calDependants3.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["Dependants3"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calDependants3.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["Relation3"]) != ddRelation3.SelectedValue)
                 return true;
             if (GetEmptyStringIfNull(item["DependantsEducationOccupationLevel3"]) != txtDependantsEducationOccupationLevel3.Text)
@@ -1666,8 +1702,10 @@ namespace TTK.SP.NeedsAnalysis.WP
                 return true;
             if (GetEmptyStringIfNull(item["DependantsSurName4"]) != txtDependantsSurName4.Text)
                 return true;
-            if (((DateTime)item["Dependants4"]).ToString("dd-MM-yyyy") != calDependants4.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["Dependants4"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calDependants4.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["Relation4"]) != ddRelation4.SelectedValue)
                 return true;
             if (GetEmptyStringIfNull(item["DependantsEducationOccupationLevel4"]) != txtDependantsEducationOccupationLevel4.Text)
@@ -1681,8 +1719,10 @@ namespace TTK.SP.NeedsAnalysis.WP
                 return true;
             if (GetEmptyStringIfNull(item["DependantsSurName5"]) != txtDependantsSurName5.Text)
                 return true;
-            if (((DateTime)item["Dependants5"]).ToString("dd-MM-yyyy") != calDependants5.SelectedDate.ToString("dd-MM-yyyy"))
+
+            if (Convert.ToDateTime(GetEmptyStringIfNull(item["Dependants5"]).ToString(), australiaCulture).ToString("dd-MM-yyyy") != calDependants5.SelectedDate.ToString("dd-MM-yyyy"))
                 return true;
+
             if (GetEmptyStringIfNull(item["Relation5"]) != ddRelation5.SelectedValue)
                 return true;
             if (GetEmptyStringIfNull(item["DependantsEducationOccupationLevel5"]) != txtDependantsEducationOccupationLevel5.Text)
