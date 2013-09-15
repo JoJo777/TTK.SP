@@ -5,8 +5,7 @@
 <%@ Register TagPrefix="asp" Namespace="System.Web.UI" Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" %>
 <%@ Import Namespace="Microsoft.SharePoint" %>
 <%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Control  EnableViewState="true" Language="C#" AutoEventWireup="true" CodeBehind="NeedsAnalysis.ascx.cs" Inherits="TTK.SP.NeedsAnalysis.WP.NeedsAnalysis" %>
-
+<%@ Control EnableViewState="true" Language="C#" AutoEventWireup="true" CodeBehind="NeedsAnalysis.ascx.cs" Inherits="TTK.SP.NeedsAnalysis.WP.NeedsAnalysis" %>
 
 <style type="text/css">
     .wizard-table {
@@ -70,6 +69,11 @@
     }
 </style>
 
+<link rel="stylesheet" type="text/css" href="/Style Library/jquery-ui.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+
+
 
 <asp:UpdatePanel ID="UpdatePanel1" EnableViewState="true" runat="server">
 </asp:UpdatePanel>
@@ -120,7 +124,7 @@
     <SideBarStyle BackColor="#ce244a" Font-Size="1.2em" VerticalAlign="Top" Width="250px" />
     <StepStyle BackColor="White" BorderColor="#E6E2D8" BorderStyle="Solid" BorderWidth="2px" />
     <WizardSteps>
-        <asp:WizardStep ID="WizardStepPersonal" EnableViewState="true"  runat="server" StepType="Start" Title="Personal">
+        <asp:WizardStep ID="WizardStepPersonal" EnableViewState="true" runat="server" StepType="Start" Title="Personal">
             <table class="wizard-table">
                 <tr>
                     <th colspan="2">Please capture the Client's Personal Data</th>
@@ -139,7 +143,9 @@
                         <label>
                             Date of Birth</label></td>
                     <td>
-                        <SharePoint:DateTimeControl ID="calDOB" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:52:17" LocaleId="3081" />
+                        <asp:TextBox ID="txtDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator72" ControlToValidate="txtDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calDOB" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:52:17" LocaleId="3081" ToolTip="" />--%>
                     </td>
                 </tr>
                 <tr>
@@ -273,7 +279,7 @@
                 </tr>
             </table>
         </asp:WizardStep>
-        <asp:WizardStep ID="WizardStepPartner" EnableViewState="true"  runat="server" Title="Partner">
+        <asp:WizardStep ID="WizardStepPartner" EnableViewState="true" runat="server" Title="Partner">
             <table class="wizard-table">
                 <tr>
                     <th colspan="2">Please capture the Partner's Personal Data</th>
@@ -286,13 +292,15 @@
                     <td class="auto-style20">
                         <asp:TextBox runat="server" ID="txtSurNameP"></asp:TextBox><asp:TextBox runat="server" ID="txtFirstNameP"></asp:TextBox>
                         <%--<asp:RequiredFieldValidator runat="server" ControlToValidate="txtSurNameP" ErrorMessage="Please enter First Name" ID="RequiredFieldValidator11"></asp:RequiredFieldValidator>
-                        <asp:RequiredFieldValidator runat="server" ControlToValidate="txtFirstNameP" ErrorMessage="Please enter Last Name" ID="RequiredFieldValidator12"></asp:RequiredFieldValidator>--%>
+						<asp:RequiredFieldValidator runat="server" ControlToValidate="txtFirstNameP" ErrorMessage="Please enter Last Name" ID="RequiredFieldValidator12"></asp:RequiredFieldValidator>--%>
                     </td>
                     <td class="auto-style2">
                         <label>
                             Date of Birth</label></td>
                     <td class="auto-style2">
-                        <SharePoint:DateTimeControl runat="server" ID="calDOBP" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" ToolTip=""></SharePoint:DateTimeControl>
+                        <asp:TextBox ID="txtDOBP" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator73" ControlToValidate="txtDOBP" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl runat="server" ID="calDOBP" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" ToolTip=""></SharePoint:DateTimeControl>--%>
                     </td>
                 </tr>
                 <tr>
@@ -430,7 +438,7 @@
                 </tr>
             </table>
         </asp:WizardStep>
-        <asp:WizardStep ID="WizardStepClientFamilyDetails" EnableViewState="true"  runat="server" Title="Client Family Details">
+        <asp:WizardStep ID="WizardStepClientFamilyDetails" EnableViewState="true" runat="server" Title="Client Family Details">
             <table class="wizard-table">
                 <tr>
                     <th colspan="2">Please capture the Client's Families Data</th>
@@ -448,7 +456,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtFather" runat="server"></asp:TextBox></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calFather" runat="server" DateOnly="true" LocaleId="3081" SelectedDate="09/12/2013 23:54:17" />
+                        <asp:TextBox ID="txtFatherDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator71" ControlToValidate="txtFatherDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calFather" runat="server" DateOnly="true" LocaleId="3081" SelectedDate="09/12/2013 23:54:17" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbFatherHealth" runat="server" RepeatColumns="2">
@@ -474,7 +484,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtMother" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calMother" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtMotherDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator100"  ControlToValidate="txtMotherDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calMother" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbMotherHealth" runat="server" RepeatColumns="2">
@@ -500,7 +512,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtBrother" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calBrother" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtBrotherDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator74"  ControlToValidate="txtBrotherDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calBrother" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbBrotherHealth" runat="server" RepeatColumns="2">
@@ -526,7 +540,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtBrother2" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calBrother2" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtBrother2DOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator75"  ControlToValidate="txtBrother2DOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calBrother2" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbBrotherHealth2" runat="server" RepeatColumns="2">
@@ -552,7 +568,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtSister" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calSister" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtSisterDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator76"  ControlToValidate="txtSisterDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calSister" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbSisterHealth" runat="server" RepeatColumns="2">
@@ -578,7 +596,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtSister2" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calSister2" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtSister2DOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator77"  ControlToValidate="txtSister2DOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calSister2" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbSisterHealth2" runat="server" RepeatColumns="2">
@@ -595,12 +615,10 @@
                             <asp:ListItem>Cancer</asp:ListItem>
                             <asp:ListItem>Other</asp:ListItem>
                         </asp:CheckBoxList>
-
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <%--<asp:ValidationSummary ID="ValidationSummaryClientFamilyDatails" runat="server" Visible="False" />--%>
                     </td>
                 </tr>
 
@@ -624,7 +642,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtFatherP" runat="server"></asp:TextBox></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calFatherP" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtFatherPDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator78"  ControlToValidate="txtFatherPDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calFatherP" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbFatherHealthP" runat="server" RepeatColumns="2">
@@ -649,7 +669,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtMotherP" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calMotherP" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtMotherPDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator79"  ControlToValidate="txtMotherPDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calMotherP" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbMotherHealthP" runat="server" RepeatColumns="2">
@@ -675,7 +697,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtBrotherP" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calBrotherP" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtBrotherPDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator80"  ControlToValidate="txtBrotherPDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calBrotherP" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbBrotherHealthP" runat="server" RepeatColumns="2">
@@ -701,7 +725,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtBrother2P" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calBrother2P" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtBrother2PDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator81"  ControlToValidate="txtBrother2PDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calBrother2P" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbBrotherHealth2P" runat="server" RepeatColumns="2">
@@ -727,7 +753,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtSisterP" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calSisterP" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtSisterPDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator82"  ControlToValidate="txtSisterPDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calSisterP" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbSisterHealthP" runat="server" RepeatColumns="2">
@@ -753,7 +781,9 @@
                     <td valign="top">
                         <asp:TextBox ID="txtSister2P" runat="server" /></td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calSister2P" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtSister2PDOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator83"  ControlToValidate="txtSister2PDOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calSister2P" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:CheckBoxList ID="cbSisterHealth2P" runat="server" RepeatColumns="2">
@@ -773,7 +803,6 @@
                 </tr>
                 <tr>
                     <td>
-                        <%--<asp:ValidationSummary ID="ValidationSummaryClientFamilyDatailsP" runat="server" Visible="False" />--%>
                     </td>
                 </tr>
             </table>
@@ -788,9 +817,9 @@
                     <th>Date of Birth</th>
                     <th>Relation</th>
                     <th class="auto-style15">Occupation/
-                        Education Year Level</th>
+						Education Year Level</th>
                     <th class="auto-style14">School/
-                        University Attended</th>
+						University Attended</th>
                     <th>Health</th>
                 </tr>
                 <tr>
@@ -798,8 +827,10 @@
                         <asp:TextBox ID="txtDependantsFirst1" runat="server"></asp:TextBox>
                         <asp:TextBox ID="txtDependantsSurName1" runat="server"></asp:TextBox>
                     </td>
-                    <td valign="top">
-                        <SharePoint:DateTimeControl ID="calDependants1" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                    <td valign="top">                        
+                        <asp:TextBox ID="txtDependants1DOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator101" ControlToValidate="txtDependants1DOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calDependants1" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:DropDownList ID="ddRelation1" runat="server">
@@ -838,7 +869,9 @@
                         <asp:TextBox ID="txtDependantsSurName2" runat="server"></asp:TextBox>
                     </td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calDependants2" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtDependants2DOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator84" ControlToValidate="txtDependants2DOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calDependants2" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:DropDownList ID="ddRelation2" runat="server">
@@ -877,7 +910,9 @@
                         <asp:TextBox ID="txtDependantsSurName3" runat="server"></asp:TextBox>
                     </td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calDependants3" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtDependants3DOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator85" ControlToValidate="txtDependants3DOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calDependants3" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:DropDownList ID="ddRelation3" runat="server">
@@ -917,7 +952,9 @@
                         <asp:TextBox ID="txtDependantsSurName4" runat="server"></asp:TextBox>
                     </td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calDependants4" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtDependants4DOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator86" ControlToValidate="txtDependants4DOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calDependants4" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:DropDownList ID="ddRelation4" runat="server">
@@ -957,7 +994,9 @@
                         <asp:TextBox ID="txtDependantsSurName5" runat="server"></asp:TextBox>
                     </td>
                     <td valign="top">
-                        <SharePoint:DateTimeControl ID="calDependants5" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />
+                        <asp:TextBox ID="txtDependants5DOB" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator87" ControlToValidate="txtDependants5DOB" runat="server" ErrorMessage="Invalid Date (dd/mm/yyyy)" ValidationExpression="^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$"></asp:RegularExpressionValidator>
+                        <%--<SharePoint:DateTimeControl ID="calDependants5" runat="server" DateOnly="true" SelectedDate="08/09/2013 09:55:23" LocaleId="3081" />--%>
                     </td>
                     <td valign="top">
                         <asp:DropDownList ID="ddRelation5" runat="server">
@@ -1601,6 +1640,32 @@
 
 <asp:Label runat="server" ID="ErrorLabel" Visible="false"></asp:Label>
 
+<script type="text/javascript" language="javascript">
+    $(function () {
+        $("#<%= txtDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtDOBP.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtFatherDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtMotherDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+
+        $("#<%= txtBrotherDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtBrother2DOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtSisterDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtSister2DOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtFatherPDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtMotherPDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtBrotherPDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtBrother2PDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtBrother2PDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtSisterPDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtSister2PDOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+	    $("#<%= txtDependants1DOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtDependants2DOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtDependants3DOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtDependants4DOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+        $("#<%= txtDependants5DOB.ClientID %>").datepicker({ dateFormat: 'dd/mm/yy' });
+	});
+
+</script>
 
 
 

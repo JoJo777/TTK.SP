@@ -54,7 +54,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDOB;
+        protected global::System.Web.UI.WebControls.TextBox txtDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator72;
         
         protected global::System.Web.UI.WebControls.DropDownList ddGender;
         
@@ -116,7 +118,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.TextBox txtFirstNameP;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDOBP;
+        protected global::System.Web.UI.WebControls.TextBox txtDOBP;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator73;
         
         protected global::System.Web.UI.WebControls.DropDownList ddGenderP;
         
@@ -158,37 +162,49 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.TextBox txtFather;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calFather;
+        protected global::System.Web.UI.WebControls.TextBox txtFatherDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator71;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbFatherHealth;
         
         protected global::System.Web.UI.WebControls.TextBox txtMother;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calMother;
+        protected global::System.Web.UI.WebControls.TextBox txtMotherDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator100;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbMotherHealth;
         
         protected global::System.Web.UI.WebControls.TextBox txtBrother;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calBrother;
+        protected global::System.Web.UI.WebControls.TextBox txtBrotherDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator74;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbBrotherHealth;
         
         protected global::System.Web.UI.WebControls.TextBox txtBrother2;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calBrother2;
+        protected global::System.Web.UI.WebControls.TextBox txtBrother2DOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator75;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbBrotherHealth2;
         
         protected global::System.Web.UI.WebControls.TextBox txtSister;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calSister;
+        protected global::System.Web.UI.WebControls.TextBox txtSisterDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator76;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbSisterHealth;
         
         protected global::System.Web.UI.WebControls.TextBox txtSister2;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calSister2;
+        protected global::System.Web.UI.WebControls.TextBox txtSister2DOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator77;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbSisterHealth2;
         
@@ -196,37 +212,49 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.TextBox txtFatherP;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calFatherP;
+        protected global::System.Web.UI.WebControls.TextBox txtFatherPDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator78;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbFatherHealthP;
         
         protected global::System.Web.UI.WebControls.TextBox txtMotherP;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calMotherP;
+        protected global::System.Web.UI.WebControls.TextBox txtMotherPDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator79;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbMotherHealthP;
         
         protected global::System.Web.UI.WebControls.TextBox txtBrotherP;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calBrotherP;
+        protected global::System.Web.UI.WebControls.TextBox txtBrotherPDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator80;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbBrotherHealthP;
         
         protected global::System.Web.UI.WebControls.TextBox txtBrother2P;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calBrother2P;
+        protected global::System.Web.UI.WebControls.TextBox txtBrother2PDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator81;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbBrotherHealth2P;
         
         protected global::System.Web.UI.WebControls.TextBox txtSisterP;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calSisterP;
+        protected global::System.Web.UI.WebControls.TextBox txtSisterPDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator82;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbSisterHealthP;
         
         protected global::System.Web.UI.WebControls.TextBox txtSister2P;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calSister2P;
+        protected global::System.Web.UI.WebControls.TextBox txtSister2PDOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator83;
         
         protected global::System.Web.UI.WebControls.CheckBoxList cbSisterHealth2P;
         
@@ -236,7 +264,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.TextBox txtDependantsSurName1;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDependants1;
+        protected global::System.Web.UI.WebControls.TextBox txtDependants1DOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator101;
         
         protected global::System.Web.UI.WebControls.DropDownList ddRelation1;
         
@@ -250,7 +280,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.TextBox txtDependantsSurName2;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDependants2;
+        protected global::System.Web.UI.WebControls.TextBox txtDependants2DOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator84;
         
         protected global::System.Web.UI.WebControls.DropDownList ddRelation2;
         
@@ -264,7 +296,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.TextBox txtDependantsSurName3;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDependants3;
+        protected global::System.Web.UI.WebControls.TextBox txtDependants3DOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator85;
         
         protected global::System.Web.UI.WebControls.DropDownList ddRelation3;
         
@@ -278,7 +312,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.TextBox txtDependantsSurName4;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDependants4;
+        protected global::System.Web.UI.WebControls.TextBox txtDependants4DOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator86;
         
         protected global::System.Web.UI.WebControls.DropDownList ddRelation4;
         
@@ -292,7 +328,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
         
         protected global::System.Web.UI.WebControls.TextBox txtDependantsSurName5;
         
-        protected global::Microsoft.SharePoint.WebControls.DateTimeControl calDependants5;
+        protected global::System.Web.UI.WebControls.TextBox txtDependants5DOB;
+        
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator87;
         
         protected global::System.Web.UI.WebControls.DropDownList ddRelation5;
         
@@ -892,14 +930,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDOB() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calDOB = @__ctrl;
-            @__ctrl.ID = "calDOB";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 52, 17, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator72() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator72 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator72";
+            @__ctrl.ControlToValidate = "txtDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -1418,147 +1467,158 @@ namespace TTK.SP.NeedsAnalysis.WP {
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Date of Birth</label></td>\r\n                 " +
                         "   <td>\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl5;
-            @__ctrl5 = this.@__BuildControlcalDOB();
+            global::System.Web.UI.WebControls.TextBox @__ctrl5;
+            @__ctrl5 = this.@__BuildControltxtDOB();
             @__parser.AddParsedSubObject(@__ctrl5);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
-                        "             <td>\r\n                        <label>\r\n                            " +
-                        "Gender</label></td>\r\n                    <td>\r\n                        "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl6;
-            @__ctrl6 = this.@__BuildControlddGender();
-            @__parser.AddParsedSubObject(@__ctrl6);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl7;
-            @__ctrl7 = this.@__BuildControlRequiredFieldValidator3();
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl6;
+            @__ctrl6 = this.@__BuildControlRegularExpressionValidator72();
+            @__parser.AddParsedSubObject(@__ctrl6);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Gender</label></td>
+                    <td>
+                        "));
+            global::System.Web.UI.WebControls.DropDownList @__ctrl7;
+            @__ctrl7 = this.@__BuildControlddGender();
             @__parser.AddParsedSubObject(@__ctrl7);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl8;
+            @__ctrl8 = this.@__BuildControlRequiredFieldValidator3();
+            @__parser.AddParsedSubObject(@__ctrl8);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Smoking</label></td>\r\n                    <td" +
                         ">\r\n                        "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl8;
-            @__ctrl8 = this.@__BuildControlddSmoker();
-            @__parser.AddParsedSubObject(@__ctrl8);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl9;
-            @__ctrl9 = this.@__BuildControlRequiredFieldValidator2();
+            global::System.Web.UI.WebControls.DropDownList @__ctrl9;
+            @__ctrl9 = this.@__BuildControlddSmoker();
             @__parser.AddParsedSubObject(@__ctrl9);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl10;
+            @__ctrl10 = this.@__BuildControlRequiredFieldValidator2();
+            @__parser.AddParsedSubObject(@__ctrl10);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
                         "             <td>\r\n                        <label>\r\n                            " +
                         "Marital</label></td>\r\n                    <td>\r\n                        "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl10;
-            @__ctrl10 = this.@__BuildControlddMarital();
-            @__parser.AddParsedSubObject(@__ctrl10);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl11;
-            @__ctrl11 = this.@__BuildControlRequiredFieldValidator4();
+            global::System.Web.UI.WebControls.DropDownList @__ctrl11;
+            @__ctrl11 = this.@__BuildControlddMarital();
             @__parser.AddParsedSubObject(@__ctrl11);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl12;
+            @__ctrl12 = this.@__BuildControlRequiredFieldValidator4();
+            @__parser.AddParsedSubObject(@__ctrl12);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Residential Address</label></td>\r\n           " +
                         "         <td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl12;
-            @__ctrl12 = this.@__BuildControltxtResidential();
-            @__parser.AddParsedSubObject(@__ctrl12);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl13;
-            @__ctrl13 = this.@__BuildControlRequiredFieldValidator10();
+            global::System.Web.UI.WebControls.TextBox @__ctrl13;
+            @__ctrl13 = this.@__BuildControltxtResidential();
             @__parser.AddParsedSubObject(@__ctrl13);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl14;
+            @__ctrl14 = this.@__BuildControlRequiredFieldValidator10();
+            @__parser.AddParsedSubObject(@__ctrl14);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
                         "             <td>\r\n                        <label>\r\n                            " +
                         "Mobile</label></td>\r\n                    <td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl14;
-            @__ctrl14 = this.@__BuildControltxtMobile();
-            @__parser.AddParsedSubObject(@__ctrl14);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl15;
-            @__ctrl15 = this.@__BuildControlRegularExpressionValidator1();
+            global::System.Web.UI.WebControls.TextBox @__ctrl15;
+            @__ctrl15 = this.@__BuildControltxtMobile();
             @__parser.AddParsedSubObject(@__ctrl15);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl16;
-            @__ctrl16 = this.@__BuildControlRequiredFieldValidator5();
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl16;
+            @__ctrl16 = this.@__BuildControlRegularExpressionValidator1();
             @__parser.AddParsedSubObject(@__ctrl16);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl17;
+            @__ctrl17 = this.@__BuildControlRequiredFieldValidator5();
+            @__parser.AddParsedSubObject(@__ctrl17);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Business Telephone</label></td>\r\n            " +
                         "        <td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl17;
-            @__ctrl17 = this.@__BuildControltxtBusiness();
-            @__parser.AddParsedSubObject(@__ctrl17);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl18;
-            @__ctrl18 = this.@__BuildControlRegularExpressionValidator2();
+            global::System.Web.UI.WebControls.TextBox @__ctrl18;
+            @__ctrl18 = this.@__BuildControltxtBusiness();
             @__parser.AddParsedSubObject(@__ctrl18);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl19;
-            @__ctrl19 = this.@__BuildControlRequiredFieldValidator6();
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl19;
+            @__ctrl19 = this.@__BuildControlRegularExpressionValidator2();
             @__parser.AddParsedSubObject(@__ctrl19);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl20;
+            @__ctrl20 = this.@__BuildControlRequiredFieldValidator6();
+            @__parser.AddParsedSubObject(@__ctrl20);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
                         "             <td>\r\n                        <label>\r\n                            " +
                         "Home Telephone</label></td>\r\n                    <td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl20;
-            @__ctrl20 = this.@__BuildControltxtHome();
-            @__parser.AddParsedSubObject(@__ctrl20);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl21;
-            @__ctrl21 = this.@__BuildControlRegularExpressionValidator3();
+            global::System.Web.UI.WebControls.TextBox @__ctrl21;
+            @__ctrl21 = this.@__BuildControltxtHome();
             @__parser.AddParsedSubObject(@__ctrl21);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl22;
-            @__ctrl22 = this.@__BuildControlRequiredFieldValidator7();
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl22;
+            @__ctrl22 = this.@__BuildControlRegularExpressionValidator3();
             @__parser.AddParsedSubObject(@__ctrl22);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl23;
+            @__ctrl23 = this.@__BuildControlRequiredFieldValidator7();
+            @__parser.AddParsedSubObject(@__ctrl23);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Email</label></td>\r\n                    <td>\r" +
                         "\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl23;
-            @__ctrl23 = this.@__BuildControltxtEmail();
-            @__parser.AddParsedSubObject(@__ctrl23);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl24;
-            @__ctrl24 = this.@__BuildControlRegularExpressionValidator4();
+            global::System.Web.UI.WebControls.TextBox @__ctrl24;
+            @__ctrl24 = this.@__BuildControltxtEmail();
             @__parser.AddParsedSubObject(@__ctrl24);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl25;
-            @__ctrl25 = this.@__BuildControlRequiredFieldValidator8();
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl25;
+            @__ctrl25 = this.@__BuildControlRegularExpressionValidator4();
             @__parser.AddParsedSubObject(@__ctrl25);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl26;
+            @__ctrl26 = this.@__BuildControlRequiredFieldValidator8();
+            @__parser.AddParsedSubObject(@__ctrl26);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
                         "             <td>\r\n                        <label>\r\n                            " +
                         "Correspondence Preference</label></td>\r\n                    <td>\r\n              " +
                         "          "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl26;
-            @__ctrl26 = this.@__BuildControlddCorrespondancePreference();
-            @__parser.AddParsedSubObject(@__ctrl26);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl27;
-            @__ctrl27 = this.@__BuildControlRequiredFieldValidator9();
+            global::System.Web.UI.WebControls.DropDownList @__ctrl27;
+            @__ctrl27 = this.@__BuildControlddCorrespondancePreference();
             @__parser.AddParsedSubObject(@__ctrl27);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl28;
+            @__ctrl28 = this.@__BuildControlRequiredFieldValidator9();
+            @__parser.AddParsedSubObject(@__ctrl28);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Will</label></td>\r\n                    <td>\r\n" +
                         "                        "));
-            global::System.Web.UI.WebControls.CheckBox @__ctrl28;
-            @__ctrl28 = this.@__BuildControlcbWill();
-            @__parser.AddParsedSubObject(@__ctrl28);
+            global::System.Web.UI.WebControls.CheckBox @__ctrl29;
+            @__ctrl29 = this.@__BuildControlcbWill();
+            @__parser.AddParsedSubObject(@__ctrl29);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
                         "             <td>\r\n                        <label>\r\n                            " +
                         "Qantas Frequent Flyer</label></td>\r\n                    <td>\r\n                  " +
                         "      "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl29;
-            @__ctrl29 = this.@__BuildControltxtQantas();
-            @__parser.AddParsedSubObject(@__ctrl29);
+            global::System.Web.UI.WebControls.TextBox @__ctrl30;
+            @__ctrl30 = this.@__BuildControltxtQantas();
+            @__parser.AddParsedSubObject(@__ctrl30);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            RACV Membership</label></td>\r\n               " +
                         "     <td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl30;
-            @__ctrl30 = this.@__BuildControltxtRACV();
-            @__parser.AddParsedSubObject(@__ctrl30);
+            global::System.Web.UI.WebControls.TextBox @__ctrl31;
+            @__ctrl31 = this.@__BuildControltxtRACV();
+            @__parser.AddParsedSubObject(@__ctrl31);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
                         "             <td>\r\n                        <label>\r\n                            " +
                         "Solicitor</label></td>\r\n                    <td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl31;
-            @__ctrl31 = this.@__BuildControltxtSolicitor();
-            @__parser.AddParsedSubObject(@__ctrl31);
+            global::System.Web.UI.WebControls.TextBox @__ctrl32;
+            @__ctrl32 = this.@__BuildControltxtSolicitor();
+            @__parser.AddParsedSubObject(@__ctrl32);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Accountant</label></td>\r\n                    " +
                         "<td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl32;
-            @__ctrl32 = this.@__BuildControltxtAccountant();
-            @__parser.AddParsedSubObject(@__ctrl32);
+            global::System.Web.UI.WebControls.TextBox @__ctrl33;
+            @__ctrl33 = this.@__BuildControltxtAccountant();
+            @__parser.AddParsedSubObject(@__ctrl33);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n            </table>\r\n       " +
                         " "));
             return @__ctrl;
@@ -1585,15 +1645,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDOBP() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calDOBP = @__ctrl;
-            @__ctrl.ID = "calDOBP";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
-            @__ctrl.ToolTip = "";
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtDOBP() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtDOBP = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtDOBP";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator73() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator73 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator73";
+            @__ctrl.ControlToValidate = "txtDOBP";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -2000,10 +2070,15 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Date of Birth</label></td>
                     <td class=""auto-style2"">
                         "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl3;
-            @__ctrl3 = this.@__BuildControlcalDOBP();
+            global::System.Web.UI.WebControls.TextBox @__ctrl3;
+            @__ctrl3 = this.@__BuildControltxtDOBP();
             @__parser.AddParsedSubObject(@__ctrl3);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl4;
+            @__ctrl4 = this.@__BuildControlRegularExpressionValidator73();
+            @__parser.AddParsedSubObject(@__ctrl4);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
+                        
                     </td>
                 </tr>
                 <tr>
@@ -2012,15 +2087,15 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Gender</label></td>
                     <td class=""auto-style20"">
                         "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl4;
-            @__ctrl4 = this.@__BuildControlddGenderP();
-            @__parser.AddParsedSubObject(@__ctrl4);
+            global::System.Web.UI.WebControls.DropDownList @__ctrl5;
+            @__ctrl5 = this.@__BuildControlddGenderP();
+            @__parser.AddParsedSubObject(@__ctrl5);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td>\r\n" +
                         "                        <label>\r\n                            Smoking</label></td" +
                         ">\r\n                    <td>\r\n                        "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl5;
-            @__ctrl5 = this.@__BuildControlddSmokerP();
-            @__parser.AddParsedSubObject(@__ctrl5);
+            global::System.Web.UI.WebControls.DropDownList @__ctrl6;
+            @__ctrl6 = this.@__BuildControlddSmokerP();
+            @__parser.AddParsedSubObject(@__ctrl6);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -2030,9 +2105,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Marital</label></td>
                     <td class=""auto-style20"">
                         "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl6;
-            @__ctrl6 = this.@__BuildControlddMaritalP();
-            @__parser.AddParsedSubObject(@__ctrl6);
+            global::System.Web.UI.WebControls.DropDownList @__ctrl7;
+            @__ctrl7 = this.@__BuildControlddMaritalP();
+            @__parser.AddParsedSubObject(@__ctrl7);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                         
                     </td>
@@ -2041,9 +2116,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Residential Address</label></td>
                     <td class=""auto-style1"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl7;
-            @__ctrl7 = this.@__BuildControltxtResidentialP();
-            @__parser.AddParsedSubObject(@__ctrl7);
+            global::System.Web.UI.WebControls.TextBox @__ctrl8;
+            @__ctrl8 = this.@__BuildControltxtResidentialP();
+            @__parser.AddParsedSubObject(@__ctrl8);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                         
                     </td>
@@ -2054,23 +2129,23 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Mobile</label></td>
                     <td class=""auto-style20"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl8;
-            @__ctrl8 = this.@__BuildControltxtMobileP();
-            @__parser.AddParsedSubObject(@__ctrl8);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                        "));
-            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl9;
-            @__ctrl9 = this.@__BuildControlRegularExpressionValidator5();
+            global::System.Web.UI.WebControls.TextBox @__ctrl9;
+            @__ctrl9 = this.@__BuildControltxtMobileP();
             @__parser.AddParsedSubObject(@__ctrl9);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl10;
+            @__ctrl10 = this.@__BuildControlRegularExpressionValidator5();
+            @__parser.AddParsedSubObject(@__ctrl10);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Business Telephone</label></td>\r\n            " +
                         "        <td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl10;
-            @__ctrl10 = this.@__BuildControltxtBusinessP();
-            @__parser.AddParsedSubObject(@__ctrl10);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                        "));
-            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl11;
-            @__ctrl11 = this.@__BuildControlRegularExpressionValidator7();
+            global::System.Web.UI.WebControls.TextBox @__ctrl11;
+            @__ctrl11 = this.@__BuildControltxtBusinessP();
             @__parser.AddParsedSubObject(@__ctrl11);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl12;
+            @__ctrl12 = this.@__BuildControlRegularExpressionValidator7();
+            @__parser.AddParsedSubObject(@__ctrl12);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -2080,23 +2155,23 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Home Telephone</label></td>
                     <td class=""auto-style20"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl12;
-            @__ctrl12 = this.@__BuildControltxtHomeP();
-            @__parser.AddParsedSubObject(@__ctrl12);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                        "));
-            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl13;
-            @__ctrl13 = this.@__BuildControlRegularExpressionValidator6();
+            global::System.Web.UI.WebControls.TextBox @__ctrl13;
+            @__ctrl13 = this.@__BuildControltxtHomeP();
             @__parser.AddParsedSubObject(@__ctrl13);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl14;
+            @__ctrl14 = this.@__BuildControlRegularExpressionValidator6();
+            @__parser.AddParsedSubObject(@__ctrl14);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Email</label></td>\r\n                    <td>\r" +
                         "\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl14;
-            @__ctrl14 = this.@__BuildControltxtEmailP();
-            @__parser.AddParsedSubObject(@__ctrl14);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                        "));
-            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl15;
-            @__ctrl15 = this.@__BuildControlRegularExpressionValidator8();
+            global::System.Web.UI.WebControls.TextBox @__ctrl15;
+            @__ctrl15 = this.@__BuildControltxtEmailP();
             @__parser.AddParsedSubObject(@__ctrl15);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl16;
+            @__ctrl16 = this.@__BuildControlRegularExpressionValidator8();
+            @__parser.AddParsedSubObject(@__ctrl16);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -2106,15 +2181,15 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Correspondence Preference</label></td>
                     <td class=""auto-style20"">
                         "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl16;
-            @__ctrl16 = this.@__BuildControlddCorrespondencePreferenceP();
-            @__parser.AddParsedSubObject(@__ctrl16);
+            global::System.Web.UI.WebControls.DropDownList @__ctrl17;
+            @__ctrl17 = this.@__BuildControlddCorrespondencePreferenceP();
+            @__parser.AddParsedSubObject(@__ctrl17);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td>\r\n" +
                         "                        <label>\r\n                            Will</label></td>\r\n" +
                         "                    <td>\r\n                        "));
-            global::System.Web.UI.WebControls.CheckBox @__ctrl17;
-            @__ctrl17 = this.@__BuildControlcbWillP();
-            @__parser.AddParsedSubObject(@__ctrl17);
+            global::System.Web.UI.WebControls.CheckBox @__ctrl18;
+            @__ctrl18 = this.@__BuildControlcbWillP();
+            @__parser.AddParsedSubObject(@__ctrl18);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -2124,15 +2199,15 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Qantas Frequent Flyer</label></td>
                     <td class=""auto-style20"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl18;
-            @__ctrl18 = this.@__BuildControltxtQantasP();
-            @__parser.AddParsedSubObject(@__ctrl18);
+            global::System.Web.UI.WebControls.TextBox @__ctrl19;
+            @__ctrl19 = this.@__BuildControltxtQantasP();
+            @__parser.AddParsedSubObject(@__ctrl19);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            RACV Membership</label></td>\r\n               " +
                         "     <td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl19;
-            @__ctrl19 = this.@__BuildControltxtRACVP();
-            @__parser.AddParsedSubObject(@__ctrl19);
+            global::System.Web.UI.WebControls.TextBox @__ctrl20;
+            @__ctrl20 = this.@__BuildControltxtRACVP();
+            @__parser.AddParsedSubObject(@__ctrl20);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -2142,15 +2217,15 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Solicitor</label></td>
                     <td class=""auto-style20"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl20;
-            @__ctrl20 = this.@__BuildControltxtSolicitorP();
-            @__parser.AddParsedSubObject(@__ctrl20);
+            global::System.Web.UI.WebControls.TextBox @__ctrl21;
+            @__ctrl21 = this.@__BuildControltxtSolicitorP();
+            @__parser.AddParsedSubObject(@__ctrl21);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td>\r\n                        <l" +
                         "abel>\r\n                            Accountant</label></td>\r\n                    " +
                         "<td>\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl21;
-            @__ctrl21 = this.@__BuildControltxtAccountantP();
-            @__parser.AddParsedSubObject(@__ctrl21);
+            global::System.Web.UI.WebControls.TextBox @__ctrl22;
+            @__ctrl22 = this.@__BuildControltxtAccountantP();
+            @__parser.AddParsedSubObject(@__ctrl22);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
                         "             <td class=\"auto-style16\">\r\n                        \r\n              " +
                         "      </td>\r\n                </tr>\r\n            </table>\r\n        "));
@@ -2168,14 +2243,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalFather() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calFather = @__ctrl;
-            @__ctrl.ID = "calFather";
-            @__ctrl.DateOnly = true;
-            @__ctrl.LocaleId = 3081;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 9, 12, 23, 54, 17, 0);
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtFatherDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtFatherDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtFatherDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator71() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator71 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator71";
+            @__ctrl.ControlToValidate = "txtFatherDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -2338,14 +2424,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalMother() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calMother = @__ctrl;
-            @__ctrl.ID = "calMother";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtMotherDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtMotherDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtMotherDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator100() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator100 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator100";
+            @__ctrl.ControlToValidate = "txtMotherDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -2508,14 +2605,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalBrother() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calBrother = @__ctrl;
-            @__ctrl.ID = "calBrother";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtBrotherDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtBrotherDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtBrotherDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator74() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator74 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator74";
+            @__ctrl.ControlToValidate = "txtBrotherDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -2678,14 +2786,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalBrother2() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calBrother2 = @__ctrl;
-            @__ctrl.ID = "calBrother2";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtBrother2DOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtBrother2DOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtBrother2DOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator75() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator75 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator75";
+            @__ctrl.ControlToValidate = "txtBrother2DOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -2848,14 +2967,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalSister() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calSister = @__ctrl;
-            @__ctrl.ID = "calSister";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtSisterDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtSisterDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtSisterDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator76() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator76 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator76";
+            @__ctrl.ControlToValidate = "txtSisterDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -3018,14 +3148,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalSister2() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calSister2 = @__ctrl;
-            @__ctrl.ID = "calSister2";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtSister2DOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtSister2DOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtSister2DOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator77() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator77 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator77";
+            @__ctrl.ControlToValidate = "txtSister2DOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -3207,14 +3348,18 @@ namespace TTK.SP.NeedsAnalysis.WP {
             @__ctrl1 = this.@__BuildControltxtFather();
             @__parser.AddParsedSubObject(@__ctrl1);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl2;
-            @__ctrl2 = this.@__BuildControlcalFather();
+            global::System.Web.UI.WebControls.TextBox @__ctrl2;
+            @__ctrl2 = this.@__BuildControltxtFatherDOB();
             @__parser.AddParsedSubObject(@__ctrl2);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl3;
-            @__ctrl3 = this.@__BuildControlcbFatherHealth();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl3;
+            @__ctrl3 = this.@__BuildControlRegularExpressionValidator71();
             @__parser.AddParsedSubObject(@__ctrl3);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl4;
+            @__ctrl4 = this.@__BuildControlcbFatherHealth();
+            @__parser.AddParsedSubObject(@__ctrl4);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -3224,39 +3369,22 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Mother</label></td>
                     <td valign=""top"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl4;
-            @__ctrl4 = this.@__BuildControltxtMother();
-            @__parser.AddParsedSubObject(@__ctrl4);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl5;
-            @__ctrl5 = this.@__BuildControlcalMother();
+            global::System.Web.UI.WebControls.TextBox @__ctrl5;
+            @__ctrl5 = this.@__BuildControltxtMother();
             @__parser.AddParsedSubObject(@__ctrl5);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl6;
-            @__ctrl6 = this.@__BuildControlcbMotherHealth();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl6;
+            @__ctrl6 = this.@__BuildControltxtMotherDOB();
             @__parser.AddParsedSubObject(@__ctrl6);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=""top"">
-                        <label>
-                            Brother</label></td>
-                    <td valign=""top"">
-                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl7;
-            @__ctrl7 = this.@__BuildControltxtBrother();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl7;
+            @__ctrl7 = this.@__BuildControlRegularExpressionValidator100();
             @__parser.AddParsedSubObject(@__ctrl7);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl8;
-            @__ctrl8 = this.@__BuildControlcalBrother();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl8;
+            @__ctrl8 = this.@__BuildControlcbMotherHealth();
             @__parser.AddParsedSubObject(@__ctrl8);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl9;
-            @__ctrl9 = this.@__BuildControlcbBrotherHealth();
-            @__parser.AddParsedSubObject(@__ctrl9);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -3266,17 +3394,21 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Brother</label></td>
                     <td valign=""top"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl10;
-            @__ctrl10 = this.@__BuildControltxtBrother2();
-            @__parser.AddParsedSubObject(@__ctrl10);
+            global::System.Web.UI.WebControls.TextBox @__ctrl9;
+            @__ctrl9 = this.@__BuildControltxtBrother();
+            @__parser.AddParsedSubObject(@__ctrl9);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl11;
-            @__ctrl11 = this.@__BuildControlcalBrother2();
+            global::System.Web.UI.WebControls.TextBox @__ctrl10;
+            @__ctrl10 = this.@__BuildControltxtBrotherDOB();
+            @__parser.AddParsedSubObject(@__ctrl10);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl11;
+            @__ctrl11 = this.@__BuildControlRegularExpressionValidator74();
             @__parser.AddParsedSubObject(@__ctrl11);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
             global::System.Web.UI.WebControls.CheckBoxList @__ctrl12;
-            @__ctrl12 = this.@__BuildControlcbBrotherHealth2();
+            @__ctrl12 = this.@__BuildControlcbBrotherHealth();
             @__parser.AddParsedSubObject(@__ctrl12);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
@@ -3284,21 +3416,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
                 <tr>
                     <td valign=""top"">
                         <label>
-                            Sister</label></td>
+                            Brother</label></td>
                     <td valign=""top"">
                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl13;
-            @__ctrl13 = this.@__BuildControltxtSister();
+            @__ctrl13 = this.@__BuildControltxtBrother2();
             @__parser.AddParsedSubObject(@__ctrl13);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl14;
-            @__ctrl14 = this.@__BuildControlcalSister();
+            global::System.Web.UI.WebControls.TextBox @__ctrl14;
+            @__ctrl14 = this.@__BuildControltxtBrother2DOB();
             @__parser.AddParsedSubObject(@__ctrl14);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl15;
-            @__ctrl15 = this.@__BuildControlcbSisterHealth();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl15;
+            @__ctrl15 = this.@__BuildControlRegularExpressionValidator75();
             @__parser.AddParsedSubObject(@__ctrl15);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl16;
+            @__ctrl16 = this.@__BuildControlcbBrotherHealth2();
+            @__parser.AddParsedSubObject(@__ctrl16);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -3308,21 +3444,50 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Sister</label></td>
                     <td valign=""top"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl16;
-            @__ctrl16 = this.@__BuildControltxtSister2();
-            @__parser.AddParsedSubObject(@__ctrl16);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl17;
-            @__ctrl17 = this.@__BuildControlcalSister2();
+            global::System.Web.UI.WebControls.TextBox @__ctrl17;
+            @__ctrl17 = this.@__BuildControltxtSister();
             @__parser.AddParsedSubObject(@__ctrl17);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl18;
-            @__ctrl18 = this.@__BuildControlcbSisterHealth2();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl18;
+            @__ctrl18 = this.@__BuildControltxtSisterDOB();
             @__parser.AddParsedSubObject(@__ctrl18);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n     " +
-                        "               <td>\r\n                        \r\n                    </td>\r\n      " +
-                        "          </tr>\r\n\r\n            </table>\r\n        "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl19;
+            @__ctrl19 = this.@__BuildControlRegularExpressionValidator76();
+            @__parser.AddParsedSubObject(@__ctrl19);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl20;
+            @__ctrl20 = this.@__BuildControlcbSisterHealth();
+            @__parser.AddParsedSubObject(@__ctrl20);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
+                    </td>
+                </tr>
+                <tr>
+                    <td valign=""top"">
+                        <label>
+                            Sister</label></td>
+                    <td valign=""top"">
+                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl21;
+            @__ctrl21 = this.@__BuildControltxtSister2();
+            @__parser.AddParsedSubObject(@__ctrl21);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl22;
+            @__ctrl22 = this.@__BuildControltxtSister2DOB();
+            @__parser.AddParsedSubObject(@__ctrl22);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl23;
+            @__ctrl23 = this.@__BuildControlRegularExpressionValidator77();
+            @__parser.AddParsedSubObject(@__ctrl23);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl24;
+            @__ctrl24 = this.@__BuildControlcbSisterHealth2();
+            @__parser.AddParsedSubObject(@__ctrl24);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
+                        "             <td>\r\n                    </td>\r\n                </tr>\r\n\r\n         " +
+                        "   </table>\r\n        "));
             return @__ctrl;
         }
         
@@ -3337,14 +3502,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalFatherP() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calFatherP = @__ctrl;
-            @__ctrl.ID = "calFatherP";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtFatherPDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtFatherPDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtFatherPDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator78() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator78 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator78";
+            @__ctrl.ControlToValidate = "txtFatherPDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -3507,14 +3683,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalMotherP() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calMotherP = @__ctrl;
-            @__ctrl.ID = "calMotherP";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtMotherPDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtMotherPDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtMotherPDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator79() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator79 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator79";
+            @__ctrl.ControlToValidate = "txtMotherPDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -3677,14 +3864,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalBrotherP() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calBrotherP = @__ctrl;
-            @__ctrl.ID = "calBrotherP";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtBrotherPDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtBrotherPDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtBrotherPDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator80() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator80 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator80";
+            @__ctrl.ControlToValidate = "txtBrotherPDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -3847,14 +4045,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalBrother2P() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calBrother2P = @__ctrl;
-            @__ctrl.ID = "calBrother2P";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtBrother2PDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtBrother2PDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtBrother2PDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator81() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator81 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator81";
+            @__ctrl.ControlToValidate = "txtBrother2PDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -4017,14 +4226,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalSisterP() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calSisterP = @__ctrl;
-            @__ctrl.ID = "calSisterP";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtSisterPDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtSisterPDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtSisterPDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator82() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator82 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator82";
+            @__ctrl.ControlToValidate = "txtSisterPDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -4187,14 +4407,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalSister2P() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calSister2P = @__ctrl;
-            @__ctrl.ID = "calSister2P";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtSister2PDOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtSister2PDOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtSister2PDOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator83() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator83 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator83";
+            @__ctrl.ControlToValidate = "txtSister2PDOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -4375,50 +4606,37 @@ namespace TTK.SP.NeedsAnalysis.WP {
             @__ctrl1 = this.@__BuildControltxtFatherP();
             @__parser.AddParsedSubObject(@__ctrl1);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl2;
-            @__ctrl2 = this.@__BuildControlcalFatherP();
+            global::System.Web.UI.WebControls.TextBox @__ctrl2;
+            @__ctrl2 = this.@__BuildControltxtFatherPDOB();
             @__parser.AddParsedSubObject(@__ctrl2);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl3;
-            @__ctrl3 = this.@__BuildControlcbFatherHealthP();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl3;
+            @__ctrl3 = this.@__BuildControlRegularExpressionValidator78();
             @__parser.AddParsedSubObject(@__ctrl3);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl4;
+            @__ctrl4 = this.@__BuildControlcbFatherHealthP();
+            @__parser.AddParsedSubObject(@__ctrl4);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                </tr>\r\n                <tr>\r\n                    <td valig" +
                         "n=\"top\">\r\n                        <label>\r\n                            Mother</l" +
                         "abel></td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl4;
-            @__ctrl4 = this.@__BuildControltxtMotherP();
-            @__parser.AddParsedSubObject(@__ctrl4);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl5;
-            @__ctrl5 = this.@__BuildControlcalMotherP();
+            global::System.Web.UI.WebControls.TextBox @__ctrl5;
+            @__ctrl5 = this.@__BuildControltxtMotherP();
             @__parser.AddParsedSubObject(@__ctrl5);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl6;
-            @__ctrl6 = this.@__BuildControlcbMotherHealthP();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl6;
+            @__ctrl6 = this.@__BuildControltxtMotherPDOB();
             @__parser.AddParsedSubObject(@__ctrl6);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=""top"">
-                        <label>
-                            Brother</label></td>
-                    <td valign=""top"">
-                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl7;
-            @__ctrl7 = this.@__BuildControltxtBrotherP();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl7;
+            @__ctrl7 = this.@__BuildControlRegularExpressionValidator79();
             @__parser.AddParsedSubObject(@__ctrl7);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl8;
-            @__ctrl8 = this.@__BuildControlcalBrotherP();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl8;
+            @__ctrl8 = this.@__BuildControlcbMotherHealthP();
             @__parser.AddParsedSubObject(@__ctrl8);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl9;
-            @__ctrl9 = this.@__BuildControlcbBrotherHealthP();
-            @__parser.AddParsedSubObject(@__ctrl9);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -4428,17 +4646,21 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Brother</label></td>
                     <td valign=""top"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl10;
-            @__ctrl10 = this.@__BuildControltxtBrother2P();
-            @__parser.AddParsedSubObject(@__ctrl10);
+            global::System.Web.UI.WebControls.TextBox @__ctrl9;
+            @__ctrl9 = this.@__BuildControltxtBrotherP();
+            @__parser.AddParsedSubObject(@__ctrl9);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl11;
-            @__ctrl11 = this.@__BuildControlcalBrother2P();
+            global::System.Web.UI.WebControls.TextBox @__ctrl10;
+            @__ctrl10 = this.@__BuildControltxtBrotherPDOB();
+            @__parser.AddParsedSubObject(@__ctrl10);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl11;
+            @__ctrl11 = this.@__BuildControlRegularExpressionValidator80();
             @__parser.AddParsedSubObject(@__ctrl11);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
             global::System.Web.UI.WebControls.CheckBoxList @__ctrl12;
-            @__ctrl12 = this.@__BuildControlcbBrotherHealth2P();
+            @__ctrl12 = this.@__BuildControlcbBrotherHealthP();
             @__parser.AddParsedSubObject(@__ctrl12);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
@@ -4446,21 +4668,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
                 <tr>
                     <td valign=""top"">
                         <label>
-                            Sister</label></td>
+                            Brother</label></td>
                     <td valign=""top"">
                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl13;
-            @__ctrl13 = this.@__BuildControltxtSisterP();
+            @__ctrl13 = this.@__BuildControltxtBrother2P();
             @__parser.AddParsedSubObject(@__ctrl13);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl14;
-            @__ctrl14 = this.@__BuildControlcalSisterP();
+            global::System.Web.UI.WebControls.TextBox @__ctrl14;
+            @__ctrl14 = this.@__BuildControltxtBrother2PDOB();
             @__parser.AddParsedSubObject(@__ctrl14);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl15;
-            @__ctrl15 = this.@__BuildControlcbSisterHealthP();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl15;
+            @__ctrl15 = this.@__BuildControlRegularExpressionValidator81();
             @__parser.AddParsedSubObject(@__ctrl15);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl16;
+            @__ctrl16 = this.@__BuildControlcbBrotherHealth2P();
+            @__parser.AddParsedSubObject(@__ctrl16);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                     </td>
                 </tr>
@@ -4470,21 +4696,49 @@ namespace TTK.SP.NeedsAnalysis.WP {
                             Sister</label></td>
                     <td valign=""top"">
                         "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl16;
-            @__ctrl16 = this.@__BuildControltxtSister2P();
-            @__parser.AddParsedSubObject(@__ctrl16);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl17;
-            @__ctrl17 = this.@__BuildControlcalSister2P();
+            global::System.Web.UI.WebControls.TextBox @__ctrl17;
+            @__ctrl17 = this.@__BuildControltxtSisterP();
             @__parser.AddParsedSubObject(@__ctrl17);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl18;
-            @__ctrl18 = this.@__BuildControlcbSisterHealth2P();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl18;
+            @__ctrl18 = this.@__BuildControltxtSisterPDOB();
             @__parser.AddParsedSubObject(@__ctrl18);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl19;
+            @__ctrl19 = this.@__BuildControlRegularExpressionValidator82();
+            @__parser.AddParsedSubObject(@__ctrl19);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl20;
+            @__ctrl20 = this.@__BuildControlcbSisterHealthP();
+            @__parser.AddParsedSubObject(@__ctrl20);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
+                    </td>
+                </tr>
+                <tr>
+                    <td valign=""top"">
+                        <label>
+                            Sister</label></td>
+                    <td valign=""top"">
+                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl21;
+            @__ctrl21 = this.@__BuildControltxtSister2P();
+            @__parser.AddParsedSubObject(@__ctrl21);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                    <td valign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl22;
+            @__ctrl22 = this.@__BuildControltxtSister2PDOB();
+            @__parser.AddParsedSubObject(@__ctrl22);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl23;
+            @__ctrl23 = this.@__BuildControlRegularExpressionValidator83();
+            @__parser.AddParsedSubObject(@__ctrl23);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl24;
+            @__ctrl24 = this.@__BuildControlcbSisterHealth2P();
+            @__parser.AddParsedSubObject(@__ctrl24);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>\r\n   " +
-                        "                     \r\n                    </td>\r\n                </tr>\r\n       " +
-                        "     </table>\r\n        "));
+                        "                 </td>\r\n                </tr>\r\n            </table>\r\n        "));
             return @__ctrl;
         }
         
@@ -4509,14 +4763,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDependants1() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calDependants1 = @__ctrl;
-            @__ctrl.ID = "calDependants1";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtDependants1DOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtDependants1DOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtDependants1DOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator101() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator101 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator101";
+            @__ctrl.ControlToValidate = "txtDependants1DOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -4770,14 +5035,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDependants2() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calDependants2 = @__ctrl;
-            @__ctrl.ID = "calDependants2";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtDependants2DOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtDependants2DOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtDependants2DOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator84() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator84 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator84";
+            @__ctrl.ControlToValidate = "txtDependants2DOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -5031,14 +5307,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDependants3() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calDependants3 = @__ctrl;
-            @__ctrl.ID = "calDependants3";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtDependants3DOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtDependants3DOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtDependants3DOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator85() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator85 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator85";
+            @__ctrl.ControlToValidate = "txtDependants3DOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -5292,14 +5579,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDependants4() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calDependants4 = @__ctrl;
-            @__ctrl.ID = "calDependants4";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtDependants4DOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtDependants4DOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtDependants4DOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator86() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator86 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator86";
+            @__ctrl.ControlToValidate = "txtDependants4DOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -5553,14 +5851,25 @@ namespace TTK.SP.NeedsAnalysis.WP {
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        private global::Microsoft.SharePoint.WebControls.DateTimeControl @__BuildControlcalDependants5() {
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl;
-            @__ctrl = new global::Microsoft.SharePoint.WebControls.DateTimeControl();
-            this.calDependants5 = @__ctrl;
-            @__ctrl.ID = "calDependants5";
-            @__ctrl.DateOnly = true;
-            @__ctrl.SelectedDate = new System.DateTime(2013, 8, 9, 9, 55, 23, 0);
-            @__ctrl.LocaleId = 3081;
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtDependants5DOB() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtDependants5DOB = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "txtDependants5DOB";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private global::System.Web.UI.WebControls.RegularExpressionValidator @__BuildControlRegularExpressionValidator87() {
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.RegularExpressionValidator();
+            this.RegularExpressionValidator87 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "RegularExpressionValidator87";
+            @__ctrl.ControlToValidate = "txtDependants5DOB";
+            @__ctrl.ErrorMessage = "Invalid Date (dd/mm/yyyy)";
+            @__ctrl.ValidationExpression = @"^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00))))$";
             return @__ctrl;
         }
         
@@ -5809,9 +6118,9 @@ namespace TTK.SP.NeedsAnalysis.WP {
                     <th>Date of Birth</th>
                     <th>Relation</th>
                     <th class=""auto-style15"">Occupation/
-                        Education Year Level</th>
+						Education Year Level</th>
                     <th class=""auto-style14"">School/
-                        University Attended</th>
+						University Attended</th>
                     <th>Health</th>
                 </tr>
                 <tr>
@@ -5824,167 +6133,187 @@ namespace TTK.SP.NeedsAnalysis.WP {
             global::System.Web.UI.WebControls.TextBox @__ctrl2;
             @__ctrl2 = this.@__BuildControltxtDependantsSurName1();
             @__parser.AddParsedSubObject(@__ctrl2);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl3;
-            @__ctrl3 = this.@__BuildControlcalDependants1();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">               " +
+                        "         \r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl3;
+            @__ctrl3 = this.@__BuildControltxtDependants1DOB();
             @__parser.AddParsedSubObject(@__ctrl3);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl4;
-            @__ctrl4 = this.@__BuildControlddRelation1();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl4;
+            @__ctrl4 = this.@__BuildControlRegularExpressionValidator101();
             @__parser.AddParsedSubObject(@__ctrl4);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
-                        "le15\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl5;
-            @__ctrl5 = this.@__BuildControltxtDependantsEducationOccupationLevel1();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.DropDownList @__ctrl5;
+            @__ctrl5 = this.@__BuildControlddRelation1();
             @__parser.AddParsedSubObject(@__ctrl5);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
-                        "le14\">\r\n                        "));
+                        "le15\">\r\n                        "));
             global::System.Web.UI.WebControls.TextBox @__ctrl6;
-            @__ctrl6 = this.@__BuildControltxtDependantsSchoolUniversity1();
+            @__ctrl6 = this.@__BuildControltxtDependantsEducationOccupationLevel1();
             @__parser.AddParsedSubObject(@__ctrl6);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
+                        "le14\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl7;
+            @__ctrl7 = this.@__BuildControltxtDependantsSchoolUniversity1();
+            @__parser.AddParsedSubObject(@__ctrl7);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
                         "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl7;
-            @__ctrl7 = this.@__BuildControlcbDependantsHealth1();
-            @__parser.AddParsedSubObject(@__ctrl7);
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl8;
+            @__ctrl8 = this.@__BuildControlcbDependantsHealth1();
+            @__parser.AddParsedSubObject(@__ctrl8);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
                         "             <td valign=\"top\" class=\"auto-style12\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl8;
-            @__ctrl8 = this.@__BuildControltxtDependantsFirst2();
-            @__parser.AddParsedSubObject(@__ctrl8);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
             global::System.Web.UI.WebControls.TextBox @__ctrl9;
-            @__ctrl9 = this.@__BuildControltxtDependantsSurName2();
+            @__ctrl9 = this.@__BuildControltxtDependantsFirst2();
             @__parser.AddParsedSubObject(@__ctrl9);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl10;
-            @__ctrl10 = this.@__BuildControlcalDependants2();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl10;
+            @__ctrl10 = this.@__BuildControltxtDependantsSurName2();
             @__parser.AddParsedSubObject(@__ctrl10);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
                         "           "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl11;
-            @__ctrl11 = this.@__BuildControlddRelation2();
+            global::System.Web.UI.WebControls.TextBox @__ctrl11;
+            @__ctrl11 = this.@__BuildControltxtDependants2DOB();
             @__parser.AddParsedSubObject(@__ctrl11);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl12;
+            @__ctrl12 = this.@__BuildControlRegularExpressionValidator84();
+            @__parser.AddParsedSubObject(@__ctrl12);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.DropDownList @__ctrl13;
+            @__ctrl13 = this.@__BuildControlddRelation2();
+            @__parser.AddParsedSubObject(@__ctrl13);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
                         "le15\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl12;
-            @__ctrl12 = this.@__BuildControltxtDependantsEducationOccupationLevel2();
-            @__parser.AddParsedSubObject(@__ctrl12);
+            global::System.Web.UI.WebControls.TextBox @__ctrl14;
+            @__ctrl14 = this.@__BuildControltxtDependantsEducationOccupationLevel2();
+            @__parser.AddParsedSubObject(@__ctrl14);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
                         "le14\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl13;
-            @__ctrl13 = this.@__BuildControltxtDependantsSchoolUniversity2();
-            @__parser.AddParsedSubObject(@__ctrl13);
+            global::System.Web.UI.WebControls.TextBox @__ctrl15;
+            @__ctrl15 = this.@__BuildControltxtDependantsSchoolUniversity2();
+            @__parser.AddParsedSubObject(@__ctrl15);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
                         "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl14;
-            @__ctrl14 = this.@__BuildControlcbDependantsHealth2();
-            @__parser.AddParsedSubObject(@__ctrl14);
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl16;
+            @__ctrl16 = this.@__BuildControlcbDependantsHealth2();
+            @__parser.AddParsedSubObject(@__ctrl16);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n       " +
                         "             <td valign=\"top\" class=\"auto-style12\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl15;
-            @__ctrl15 = this.@__BuildControltxtDependantsFirst3();
-            @__parser.AddParsedSubObject(@__ctrl15);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl16;
-            @__ctrl16 = this.@__BuildControltxtDependantsSurName3();
-            @__parser.AddParsedSubObject(@__ctrl16);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl17;
-            @__ctrl17 = this.@__BuildControlcalDependants3();
+            global::System.Web.UI.WebControls.TextBox @__ctrl17;
+            @__ctrl17 = this.@__BuildControltxtDependantsFirst3();
             @__parser.AddParsedSubObject(@__ctrl17);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl18;
+            @__ctrl18 = this.@__BuildControltxtDependantsSurName3();
+            @__parser.AddParsedSubObject(@__ctrl18);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
                         "           "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl18;
-            @__ctrl18 = this.@__BuildControlddRelation3();
-            @__parser.AddParsedSubObject(@__ctrl18);
+            global::System.Web.UI.WebControls.TextBox @__ctrl19;
+            @__ctrl19 = this.@__BuildControltxtDependants3DOB();
+            @__parser.AddParsedSubObject(@__ctrl19);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl20;
+            @__ctrl20 = this.@__BuildControlRegularExpressionValidator85();
+            @__parser.AddParsedSubObject(@__ctrl20);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.DropDownList @__ctrl21;
+            @__ctrl21 = this.@__BuildControlddRelation3();
+            @__parser.AddParsedSubObject(@__ctrl21);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
                         "le15\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl19;
-            @__ctrl19 = this.@__BuildControltxtDependantsEducationOccupationLevel3();
-            @__parser.AddParsedSubObject(@__ctrl19);
+            global::System.Web.UI.WebControls.TextBox @__ctrl22;
+            @__ctrl22 = this.@__BuildControltxtDependantsEducationOccupationLevel3();
+            @__parser.AddParsedSubObject(@__ctrl22);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
                         "le14\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl20;
-            @__ctrl20 = this.@__BuildControltxtDependantsSchoolUniversity3();
-            @__parser.AddParsedSubObject(@__ctrl20);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl21;
-            @__ctrl21 = this.@__BuildControlcbDependantsHealth3();
-            @__parser.AddParsedSubObject(@__ctrl21);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n\r\n                <tr>\r\n     " +
-                        "               <td valign=\"top\" class=\"auto-style12\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl22;
-            @__ctrl22 = this.@__BuildControltxtDependantsFirst4();
-            @__parser.AddParsedSubObject(@__ctrl22);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
             global::System.Web.UI.WebControls.TextBox @__ctrl23;
-            @__ctrl23 = this.@__BuildControltxtDependantsSurName4();
+            @__ctrl23 = this.@__BuildControltxtDependantsSchoolUniversity3();
             @__parser.AddParsedSubObject(@__ctrl23);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
                         "           "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl24;
-            @__ctrl24 = this.@__BuildControlcalDependants4();
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl24;
+            @__ctrl24 = this.@__BuildControlcbDependantsHealth3();
             @__parser.AddParsedSubObject(@__ctrl24);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl25;
-            @__ctrl25 = this.@__BuildControlddRelation4();
-            @__parser.AddParsedSubObject(@__ctrl25);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
-                        "le15\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl26;
-            @__ctrl26 = this.@__BuildControltxtDependantsEducationOccupationLevel4();
-            @__parser.AddParsedSubObject(@__ctrl26);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
-                        "le14\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl27;
-            @__ctrl27 = this.@__BuildControltxtDependantsSchoolUniversity4();
-            @__parser.AddParsedSubObject(@__ctrl27);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
-                        "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl28;
-            @__ctrl28 = this.@__BuildControlcbDependantsHealth4();
-            @__parser.AddParsedSubObject(@__ctrl28);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n\r\n                <tr>\r\n     " +
                         "               <td valign=\"top\" class=\"auto-style12\">\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl29;
-            @__ctrl29 = this.@__BuildControltxtDependantsFirst5();
-            @__parser.AddParsedSubObject(@__ctrl29);
+            global::System.Web.UI.WebControls.TextBox @__ctrl25;
+            @__ctrl25 = this.@__BuildControltxtDependantsFirst4();
+            @__parser.AddParsedSubObject(@__ctrl25);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl30;
-            @__ctrl30 = this.@__BuildControltxtDependantsSurName5();
-            @__parser.AddParsedSubObject(@__ctrl30);
+            global::System.Web.UI.WebControls.TextBox @__ctrl26;
+            @__ctrl26 = this.@__BuildControltxtDependantsSurName4();
+            @__parser.AddParsedSubObject(@__ctrl26);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
                         "           "));
-            global::Microsoft.SharePoint.WebControls.DateTimeControl @__ctrl31;
-            @__ctrl31 = this.@__BuildControlcalDependants5();
+            global::System.Web.UI.WebControls.TextBox @__ctrl27;
+            @__ctrl27 = this.@__BuildControltxtDependants4DOB();
+            @__parser.AddParsedSubObject(@__ctrl27);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl28;
+            @__ctrl28 = this.@__BuildControlRegularExpressionValidator86();
+            @__parser.AddParsedSubObject(@__ctrl28);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.DropDownList @__ctrl29;
+            @__ctrl29 = this.@__BuildControlddRelation4();
+            @__parser.AddParsedSubObject(@__ctrl29);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
+                        "le15\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl30;
+            @__ctrl30 = this.@__BuildControltxtDependantsEducationOccupationLevel4();
+            @__parser.AddParsedSubObject(@__ctrl30);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
+                        "le14\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl31;
+            @__ctrl31 = this.@__BuildControltxtDependantsSchoolUniversity4();
             @__parser.AddParsedSubObject(@__ctrl31);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
                         "           "));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl32;
-            @__ctrl32 = this.@__BuildControlddRelation5();
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl32;
+            @__ctrl32 = this.@__BuildControlcbDependantsHealth4();
             @__parser.AddParsedSubObject(@__ctrl32);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
-                        "le15\">\r\n                        "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n\r\n                <tr>\r\n     " +
+                        "               <td valign=\"top\" class=\"auto-style12\">\r\n                        "));
             global::System.Web.UI.WebControls.TextBox @__ctrl33;
-            @__ctrl33 = this.@__BuildControltxtDependantsEducationOccupationLevel5();
+            @__ctrl33 = this.@__BuildControltxtDependantsFirst5();
             @__parser.AddParsedSubObject(@__ctrl33);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
-                        "le14\">\r\n                        "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
             global::System.Web.UI.WebControls.TextBox @__ctrl34;
-            @__ctrl34 = this.@__BuildControltxtDependantsSchoolUniversity5();
+            @__ctrl34 = this.@__BuildControltxtDependantsSurName5();
             @__parser.AddParsedSubObject(@__ctrl34);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
                         "           "));
-            global::System.Web.UI.WebControls.CheckBoxList @__ctrl35;
-            @__ctrl35 = this.@__BuildControlcbDependantsHealth5();
+            global::System.Web.UI.WebControls.TextBox @__ctrl35;
+            @__ctrl35 = this.@__BuildControltxtDependants5DOB();
             @__parser.AddParsedSubObject(@__ctrl35);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
+            global::System.Web.UI.WebControls.RegularExpressionValidator @__ctrl36;
+            @__ctrl36 = this.@__BuildControlRegularExpressionValidator87();
+            @__parser.AddParsedSubObject(@__ctrl36);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        \r\n                    </td>\r\n                    <td va" +
+                        "lign=\"top\">\r\n                        "));
+            global::System.Web.UI.WebControls.DropDownList @__ctrl37;
+            @__ctrl37 = this.@__BuildControlddRelation5();
+            @__parser.AddParsedSubObject(@__ctrl37);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
+                        "le15\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl38;
+            @__ctrl38 = this.@__BuildControltxtDependantsEducationOccupationLevel5();
+            @__parser.AddParsedSubObject(@__ctrl38);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\" class=\"auto-sty" +
+                        "le14\">\r\n                        "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl39;
+            @__ctrl39 = this.@__BuildControltxtDependantsSchoolUniversity5();
+            @__parser.AddParsedSubObject(@__ctrl39);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                    <td valign=\"top\">\r\n             " +
+                        "           "));
+            global::System.Web.UI.WebControls.CheckBoxList @__ctrl40;
+            @__ctrl40 = this.@__BuildControlcbDependantsHealth5();
+            @__parser.AddParsedSubObject(@__ctrl40);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    </td>\r\n                </tr>\r\n\r\n            </table>\r\n     " +
                         "   "));
             return @__ctrl;
@@ -8935,9 +9264,40 @@ namespace TTK.SP.NeedsAnalysis.WP {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         private void @__BuildControlTree(global::TTK.SP.NeedsAnalysis.WP.NeedsAnalysis @__ctrl) {
             @__ctrl.EnableViewState = true;
+            global::System.Web.UI.UpdatePanel @__ctrl1;
+            @__ctrl1 = this.@__BuildControlUpdatePanel1();
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
-
+            @__parser.AddParsedSubObject(@__ctrl1);
+            global::System.Web.UI.WebControls.PlaceHolder @__ctrl2;
+            @__ctrl2 = this.@__BuildControlphForLiteral();
+            @__parser.AddParsedSubObject(@__ctrl2);
+            global::System.Web.UI.WebControls.TextBox @__ctrl3;
+            @__ctrl3 = this.@__BuildControltxtReferrer();
+            @__parser.AddParsedSubObject(@__ctrl3);
+            global::System.Web.UI.WebControls.Label @__ctrl4;
+            @__ctrl4 = this.@__BuildControllbDateCaptured();
+            @__parser.AddParsedSubObject(@__ctrl4);
+            global::System.Web.UI.WebControls.DropDownList @__ctrl5;
+            @__ctrl5 = this.@__BuildControlddNewBusinessRegister();
+            @__parser.AddParsedSubObject(@__ctrl5);
+            global::System.Web.UI.WebControls.DropDownList @__ctrl6;
+            @__ctrl6 = this.@__BuildControlddUnderWritingRegister();
+            @__parser.AddParsedSubObject(@__ctrl6);
+            global::System.Web.UI.WebControls.Label @__ctrl7;
+            @__ctrl7 = this.@__BuildControllbVersion();
+            @__parser.AddParsedSubObject(@__ctrl7);
+            global::System.Web.UI.WebControls.Wizard @__ctrl8;
+            @__ctrl8 = this.@__BuildControlwizNeeds();
+            @__parser.AddParsedSubObject(@__ctrl8);
+            global::System.Web.UI.WebControls.Label @__ctrl9;
+            @__ctrl9 = this.@__BuildControlErrorLabel();
+            @__parser.AddParsedSubObject(@__ctrl9);
+            @__ctrl.SetRenderMethodDelegate(new System.Web.UI.RenderMethod(this.@__Render__control1));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        private void @__Render__control1(System.Web.UI.HtmlTextWriter @__w, System.Web.UI.Control parameterContainer) {
+            @__w.Write(@"
 
 <style type=""text/css"">
     .wizard-table {
@@ -9001,47 +9361,95 @@ namespace TTK.SP.NeedsAnalysis.WP {
     }
 </style>
 
+<link rel=""stylesheet"" type=""text/css"" href=""/Style Library/jquery-ui.css"">
+<script type=""text/javascript"" src=""http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js""></script>
+<script type=""text/javascript"" src=""http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js""></script>
 
-"));
-            global::System.Web.UI.UpdatePanel @__ctrl1;
-            @__ctrl1 = this.@__BuildControlUpdatePanel1();
-            @__parser.AddParsedSubObject(@__ctrl1);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n<script type=\"text/javascript\" src=\"/_layouts/datepicker.js\"></script>\r\n\r\n"));
-            global::System.Web.UI.WebControls.PlaceHolder @__ctrl2;
-            @__ctrl2 = this.@__BuildControlphForLiteral();
-            @__parser.AddParsedSubObject(@__ctrl2);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n\r\n<table>\r\n    <tr>\r\n        <td colspan=\"1\" class=\"auto-style24\">\r\n         " +
-                        "   <label>Referrer:</label>\r\n            "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl3;
-            @__ctrl3 = this.@__BuildControltxtReferrer();
-            @__parser.AddParsedSubObject(@__ctrl3);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n        <td colspan=\"1\">\r\n            <b>\r\n                <labe" +
-                        "l>\r\n                    Date:\r\n                </label>\r\n            </b>\r\n     " +
-                        "       "));
-            global::System.Web.UI.WebControls.Label @__ctrl4;
-            @__ctrl4 = this.@__BuildControllbDateCaptured();
-            @__parser.AddParsedSubObject(@__ctrl4);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n        <td colspan=\"1\"><b>New Business Register:</b>"));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl5;
-            @__ctrl5 = this.@__BuildControlddNewBusinessRegister();
-            @__parser.AddParsedSubObject(@__ctrl5);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n        <td colspan=\"1\"><b>Underwriting Register:</b>"));
-            global::System.Web.UI.WebControls.DropDownList @__ctrl6;
-            @__ctrl6 = this.@__BuildControlddUnderWritingRegister();
-            @__parser.AddParsedSubObject(@__ctrl6);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("</td>\r\n        <td colspan=\"1\">\r\n            "));
-            global::System.Web.UI.WebControls.Label @__ctrl7;
-            @__ctrl7 = this.@__BuildControllbVersion();
-            @__parser.AddParsedSubObject(@__ctrl7);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n    </tr>\r\n</table>\r\n\r\n"));
-            global::System.Web.UI.WebControls.Wizard @__ctrl8;
-            @__ctrl8 = this.@__BuildControlwizNeeds();
-            @__parser.AddParsedSubObject(@__ctrl8);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n"));
-            global::System.Web.UI.WebControls.Label @__ctrl9;
-            @__ctrl9 = this.@__BuildControlErrorLabel();
-            @__parser.AddParsedSubObject(@__ctrl9);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"));
+
+
+");
+            parameterContainer.Controls[0].RenderControl(@__w);
+            @__w.Write("\r\n\r\n<script type=\"text/javascript\" src=\"/_layouts/datepicker.js\"></script>\r\n\r\n");
+            parameterContainer.Controls[1].RenderControl(@__w);
+            @__w.Write("\r\n\r\n\r\n<table>\r\n    <tr>\r\n        <td colspan=\"1\" class=\"auto-style24\">\r\n         " +
+                    "   <label>Referrer:</label>\r\n            ");
+            parameterContainer.Controls[2].RenderControl(@__w);
+            @__w.Write("\r\n        </td>\r\n        <td colspan=\"1\">\r\n            <b>\r\n                <labe" +
+                    "l>\r\n                    Date:\r\n                </label>\r\n            </b>\r\n     " +
+                    "       ");
+            parameterContainer.Controls[3].RenderControl(@__w);
+            @__w.Write("\r\n        </td>\r\n        <td colspan=\"1\"><b>New Business Register:</b>");
+            parameterContainer.Controls[4].RenderControl(@__w);
+            @__w.Write("</td>\r\n        <td colspan=\"1\"><b>Underwriting Register:</b>");
+            parameterContainer.Controls[5].RenderControl(@__w);
+            @__w.Write("</td>\r\n        <td colspan=\"1\">\r\n            ");
+            parameterContainer.Controls[6].RenderControl(@__w);
+            @__w.Write("\r\n        </td>\r\n    </tr>\r\n</table>\r\n\r\n");
+            parameterContainer.Controls[7].RenderControl(@__w);
+            @__w.Write("\r\n\r\n");
+            parameterContainer.Controls[8].RenderControl(@__w);
+            @__w.Write("\r\n\r\n<script type=\"text/javascript\" language=\"javascript\">\r\n    $(function () {\r\n " +
+                    "       $(\"#");
+    @__w.Write( txtDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtDOBP.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtFatherDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtMotherDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n\r\n        $(\"#");
+    @__w.Write( txtBrotherDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtBrother2DOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtSisterDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtSister2DOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtFatherPDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtMotherPDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtBrotherPDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtBrother2PDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtBrother2PDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtSisterPDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtSister2PDOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n\t    $(\"#");
+ @__w.Write( txtDependants1DOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtDependants2DOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtDependants3DOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtDependants4DOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n        $(\"#");
+    @__w.Write( txtDependants5DOB.ClientID );
+
+            @__w.Write("\").datepicker({ dateFormat: \'dd/mm/yy\' });\r\n\t});\r\n\r\n</script>\r\n\r\n\r\n\r\n\r\n\r\n\r\n");
         }
         
         private void InitializeControl() {
