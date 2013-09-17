@@ -107,9 +107,7 @@ namespace TTK.SP.NeedsAnalysis.WP
 
             txtFirstName.Text = GetEmptyStringIfNull(customerListItem["FirstName"]);
 
-            txtDOB.Text = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["DoB"]).ToString(), australiaCulture).Date.ToString().Replace(" 12:00:00 AM", "");
-            txtDOB.Text = (txtDOB.Text.Substring(1, 1) != "/") ? txtDOB.Text : "0" + txtDOB.Text; //zero pad
-
+            txtDOB.Text = GetTextBoxDateString(customerListItem, "DoB");
             //calDOB.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["DoB"]).ToString(), australiaCulture); ;
 
             ddGender.SelectedValue = customerListItem["Gender"].ToString();
@@ -123,7 +121,7 @@ namespace TTK.SP.NeedsAnalysis.WP
             txtEmail.Text = GetEmptyStringIfNull(customerListItem["Email"]);
             ddCorrespondancePreference.SelectedValue = GetEmptyStringIfNull(customerListItem["CorrespondancePreference"]);
 
-            cbWill.Checked = (bool)customerListItem["Will"];
+            cbWill.Checked = GetFalseIfNull(customerListItem["Will"]);
             txtQantas.Text = GetEmptyStringIfNull(customerListItem["Qantas"]);
             txtRACV.Text = GetEmptyStringIfNull(customerListItem["RACV"]);
             txtSolicitor.Text = GetEmptyStringIfNull(customerListItem["Solicitor"]);
@@ -136,9 +134,8 @@ namespace TTK.SP.NeedsAnalysis.WP
             txtSurNameP.Text = GetEmptyStringIfNull(customerListItem["SurNameP"]);
             txtFirstNameP.Text = GetEmptyStringIfNull(customerListItem["FirstNameP"]);
 
-            txtDOBP.Text = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["DoBP"]).ToString(), australiaCulture).Date.ToString().Replace(" 12:00:00 AM", "");
-            txtDOBP.Text = (txtDOBP.Text.Substring(1, 1) != "/") ? txtDOBP.Text : "0" + txtDOBP.Text; //zero pad
-
+            txtDOBP.Text = GetTextBoxDateString(customerListItem, "DoBP");
+           
             //calDOBP.SelectedDate = Convert.ToDateTime(GetEmptyStringIfNull(customerListItem["DoBP"]).ToString(), australiaCulture);
             ddGenderP.SelectedValue = GetEmptyStringIfNull(customerListItem["GenderP"]);
 
@@ -152,12 +149,12 @@ namespace TTK.SP.NeedsAnalysis.WP
             txtEmailP.Text = GetEmptyStringIfNull(customerListItem["EmailP"]);
             ddCorrespondencePreferenceP.SelectedValue = GetEmptyStringIfNull(customerListItem["CorrespondancePreferenceP"]);
 
-            cbWillP.Checked = (bool)customerListItem["WillP"];
+            cbWillP.Checked = GetFalseIfNull(customerListItem["WillP"]);
             txtQantasP.Text = GetEmptyStringIfNull(customerListItem["QantasP"]);
             txtRACVP.Text = GetEmptyStringIfNull(customerListItem["RACVP"]);
             txtSolicitorP.Text = GetEmptyStringIfNull(customerListItem["SolicitorP"]);
             txtAccountantP.Text = GetEmptyStringIfNull(customerListItem["AccountantP"]);
-            ddSmokerP.SelectedValue = customerListItem["SmokerP"].ToString();
+            ddSmokerP.SelectedValue = GetEmptyStringIfNull(customerListItem["SmokerP"]);
 
 
             //tab3
@@ -406,7 +403,7 @@ namespace TTK.SP.NeedsAnalysis.WP
             txtEmail.Text = GetEmptyStringIfNull(customerListItem["Email"]);
             ddCorrespondancePreference.SelectedValue = GetEmptyStringIfNull(customerListItem["CorrespondancePreference"]);
 
-            cbWill.Checked = (bool)customerListItem["Will"];
+            cbWill.Checked = GetFalseIfNull(customerListItem["Will"]);
             txtQantas.Text = GetEmptyStringIfNull(customerListItem["Qantas"]);
             txtRACV.Text = GetEmptyStringIfNull(customerListItem["RACV"]);
             txtSolicitor.Text = GetEmptyStringIfNull(customerListItem["Solicitor"]);
@@ -432,12 +429,12 @@ namespace TTK.SP.NeedsAnalysis.WP
             txtEmailP.Text = GetEmptyStringIfNull(customerListItem["EmailP"]);
             ddCorrespondencePreferenceP.SelectedValue = GetEmptyStringIfNull(customerListItem["CorrespondancePreferenceP"]);
 
-            cbWillP.Checked = (bool)customerListItem["WillP"];
+            cbWillP.Checked = GetFalseIfNull(customerListItem["WillP"]);
             txtQantasP.Text = GetEmptyStringIfNull(customerListItem["QantasP"]);
             txtRACVP.Text = GetEmptyStringIfNull(customerListItem["RACVP"]);
             txtSolicitorP.Text = GetEmptyStringIfNull(customerListItem["SolicitorP"]);
             txtAccountantP.Text = GetEmptyStringIfNull(customerListItem["AccountantP"]);
-            ddSmokerP.SelectedValue = customerListItem["SmokerP"].ToString();
+            ddSmokerP.SelectedValue = GetEmptyStringIfNull(customerListItem["SmokerP"]);
 
 
             //tab3
@@ -927,6 +924,15 @@ namespace TTK.SP.NeedsAnalysis.WP
                 return "";
             else
                 return item.ToString();
+        }
+
+
+        private bool GetFalseIfNull(object item)
+        {
+            if (null == item)
+                return false;
+            else
+                return (bool)item;
         }
 
         private void SetCheckBoxValues(CheckBoxList checkBoxList, object item)
@@ -2190,6 +2196,9 @@ namespace TTK.SP.NeedsAnalysis.WP
         {
             string textBox = "";
 
+            if (GetEmptyStringIfNull(item[column]) == string.Empty)
+                return DateTime.Now.Date.ToString("dd/MM/yyyy"); 
+
             textBox = Convert.ToDateTime(GetEmptyStringIfNull(item[column]).ToString(), australiaCulture).ToLocalTime().Date.ToString().Replace(" 12:00:00 AM", "");
             textBox = (textBox.Substring(1, 1) != "/") ? textBox : "0" + textBox; //zero pad
 
@@ -2199,6 +2208,9 @@ namespace TTK.SP.NeedsAnalysis.WP
         private string GetTextBoxDateStringVersion(SPListItemVersion item, string column)
         {
             string textBox = "";
+
+            if (GetEmptyStringIfNull(item[column]) == string.Empty)
+                return DateTime.Now.Date.ToString("dd/MM/yyyy"); 
 
             textBox = Convert.ToDateTime(GetEmptyStringIfNull(item[column]).ToString(), australiaCulture).ToLocalTime().Date.ToString().Replace(" 12:00:00 AM", "");
             textBox = (textBox.Substring(1, 1) != "/") ? textBox : "0" + textBox; //zero pad

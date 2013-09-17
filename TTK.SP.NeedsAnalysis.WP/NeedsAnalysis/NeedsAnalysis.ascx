@@ -1555,7 +1555,6 @@
                         <label>Income Protection</label></td>
                     <td>
                         <asp:TextBox ID="txtIncomeProtection" runat="server"></asp:TextBox>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator23" runat="server" ControlToValidate="txtIncomeProtection" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
                     <td>
                         <asp:TextBox ID="txtIncomeProtectionC" runat="server"></asp:TextBox>
@@ -1571,7 +1570,6 @@
                         <label>Life/Death Cover</label></td>
                     <td>
                         <asp:TextBox ID="txtLifeCover" runat="server"></asp:TextBox>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator20" runat="server" ControlToValidate="txtLifeCover" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
                     <td>
                         <asp:TextBox ID="txtLifeCoverC" runat="server"></asp:TextBox>
@@ -1587,7 +1585,6 @@
                         <label>Total and Permanent Disablement (TPD)</label></td>
                     <td>
                         <asp:TextBox ID="txtDisable" runat="server"></asp:TextBox>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator15" runat="server" ControlToValidate="txtDisable" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
                     <td>
                         <asp:TextBox ID="txtDisableC" runat="server"></asp:TextBox>
@@ -1603,7 +1600,6 @@
                         <label>Trauma/Critical Illness</label></td>
                     <td>
                         <asp:TextBox ID="txtTrauma" runat="server"></asp:TextBox>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator14" runat="server" ControlToValidate="txtTrauma" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
                     <td>
                         <asp:TextBox ID="txtTraumaC" runat="server"></asp:TextBox>
@@ -1619,7 +1615,6 @@
                         <label>Other (please specify)</label></td>
                     <td>
                         <asp:TextBox ID="txtOtherInsured" runat="server"></asp:TextBox>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator11" runat="server" ControlToValidate="txtOtherInsured" ErrorMessage="Please enter a currency" ValidationExpression="^\$?([0-9]{1,3},([0-9]{3},)*[0-9]{3}|[0-9]+)(.[0-9][0-9])?$"></asp:RegularExpressionValidator>
                     </td>
                     <td>
                         <asp:TextBox ID="txtOtherInsuredC" runat="server"></asp:TextBox>
